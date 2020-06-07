@@ -1,0 +1,179 @@
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1"><script src="jquery-1.11.3.min.js" type="text/javascript"></script><script type="text/javascript" src="echarts.js"></script>
+<script type="text/javascript" src="bmap.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=D9OIkMpc1jyFB1D9AA2leHkS"></script><style type="text/css">
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style></head><body><div id="main" style="width: 100%;height:100%;"></div><script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        var geoCoordMap = {
+'测试结算工程':[106.470407,29.573469],'恒大搅拌站':[121.486127,31.244657],'测试预警信息':[116.426421,39.934496]        };        var data0 = [
+          [{name:'恒大搅拌站'},{name:'测试结算工程',value:150.0}],[{name:'恒大搅拌站'},{name:'测试预警信息',value:120.0}]        ];
+        var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
+       planePath='image://image/che.png';        var convertData = function (data) {
+            var res = [];
+            for (var i = 0; i < data.length; i++) {
+                var dataItem = data[i];
+                var fromCoord = geoCoordMap[dataItem[0].name];
+                var toCoord = geoCoordMap[dataItem[1].name];
+                if (fromCoord && toCoord) {
+                    res.push([{
+                        name: dataItem[0].name,
+                        coord: fromCoord
+                    }, {
+                        name: dataItem[1].name,
+                        coord: toCoord
+                    }]);
+                }
+            }
+            return res;
+        };
+
+        var color = ['#a6c84c', '#ffa022', '#46bee9'];
+        var series = [];
+        [
+[{name:'恒大搅拌站'},data0]        ].forEach(function (item, i) {
+            series.push(
+               
+                {
+                    name: item[0].name,
+                    type: 'lines',
+                    coordinateSystem: 'bmap',
+                    zlevel: 1,
+                    effect: {
+                        show: true,
+                        period: 6,
+                        trailLength: 0.7,
+                        color: '#fff',
+                        symbolSize: 3
+                    },
+                    lineStyle: {
+                        normal: {
+                            color: color[i%3],
+                            width: 0,
+                            curveness: 0.1
+                        }
+                    },
+                    data: convertData(item[1])
+                },
+                
+                {
+                    name: item[0].name,
+                    type: 'lines',
+                    coordinateSystem: 'bmap',
+                    zlevel: 2,
+                    effect: {
+                        show: true,
+                        period: 6,
+                        trailLength: 0,
+                        symbol: planePath,
+                        symbolSize: 30
+                    },
+                    lineStyle: {
+                        normal: {
+                            color: color[i%3],
+                            width: 2,
+                            opacity: 0.5,
+                            curveness: 0.1
+                        }
+                    },
+                    data: convertData(item[1])
+                },
+               
+                {
+                    name: item[0].name,
+                    type: 'effectScatter',
+                    coordinateSystem: 'bmap',
+                    zlevel: 2,
+                 
+                    rippleEffect: {
+                        brushType: 'stroke'
+                    },
+                   
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'right',
+                            formatter: '{b}'
+                        }
+                    },
+                
+                    symbolSize: function (val) {
+                        return val[2] / 8;
+                    },
+                   
+                    itemStyle: {
+                        normal: {
+                            color: color[i%3]
+                        }
+                    },
+                   
+                    data: item[1].map(function (dataItem) {
+                        return {
+                            name: dataItem[1].name,
+                            value: geoCoordMap[dataItem[1].name].concat([95])
+                        };
+                    })
+                }
+            );
+        });
+        option = {
+            tooltip: {
+                trigger: 'item',
+               
+                formatter: function (params) {
+                    var res = "";
+                    if (params.componentSubType == "effectScatter") {
+                        res += "地址：" + params.data.name + "<br/>";
+                        res += "经度：" + params.value[0] + "<br/>";
+                        res += "维度：" + params.value[1] + "<br/>";
+                        res += "方量：" + params.value[2] + "<br/>";
+                    } else {
+                        res += params.data.fromName + " 送往 " + params.data.toName;
+                    }
+                    return res;
+                }
+            },
+            legend: {
+            },
+            bmap: {
+                center: [106.627786, 29.721419],
+                zoom: 5,
+                roam: true,
+            },
+            series: series,
+        };
+        myChart.setOption(option);
+        var map = myChart.getModel().getComponent('bmap').getBMap();
+        map.removeControl(top_right_navigation);
+        var layIcon = ["layui-icon-app", "layui-icon-senior", "layui-icon-set", "layui-icon-home", "layui-icon-loading", "layui-icon-tree", "layui-icon-console", "layui-icon-theme"];
+        var conMethod = [
+        ];
+        map.addControl(new BMap.NavigationControl({
+            offset: new BMap.Size(80, 40),
+            type: BMAP_NAVIGATION_CONTROL_SMALL
+        }));
+        for (var j = 0; j < 8; j++) {
+            function myControl() {
+                this.defaultAnchor = BMAP_ANCHOR_TOP_LEFT;
+                this.defaultOffset = new BMap.Size(20, 40 + 50 * j);
+            }
+            myControl.prototype = new BMap.Control();
+            myControl.prototype.initialize = function (map) {
+                var i = document.createElement("i");
+                i.style = "font-size: 30px; color: #333333;background:#888888;border-radius:10px";
+                i.className = "layui-icon " + layIcon[j];
+                i.onclick = conMethod[j];
+                map.getContainer().appendChild(i);
+                return i;
+            }
+            
+            map.addControl(new myControl());
+        }
+    </script></body></html>

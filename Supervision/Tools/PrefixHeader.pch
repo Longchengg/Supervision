@@ -1,0 +1,80 @@
+//
+//  PrefixHeader.pch
+//  Supervision
+//
+//  Created by 龙成 on 2020/5/18.
+//  Copyright © 2020 Supervision. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+    #import "MJExtension.h"
+    #import "UIView+Addition.h"
+    #import "Singleton.h"
+    #import "CTUserDefaults.h"
+    #import "HttpRequestTool.h"
+    #import "AppDelegate.h"
+    #import "UIImageView+AFNetworking.h"
+    #import <MBProgressHUD.h>
+    #import "NSMutableDictionary+CTSafeDict.h"
+    #import "NSArray+safeArray.h"
+    #import "NSMutableArray+safaMutableArray.h"
+    #import "UIButton+TCBaseButton.h"
+    #import "NSString+BaseNSString.h"
+    #import "UIImageView+WebCache.h"
+    #import "UIButton+WebCache.h"
+    #import "MJRefresh.h"
+    #import "AFNetworking.h"
+    #import "TCBaseViewController.h"
+#endif
+
+#define HttpRequestURL @"http://54.223.183.206:8090"
+#define HttpRequestImageURL @"http://www.52cjb.cn:81"
+
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+
+#define Height_StatusBar (SCREEN_HEIGHT >= 812 ? 44.0 : 20.0)
+#define Height_NavBar (SCREEN_HEIGHT >= 812 ? 88.0 : 64.0)
+#define Height_TabBar (SCREEN_HEIGHT >= 812 ? 83.0 : 49.0)
+
+/** 防止循环引用*/
+#define WEAK_SELF   __weak typeof(self)  __weakSelf = self;
+
+
+#define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define RGBA(r, g, b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+//颜色规范
+//按钮背景颜色
+#define ButtonColor RGB(16,136,237)
+//按钮标题颜色
+#define ButtonTitleColor RGB(22,24,35)
+//标题正文
+#define TextColor RGB(51, 51, 51)
+//副标题
+#define SubTextColor RGB(102,102,102)
+//提示语
+#define WarningColor RGB(248,76,73)
+//链接
+#define LinkColor RGB(4,73,141)
+//描述
+#define MarkColor RGB(153,153,153)
+//分割线
+#define LineColor RGB(237,237,237).CGColor
+//取个APPdelegate对象
+#define ShareApp ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+//取个单例对象
+#define AppSingleton [Singleton shareInstance]
+
+//百度地图sdk key
+#define BMKMap_key @"gqfteWG44dW80vQG0qr5RHsuQyHObLWv"
+
+#define MYBUNDLE_NAME @ "mapapi.bundle"
+#define MYBUNDLE_PATH [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: MYBUNDLE_NAME]
+#define MYBUNDLE [NSBundle bundleWithPath: MYBUNDLE_PATH]
+
+#endif /* PrefixHeader_pch */

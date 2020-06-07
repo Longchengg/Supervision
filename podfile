@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform:ios,'9.0'
+target 'Supervision' do
+    pod 'AFNetworking'
+    pod 'MJExtension'
+    pod 'MJRefresh'
+    pod 'MBProgressHUD'
+    pod 'SDWebImage'
+    pod 'BaiduMapKit' #百度地图SDK
+    pod 'BMKLocationKit'
+    pod 'IQKeyboardManager'
+    pod 'MLLabel'
+    pod 'SGQRCode'
+
+end
+

@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Supervision/Pods-Supervision-resources.sh
+${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager/IQKeyboardManager.bundle
+${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
+${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle
