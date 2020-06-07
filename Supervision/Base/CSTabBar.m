@@ -59,7 +59,7 @@
             _centerBtn.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width - _centerWidth)/2.0, (CSTabBarItemHeight - _centerHeight)/2.0 + self.centerOffsetY, _centerWidth, _centerHeight);
             break;
         case CSTabBarCenterButtonPositionBulge:
-            _centerBtn.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width - _centerWidth)/2.0, -_centerHeight/4.0 + self.centerOffsetY, _centerWidth, _centerHeight);
+            _centerBtn.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width - _centerWidth)/2.0, -_centerHeight/3.0 + self.centerOffsetY, _centerWidth, _centerHeight);
             break;
         case CSTabBarCenterButtonPositionCenterImage:
             _centerImageView.frame = CGRectMake(0, CSTabBarItemHeight - _centerImageHeight, [UIScreen mainScreen].bounds.size.width, _centerImageHeight);
