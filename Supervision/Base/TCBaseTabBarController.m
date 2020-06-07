@@ -51,10 +51,8 @@
 }
 
 -(void)initUI{
-    
-    
-    
-    NSArray *titleArr = @[@"首页",@"看板",@"我的"];
+        
+    NSArray *titleArr = @[@"服务",@"预警",@"企业"];
     
     NSArray *iconArr = @[@"首页",@"",@"我的"];
     NSArray *selectIconArr = @[@"首页-选中",@"",@"我的-选中"];
