@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id <HomeTopTableViewCellDelegate > delegate;
 
+@property (nonatomic, copy) NSMutableArray *dataSource;
+
 @end
 
 NS_ASSUME_NONNULL_END

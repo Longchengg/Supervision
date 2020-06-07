@@ -40,4 +40,12 @@
     successBlock:(void (^)(id responObject))successBlock
     failureBlock:(void (^)(id err))failureBlock;
 
+
+/// 首页预警信息
+/// @param successBlock 成功回调
+/// @param failureBlock 失败回调
++ (void)indexMessageSuccessBlock:(void (^)(id responObject))successBlock
+                    failureBlock:(void (^)(id err))failureBlock;
+
+
 @end

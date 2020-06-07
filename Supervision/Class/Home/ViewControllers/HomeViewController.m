@@ -24,8 +24,8 @@ HomeQuickTableViewCellDelegate>{
 /// 主页面tableView
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-/// 黑名单类型 0 = 企业 1= 人员 2 =车辆
-@property (nonatomic, copy) NSString *blackListType;
+
+@property (nonatomic, strong) NSMutableArray *alertList;
 @end
 
 @implementation HomeViewController
@@ -41,7 +41,7 @@ HomeQuickTableViewCellDelegate>{
 - (void)initData{
     
     //数据初始化
-    _blackListType = @"0";
+    
     
     //对tableView进行必要的初始化
     _tableView.delegate = self;
@@ -66,16 +66,24 @@ HomeQuickTableViewCellDelegate>{
 }
 - (void)reloadVideoList{
     WEAK_SELF;
-    [HttpRequestTool uersLogin:@"18888888888"
-                    verifyCode:@"666666"
-                  successBlock:^(id responObject) {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
         
-        
-        
-        
-    } failureBlock:^(id err) {
-        
-    }];
+        [HttpRequestTool indexMessageSuccessBlock:^(id responObject) {
+            
+            NSArray *arr = (NSArray *)responObject;
+            [__weakSelf.alertList addObjectsFromArray:arr];
+            
+            NSIndexSet *setIndex = [NSIndexSet indexSetWithIndex:0];
+            
+            
+            [__weakSelf.tableView reloadSections:setIndex withRowAnimation:UITableViewRowAnimationNone];
+        } failureBlock:^(id err) {
+            
+        }];
+    });
+
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -88,11 +96,6 @@ HomeQuickTableViewCellDelegate>{
         return 1;
     }else if( 3== section){
         
-        if ([@"0" isEqualToString:_blackListType]) {
-            return 3;
-        }else  {
-            return 1;
-        }
     }
     return 1;
     
@@ -233,9 +236,6 @@ HomeQuickTableViewCellDelegate>{
                 
                 [btn.titleLabel setFont:[UIFont systemFontOfSize:14.0f]];
                 btn.tag = 1000 + i;
-                if (_blackListType.intValue == i) {
-                    btn.selected = YES;
-                }
                 [btn addTarget:self action:@selector(selectBlackListType:) forControlEvents:UIControlEventTouchUpInside];
                 [view addSubview:btn];
                 
@@ -277,6 +277,7 @@ HomeQuickTableViewCellDelegate>{
             HomeTopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeTopTableViewCell"];
             cell.selectionStyle        = UITableViewCellSelectionStyleNone;
             cell.delegate              = self;
+            cell.dataSource            = _alertList;
             return cell;
             
         }else{
@@ -421,6 +422,15 @@ HomeQuickTableViewCellDelegate>{
 - (void)checkCarDetail:(NSInteger )section row:(NSInteger )row{
     NSLog(@"%ld--%ld",(long)section,(long)row);
     
+}
+
+- (NSMutableArray *)alertList{
+    
+    if (!_alertList) {
+        _alertList = [[NSMutableArray alloc]initWithCapacity:0];
+    }
+    
+    return _alertList;
 }
 
 @end

@@ -40,6 +40,8 @@
         failureBlock(@"网络错误");
     }];
 }
+
+
 + (void)uersLogin:(NSString *)mobile
        verifyCode:(NSString *)verifyCode
      successBlock:(void (^)(id responObject))successBlock
@@ -51,7 +53,7 @@
     
     NSString *url = [NSString stringWithFormat:@"%@/client/user/login", HttpRequestURL];
     
-    
+     
     [[CTWS getDefault] postWithURLString:url parameters:param success:^(id responseObject) {
         
         if (responseObject) {
@@ -83,6 +85,32 @@
     
     
     [[CTWS getDefault] postWithURLString:url parameters:param success:^(id responseObject) {
+        
+        if (responseObject) {
+            BackModel *model = [BackModel mj_objectWithKeyValues:responseObject];
+            
+            if ([model.status isEqualToString:@"1"]) {
+                successBlock(model.wrapper);
+            }else{
+                failureBlock(model.errorMsg);
+            }
+        }else{
+            failureBlock(@"网络错误");
+        }
+    } failure:^(id error) {
+        failureBlock(@"网络错误");
+    }];
+}
+
++ (void)indexMessageSuccessBlock:(void (^)(id responObject))successBlock
+                    failureBlock:(void (^)(id err))failureBlock{
+    
+    NSMutableDictionary *param = [NSMutableDictionary dictionary];
+    
+    NSString *url = [NSString stringWithFormat:@"%@/client/client_alert/index/message", HttpRequestURL];
+    
+    
+    [[CTWS getDefault] getWithURLString:url parameters:param success:^(id responseObject) {
         
         if (responseObject) {
             BackModel *model = [BackModel mj_objectWithKeyValues:responseObject];

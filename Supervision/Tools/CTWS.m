@@ -180,6 +180,48 @@ static CTWS *instance;
     }];
 }
 
+- (void)getWithURLString:(NSString *)urlString
+              parameters:(NSMutableDictionary *)parameters
+                 success:(void (^)(id responseObject))success
+                 failure:(void (^)(NSError *error))failure{
+    
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    
+    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/plain", nil];
+    
+    //post 发送json格式数据的时候加上这两句
+    // >>>>>>>>
+    session.requestSerializer = [AFJSONRequestSerializer serializer];
+    session.responseSerializer = [AFJSONResponseSerializer serializer];
+    // <<<<<<<<
+    
+    NSString *token = [CTUserDefaults token];
+    if (token.length > 0) {
+        [session.requestSerializer setValue:token forHTTPHeaderField:@"Account-Token"];
+    }
+    
+    session.requestSerializer.timeoutInterval = 15;
+    
+    
+    [session GET:urlString parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (success) {
+            // 接口log
+            NSLog(@"%@ 返回参数： --- %@",urlString, responseObject);
+            BackModel *model = [BackModel mj_objectWithKeyValues:responseObject];
+            NSLog(@"errorMsg********%@",model.errorMsg);
+            success(responseObject);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (failure) {
+            // 失败后的处理
+            NSLog(@"%@", error);
+            
+            failure(error);
+        }
+    }];
+}
 - (void)reLoadRequest:(NSString *)url
             andParams:(NSDictionary *)Dict
               success:(void (^)(id responseObject))success

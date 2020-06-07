@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *errorCode;
 @property (nonatomic, copy) NSString *errorMsg;
 
-@property (nonatomic, copy) NSString *wrapper;
+@property (nonatomic, copy) id wrapper;
 
 
 @end

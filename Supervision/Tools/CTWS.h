@@ -26,6 +26,11 @@
                   success:(void (^)(id responseObject))success
                   failure:(void (^)(NSError *error))failure;
 
+- (void)getWithURLString:(NSString *)urlString
+              parameters:(NSMutableDictionary *)parameters
+                 success:(void (^)(id responseObject))success
+                 failure:(void (^)(NSError *error))failure;
+
 
 - (void)upLoadImage:(NSString *)url
        andImageFile:(NSData *)imageData
