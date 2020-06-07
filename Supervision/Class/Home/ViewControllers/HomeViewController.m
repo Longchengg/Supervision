@@ -10,6 +10,9 @@
 
 #import "HomeTopTableViewCell.h"
 #import "HomeQuickTableViewCell.h"
+#import "HomeFindToolCell.h"
+#import "HomeManagerCell.h"
+#import "HomeInformationSelectionCell.h"
 
 #import "HomeRedPointModel.h"
 
@@ -55,7 +58,11 @@ HomeQuickTableViewCellDelegate>{
     _tableView.dataSource = self;
     [_tableView registerNib:[UINib nibWithNibName:@"HomeTopTableViewCell" bundle:nil] forCellReuseIdentifier:@"HomeTopTableViewCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"HomeQuickTableViewCell" bundle:nil] forCellReuseIdentifier:@"HomeQuickTableViewCell"];
-    
+    [_tableView registerNib:[UINib nibWithNibName:@"HomeFindToolCell" bundle:nil] forCellReuseIdentifier:@"HomeFindToolCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"HomeManagerCell" bundle:nil] forCellReuseIdentifier:@"HomeManagerCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"HomeInformationSelectionCell" bundle:nil] forCellReuseIdentifier:@"HomeInformationSelectionCell"];
+
+
     
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -119,14 +126,12 @@ HomeQuickTableViewCellDelegate>{
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    
-    return 2;
-    
+    return 1;
     
 }
 
@@ -136,11 +141,21 @@ HomeQuickTableViewCellDelegate>{
     int row     = (int)indexPath.row;
     
     if (0 == section) {
-        if (0 == row) {
-            return 330.0f;
-        }
+        return 330.0f;
+
+    }else if(1 == section){
+        return 115.0f;
+
+    }else if(2 == section){
+        return 120.0f;
+
+    }else if(3 == section){
+        return 350.0f;
+
+    }else{
+        
+        return 140.0f;
     }
-    return 115.0f;
     
 }
 
@@ -174,20 +189,40 @@ HomeQuickTableViewCellDelegate>{
     int row     = (int)indexPath.row;
     
     
-        if (0 == row) {
-            HomeTopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeTopTableViewCell"];
-            cell.selectionStyle        = UITableViewCellSelectionStyleNone;
-            cell.delegate              = self;
-            cell.dataSource            = _alertList;
-            return cell;
-            
-        }else{
-            HomeQuickTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeQuickTableViewCell"];
-            cell.selectionStyle          = UITableViewCellSelectionStyleNone;
-            cell.delegate                = self;
-            cell.dict                    = _cert_stasticDict;
-            return cell;
-        }
+    if (0 == section) {
+        HomeTopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeTopTableViewCell"];
+        cell.selectionStyle        = UITableViewCellSelectionStyleNone;
+        cell.delegate              = self;
+        cell.dataSource            = _alertList;
+        return cell;
+        
+    }else if (1 == section){
+        HomeQuickTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeQuickTableViewCell"];
+        cell.selectionStyle          = UITableViewCellSelectionStyleNone;
+        cell.delegate                = self;
+        cell.dict                    = _cert_stasticDict;
+        return cell;
+    }else if (2 == section){
+        HomeFindToolCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeFindToolCell"];
+        cell.selectionStyle    = UITableViewCellSelectionStyleNone;
+        
+        return cell;
+        
+    }else if (3 == section){
+        HomeManagerCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeManagerCell"];
+        cell.selectionStyle   = UITableViewCellSelectionStyleNone;
+        
+        return cell;
+
+    }else{
+        HomeInformationSelectionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeInformationSelectionCell"];
+        cell.selectionStyle   = UITableViewCellSelectionStyleNone;
+        
+        return cell;
+
+        
+    }
+    
     
 }
 
