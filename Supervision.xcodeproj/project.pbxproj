@@ -37,6 +37,16 @@
 		415A447324769184004F1EE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A446F24769184004F1EE7 /* main.m */; };
 		415A447424769184004F1EE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A447024769184004F1EE7 /* AppDelegate.m */; };
 		4160FAC3248CDA2E003DD217 /* HomeRedPointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4160FAC2248CDA2E003DD217 /* HomeRedPointModel.m */; };
+		4160FAC7248CDDDC003DD217 /* HomeFindToolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4160FAC5248CDDDC003DD217 /* HomeFindToolCell.m */; };
+		4160FAC8248CDDDC003DD217 /* HomeFindToolCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4160FAC6248CDDDC003DD217 /* HomeFindToolCell.xib */; };
+		4160FACC248CE57A003DD217 /* HomeManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4160FACA248CE57A003DD217 /* HomeManagerCell.m */; };
+		4160FACD248CE57A003DD217 /* HomeManagerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4160FACB248CE57A003DD217 /* HomeManagerCell.xib */; };
+		4160FAD1248CE9D8003DD217 /* HomeManagerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4160FACF248CE9D8003DD217 /* HomeManagerItem.m */; };
+		4160FAD2248CE9D8003DD217 /* HomeManagerItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4160FAD0248CE9D8003DD217 /* HomeManagerItem.xib */; };
+		4160FAD6248CED2A003DD217 /* HomeInformationSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4160FAD4248CED2A003DD217 /* HomeInformationSelectionCell.m */; };
+		4160FAD7248CED2A003DD217 /* HomeInformationSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4160FAD5248CED2A003DD217 /* HomeInformationSelectionCell.xib */; };
+		4160FADB248CEFEB003DD217 /* InformationSelectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4160FAD9248CEFEB003DD217 /* InformationSelectionItem.m */; };
+		4160FADC248CEFEB003DD217 /* InformationSelectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4160FADA248CEFEB003DD217 /* InformationSelectionItem.xib */; };
 		418687AA2477B2E900B910D6 /* BMChineseSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 418687A82477B2E800B910D6 /* BMChineseSort.m */; };
 		418687EB2477E33300B910D6 /* ShowImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 418687EA2477E33300B910D6 /* ShowImageTool.m */; };
 		4197CA47247CACD5000EF4E1 /* BaiduTraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4197CA46247CACD5000EF4E1 /* BaiduTraceSDK.framework */; };
@@ -154,6 +164,21 @@
 		415DC78F2476237D00AB5BB8 /* NSString+BaseNSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+BaseNSString.h"; sourceTree = "<group>"; };
 		4160FAC1248CDA2E003DD217 /* HomeRedPointModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeRedPointModel.h; sourceTree = "<group>"; };
 		4160FAC2248CDA2E003DD217 /* HomeRedPointModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeRedPointModel.m; sourceTree = "<group>"; };
+		4160FAC4248CDDDC003DD217 /* HomeFindToolCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeFindToolCell.h; sourceTree = "<group>"; };
+		4160FAC5248CDDDC003DD217 /* HomeFindToolCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeFindToolCell.m; sourceTree = "<group>"; };
+		4160FAC6248CDDDC003DD217 /* HomeFindToolCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFindToolCell.xib; sourceTree = "<group>"; };
+		4160FAC9248CE57A003DD217 /* HomeManagerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeManagerCell.h; sourceTree = "<group>"; };
+		4160FACA248CE57A003DD217 /* HomeManagerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeManagerCell.m; sourceTree = "<group>"; };
+		4160FACB248CE57A003DD217 /* HomeManagerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeManagerCell.xib; sourceTree = "<group>"; };
+		4160FACE248CE9D8003DD217 /* HomeManagerItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeManagerItem.h; sourceTree = "<group>"; };
+		4160FACF248CE9D8003DD217 /* HomeManagerItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeManagerItem.m; sourceTree = "<group>"; };
+		4160FAD0248CE9D8003DD217 /* HomeManagerItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeManagerItem.xib; sourceTree = "<group>"; };
+		4160FAD3248CED2A003DD217 /* HomeInformationSelectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeInformationSelectionCell.h; sourceTree = "<group>"; };
+		4160FAD4248CED2A003DD217 /* HomeInformationSelectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeInformationSelectionCell.m; sourceTree = "<group>"; };
+		4160FAD5248CED2A003DD217 /* HomeInformationSelectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeInformationSelectionCell.xib; sourceTree = "<group>"; };
+		4160FAD8248CEFEB003DD217 /* InformationSelectionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InformationSelectionItem.h; sourceTree = "<group>"; };
+		4160FAD9248CEFEB003DD217 /* InformationSelectionItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InformationSelectionItem.m; sourceTree = "<group>"; };
+		4160FADA248CEFEB003DD217 /* InformationSelectionItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationSelectionItem.xib; sourceTree = "<group>"; };
 		418687A82477B2E800B910D6 /* BMChineseSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMChineseSort.m; sourceTree = "<group>"; };
 		418687A92477B2E800B910D6 /* BMChineseSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMChineseSort.h; sourceTree = "<group>"; };
 		418687E92477E33300B910D6 /* ShowImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowImageTool.h; sourceTree = "<group>"; };
@@ -502,6 +527,21 @@
 				4BDDB043248CC78000E10B67 /* HomeTopTableViewCell.h */,
 				4BDDB03F248CC78000E10B67 /* HomeTopTableViewCell.m */,
 				4BDDB044248CC78000E10B67 /* HomeTopTableViewCell.xib */,
+				4160FAC4248CDDDC003DD217 /* HomeFindToolCell.h */,
+				4160FAC5248CDDDC003DD217 /* HomeFindToolCell.m */,
+				4160FAC6248CDDDC003DD217 /* HomeFindToolCell.xib */,
+				4160FAC9248CE57A003DD217 /* HomeManagerCell.h */,
+				4160FACA248CE57A003DD217 /* HomeManagerCell.m */,
+				4160FACB248CE57A003DD217 /* HomeManagerCell.xib */,
+				4160FACE248CE9D8003DD217 /* HomeManagerItem.h */,
+				4160FACF248CE9D8003DD217 /* HomeManagerItem.m */,
+				4160FAD0248CE9D8003DD217 /* HomeManagerItem.xib */,
+				4160FAD3248CED2A003DD217 /* HomeInformationSelectionCell.h */,
+				4160FAD4248CED2A003DD217 /* HomeInformationSelectionCell.m */,
+				4160FAD5248CED2A003DD217 /* HomeInformationSelectionCell.xib */,
+				4160FAD8248CEFEB003DD217 /* InformationSelectionItem.h */,
+				4160FAD9248CEFEB003DD217 /* InformationSelectionItem.m */,
+				4160FADA248CEFEB003DD217 /* InformationSelectionItem.xib */,
 				4BDDB042248CC78000E10B67 /* WCScrollLabelView.h */,
 				4BDDB045248CC78000E10B67 /* WCScrollLabelView.m */,
 			);
@@ -632,15 +672,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4160FAD7248CED2A003DD217 /* HomeInformationSelectionCell.xib in Resources */,
+				4160FACD248CE57A003DD217 /* HomeManagerCell.xib in Resources */,
 				413B01DF247237F8000301F3 /* LoginViewController.xib in Resources */,
 				413B01C924723609000301F3 /* LookBroadViewController.xib in Resources */,
 				4BDDB049248CC78000E10B67 /* HomeViewController.xib in Resources */,
+				4160FAC8248CDDDC003DD217 /* HomeFindToolCell.xib in Resources */,
 				419A5B43247FD1BC00839B2B /* echarts.js in Resources */,
 				419A5B44247FD1BC00839B2B /* worldcloud.js in Resources */,
 				4B04FB8B2488FF880077C195 /* UserDelegateViewController.xib in Resources */,
 				16E4DE4A248CE839000FAB7A /* MineContentView.xib in Resources */,
 				419A5B41247FD1BC00839B2B /* bmap.js in Resources */,
+				4160FADC248CEFEB003DD217 /* InformationSelectionItem.xib in Resources */,
 				419A5B42247FD1BC00839B2B /* jquery-1.11.3.min.js in Resources */,
+				4160FAD2248CE9D8003DD217 /* HomeManagerItem.xib in Resources */,
 				4BDDB04B248CC78000E10B67 /* HomeQuickTableViewCell.xib in Resources */,
 				413B015A24721E23000301F3 /* LaunchScreen.storyboard in Resources */,
 				419A5B40247FD1BC00839B2B /* index.html in Resources */,
@@ -739,14 +784,19 @@
 				413B01A624722993000301F3 /* BackModel.m in Sources */,
 				413B01A124722813000301F3 /* CTUserDefaults.m in Sources */,
 				413B01A324722813000301F3 /* UIView+xibConfig.m in Sources */,
+				4160FAC7248CDDDC003DD217 /* HomeFindToolCell.m in Sources */,
 				413B01A224722813000301F3 /* UIView+Addition.m in Sources */,
+				4160FAD1248CE9D8003DD217 /* HomeManagerItem.m in Sources */,
+				4160FADB248CEFEB003DD217 /* InformationSelectionItem.m in Sources */,
 				413B019E24722813000301F3 /* NSMutableArray+safaMutableArray.m in Sources */,
 				418687EB2477E33300B910D6 /* ShowImageTool.m in Sources */,
+				4160FACC248CE57A003DD217 /* HomeManagerCell.m in Sources */,
 				4BDDB050248CC78000E10B67 /* WCScrollLabelView.m in Sources */,
 				415A447324769184004F1EE7 /* main.m in Sources */,
 				4BDDB048248CC78000E10B67 /* HomeViewController.m in Sources */,
 				413B01E724725D2E000301F3 /* UIButton+TCBaseButton.m in Sources */,
 				415A446E24769156004F1EE7 /* NSString+BaseNSString.m in Sources */,
+				4160FAD6248CED2A003DD217 /* HomeInformationSelectionCell.m in Sources */,
 				4BDDB04D248CC78000E10B67 /* HomeQuickTableViewCell.m in Sources */,
 				415A447424769184004F1EE7 /* AppDelegate.m in Sources */,
 			);
