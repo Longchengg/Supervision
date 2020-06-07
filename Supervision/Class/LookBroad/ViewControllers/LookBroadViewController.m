@@ -45,12 +45,12 @@ UITableViewDataSource
     [_tableView registerNib:[UINib nibWithNibName:@"LookBroadTopTableViewCell" bundle:nil] forCellReuseIdentifier:@"LookBroadTopTableViewCell"];
     
     
-    if (@available(iOS 11.0, *)) {
+ if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-//    [self reloadVideoList];
+    //    [self reloadVideoList];
     
     
 }
@@ -107,48 +107,54 @@ UITableViewDataSource
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    
-    return 2;
+    if (0 == section) {
+        return 1;
+    }
+    return 6;
     
     
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    int section = (int)indexPath.section;
-    int row     = (int)indexPath.row;
-    
-    if (0 == section) {
-        if (0 == row) {
-            return 330.0f;
-        }
+    if (0 == indexPath.section) {
+        return 330;
     }
-    return 115.0f;
-    
+    return 55.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    
     return 0.0001f;
-    
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    
     return 0.0001f;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    
-    return [[UIView alloc]init];
-    
+    if (0 == section) {
+        UIView *view = [[UIView alloc]init];
+        
+        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+        gradientLayer.colors = @[(__bridge id)RGB(0,90,186).CGColor, (__bridge id)RGB(0,90,186).CGColor, (__bridge id)RGB(0,90,186).CGColor];
+        gradientLayer.locations = @[@0.0, @0.5, @1.0];
+        gradientLayer.startPoint = CGPointMake(0, 0);
+        gradientLayer.endPoint = CGPointMake(1.0, 0);
+        gradientLayer.frame = CGRectMake(0, 0, SCREEN_WIDTH, Height_StatusBar);
+        [view.layer addSublayer:gradientLayer];
+        
+        return view;
+    }else{
+        return [[UIView alloc]init];
+        
+    }
 }
+
 
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
@@ -161,20 +167,43 @@ UITableViewDataSource
     int section = (int)indexPath.section;
     int row     = (int)indexPath.row;
     
-    
-    if (0 == row) {
+    if (0 == section) {
         LookBroadTopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LookBroadTopTableViewCell"];
-        cell.selectionStyle        = UITableViewCellSelectionStyleNone;
-        //            cell.delegate              = self;
-        //            cell.dataSource            = _alertList;
+        cell.selectionStyle=UITableViewCellSelectionStyleNone;//设置cell点击效果
+        return cell;
+    }else{
+        static NSString *identifier = @"LookBroadCellIdentifier";
+        
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        if (!cell) {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
+            cell.accessoryType   = UITableViewCellAccessoryDisclosureIndicator;
+            cell.selectionStyle  = UITableViewCellSelectionStyleNone;
+            cell.backgroundColor = [UIColor whiteColor];
+            
+            cell.textLabel.textColor = TextColor;
+            cell.textLabel.font      = [UIFont systemFontOfSize:14.0f];
+            cell.detailTextLabel.textColor = SubTextColor;
+            cell.detailTextLabel.font      = [UIFont systemFontOfSize:14.0f];
+        }
+        
+        NSArray *arr = @[@"资质证书",@"备案信息",@"CA锁",@"安全许可证",@"企业人员",@"投标预警"];
+        NSArray *arrdetail = @[@"资质证书",@"备案信息",@"CA锁",@"安全许可证",@"企业人员",@"投标预警"];
+        NSArray *arrimg = @[@"个人资料",@"修改密码",@"设置",@"隐私条款",@"意见与反馈",@"意见与反馈"];
+        cell.imageView.image = [UIImage imageNamed:arrimg[row]];
+        
+        cell.textLabel.text  = arr[row];
+        
+        cell.detailTextLabel.text =arrdetail[row];
+        
+        CALayer *layer = [CALayer layer];
+        layer.frame = CGRectMake(65, 54, SCREEN_WIDTH - 80, 1);
+        layer.backgroundColor = LineColor;
+        
+        [cell.layer addSublayer:layer];
+        
         return cell;
         
-    }else{
-        LookBroadTopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LookBroadTopTableViewCell"];
-        cell.selectionStyle        = UITableViewCellSelectionStyleNone;
-        //            cell.delegate              = self;
-        //            cell.dataSource            = _alertList;
-        return cell;
     }
     
 }
@@ -182,15 +211,11 @@ UITableViewDataSource
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
-    int section = (int)indexPath.section;
-    int row     = (int)indexPath.row;
     
-    switch (section) {
+    switch (indexPath.row) {
         case 0:
         {
-            if (0 == row) {
-                
-            }
+            
         }
             break;
         case 1:
@@ -213,39 +238,6 @@ UITableViewDataSource
             break;
     }
     
-}
-
-#pragma mark - HomeTopTableViewCellDelegate
-#pragma mark - 查看详情
-- (void)didClickQuickBtn:(NSInteger)index{
-    
-    NSLog(@"查看详情 -- %ld",index);
-}
-
-#pragma mark - 更多
-- (void)moreBtn:(UIButton *)sender{
-    
-    NSLog(@"%ld",(long)sender.tag);
-}
-
-#pragma mark - 查看人员
-- (void)checkPersonDetail:(NSInteger )index{
-    NSLog(@"%ld",(long)index);
-    
-}
-#pragma mark - 查看车辆
-- (void)checkCarDetail:(NSInteger )section row:(NSInteger )row{
-    NSLog(@"%ld--%ld",(long)section,(long)row);
-    
-}
-
-- (NSMutableArray *)alertList{
-    
-    if (!_alertList) {
-        _alertList = [[NSMutableArray alloc]initWithCapacity:0];
-    }
-    
-    return _alertList;
 }
 
 
