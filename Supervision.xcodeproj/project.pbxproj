@@ -952,7 +952,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202005292040;
-				DEVELOPMENT_TEAM = 8LUY94YDBY;
+				DEVELOPMENT_TEAM = 3XFNUN44Y6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Supervision/Class/WorkSpace(工作专区)/FrameWork",
@@ -965,7 +965,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cjb.Supervision;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JianNiu.JianBang;
 				PRODUCT_NAME = "资质通";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -978,7 +978,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202005292040;
-				DEVELOPMENT_TEAM = 8LUY94YDBY;
+				DEVELOPMENT_TEAM = 3XFNUN44Y6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Supervision/Class/WorkSpace(工作专区)/FrameWork",
@@ -991,7 +991,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cjb.Supervision;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JianNiu.JianBang;
 				PRODUCT_NAME = "资质通";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
