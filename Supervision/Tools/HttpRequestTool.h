@@ -47,5 +47,15 @@
 + (void)indexMessageSuccessBlock:(void (^)(id responObject))successBlock
                     failureBlock:(void (^)(id err))failureBlock;
 
+/// 资质证书、安全许可证和数字证书数量
+/// @param successBlock 成功回调
+/// @param failureBlock 失败回调
++ (void)cert_stasticSuccessBlock:(void (^)(id responObject))successBlock
+                    failureBlock:(void (^)(id err))failureBlock;
 
+/// 获取红点状态
+/// @param successBlock 成功回调
+/// @param failureBlock 失败回调
++ (void)redPointSuccessBlock:(void (^)(id responObject))successBlock
+                failureBlock:(void (^)(id err))failureBlock;
 @end

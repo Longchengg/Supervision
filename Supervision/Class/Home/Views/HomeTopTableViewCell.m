@@ -52,9 +52,9 @@
         [self.titles2 removeObjectAtIndex:0];
         
         if (_titles.count>2) {
-            scrollLabelView1 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56, _noticeview.width + 20, 15)];
-            scrollLabelView2 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56 + 20, _noticeview.width + 20, 15)];
-            scrollLabelView3 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56 + 20 + 20, _noticeview.width + 20, 15)];
+            scrollLabelView1 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56, _noticeview.width, 15)];
+            scrollLabelView2 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56 + 20, _noticeview.width, 15)];
+            scrollLabelView3 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56 + 20 + 20, _noticeview.width, 15)];
             
             [self initUI:scrollLabelView1 arr:_titles titleColor:RGBA(0, 0, 0, 1)];
             
@@ -64,8 +64,8 @@
             [self initUI:scrollLabelView3 arr:_titles2 titleColor:RGBA(0, 0, 0, 0.2)];
             
         }else if (_titles.count>1){
-            scrollLabelView1 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56, _noticeview.width + 20, 15)];
-            scrollLabelView2 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56 + 20, _noticeview.width + 20, 15)];
+            scrollLabelView1 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56, _noticeview.width, 15)];
+            scrollLabelView2 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56 + 20, _noticeview.width, 15)];
             
             [self initUI:scrollLabelView1 arr:_titles titleColor:RGBA(0, 0, 0, 1)];
             
@@ -75,7 +75,7 @@
             [self.titles removeObjectAtIndex:0];
             [self initUI:scrollLabelView2 arr:_titles titleColor:RGBA(0, 0, 0, 0.5)];
         }else{
-            scrollLabelView1 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56 + 20, _noticeview.width + 20, 15)];
+            scrollLabelView1 = [[WCScrollLabelView alloc] initWithFrame:CGRectMake(5, 56 + 20, _noticeview.width, 15)];
             [self initUI:scrollLabelView1 arr:_titles titleColor:RGBA(0, 0, 0, 1)];
         }
     }

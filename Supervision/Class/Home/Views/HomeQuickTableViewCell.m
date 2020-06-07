@@ -7,6 +7,13 @@
 //
 
 #import "HomeQuickTableViewCell.h"
+@interface HomeQuickTableViewCell()
+@property (weak, nonatomic) IBOutlet UILabel *lab1;
+@property (weak, nonatomic) IBOutlet UILabel *lab2;
+@property (weak, nonatomic) IBOutlet UILabel *lab3;
+@property (weak, nonatomic) IBOutlet UILabel *lab4;
+
+@end
 
 @implementation HomeQuickTableViewCell
 
@@ -15,57 +22,25 @@
     // Initialization code
 }
 
-- (IBAction)didClickTopBtn1:(id)sender {
-    if ([_delegate respondsToSelector:@selector(didClickTopBtn1:)]) {
+- (IBAction)didClickQuickBtn:(UIButton *)sender {
+    if ([_delegate respondsToSelector:@selector(didClickQuickBtn:)]) {
         
-        [_delegate didClickTopBtn1:sender];
+        [_delegate didClickQuickBtn:sender.tag];
     }
 
 }
-- (IBAction)didClickTopBtn2:(id)sender {
+
+- (void)setDict:(NSDictionary *)dict{
     
-    if ([_delegate respondsToSelector:@selector(didClickTopBtn2:)]) {
-        
-        [_delegate didClickTopBtn2:sender];
-    }
-}
-- (IBAction)didClickTopBtn3:(id)sender {
+    _dict = dict;
     
-    if ([_delegate respondsToSelector:@selector(didClickTopBtn3:)]) {
+    if (_dict.count > 0) {
         
-        [_delegate didClickTopBtn3:sender];
-    }
-}
-- (IBAction)didClickTopBtn4:(id)sender {
-    
-    if ([_delegate respondsToSelector:@selector(didClickTopBtn4:)]) {
-        
-        [_delegate didClickTopBtn4:sender];
-    }
-}
-- (IBAction)didClickBottomBtn1:(id)sender {
-    
-    if ([_delegate respondsToSelector:@selector(didClickBottomBtn1:)]) {
-        
-        [_delegate didClickBottomBtn1:sender];
-    }
-}
-- (IBAction)didClickBottomBtn2:(id)sender {
-    if ([_delegate respondsToSelector:@selector(didClickBottomBtn2:)]) {
-        
-        [_delegate didClickBottomBtn2:sender];
-    }
-}
-- (IBAction)didClickBottomBtn3:(id)sender {
-    if ([_delegate respondsToSelector:@selector(didClickBottomBtn3:)]) {
-        
-        [_delegate didClickBottomBtn3:sender];
-    }
-}
-- (IBAction)didClickBottomBtn4:(id)sender {
-    if ([_delegate respondsToSelector:@selector(didClickBottomBtn4:)]) {
-        
-        [_delegate didClickBottomBtn4:sender];
+        _lab1.text = [NSString stringWithFormat:@"%@",_dict[@"资质证书"]];
+        _lab2.text = [NSString stringWithFormat:@"%@",_dict[@"人员数量"]];
+        _lab3.text = [NSString stringWithFormat:@"%@",_dict[@"投标数量"]];
+        _lab4.text = [NSString stringWithFormat:@"%@",_dict[@"待归还证书"]];
+
     }
 }
 

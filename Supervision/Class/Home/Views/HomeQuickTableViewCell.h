@@ -12,27 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol HomeQuickTableViewCellDelegate <NSObject>
 
-- (void)didClickTopBtn1:(UIButton *)button;
-
-- (void)didClickTopBtn2:(UIButton *)button;
-
-- (void)didClickTopBtn3:(UIButton *)button;
-
-- (void)didClickTopBtn4:(UIButton *)button;
-
-- (void)didClickBottomBtn1:(UIButton *)button;
-
-- (void)didClickBottomBtn2:(UIButton *)button;
-
-- (void)didClickBottomBtn3:(UIButton *)button;
-
-- (void)didClickBottomBtn4:(UIButton *)button;
+- (void)didClickQuickBtn:(NSInteger )index;
 
 
 @end
 
 @interface HomeQuickTableViewCell : UITableViewCell
 
+@property (nonatomic ,copy) NSDictionary *dict;
 @property (nonatomic, weak) id <HomeQuickTableViewCellDelegate > delegate;
 
 @end

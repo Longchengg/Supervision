@@ -36,6 +36,7 @@
 		415A446E24769156004F1EE7 /* NSString+BaseNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A446D24769156004F1EE7 /* NSString+BaseNSString.m */; };
 		415A447324769184004F1EE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A446F24769184004F1EE7 /* main.m */; };
 		415A447424769184004F1EE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 415A447024769184004F1EE7 /* AppDelegate.m */; };
+		4160FAC3248CDA2E003DD217 /* HomeRedPointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4160FAC2248CDA2E003DD217 /* HomeRedPointModel.m */; };
 		418687AA2477B2E900B910D6 /* BMChineseSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 418687A82477B2E800B910D6 /* BMChineseSort.m */; };
 		418687EB2477E33300B910D6 /* ShowImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 418687EA2477E33300B910D6 /* ShowImageTool.m */; };
 		4197CA47247CACD5000EF4E1 /* BaiduTraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4197CA46247CACD5000EF4E1 /* BaiduTraceSDK.framework */; };
@@ -150,6 +151,8 @@
 		415A447124769184004F1EE7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		415A447224769184004F1EE7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		415DC78F2476237D00AB5BB8 /* NSString+BaseNSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+BaseNSString.h"; sourceTree = "<group>"; };
+		4160FAC1248CDA2E003DD217 /* HomeRedPointModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeRedPointModel.h; sourceTree = "<group>"; };
+		4160FAC2248CDA2E003DD217 /* HomeRedPointModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeRedPointModel.m; sourceTree = "<group>"; };
 		418687A82477B2E800B910D6 /* BMChineseSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMChineseSort.m; sourceTree = "<group>"; };
 		418687A92477B2E800B910D6 /* BMChineseSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMChineseSort.h; sourceTree = "<group>"; };
 		418687E92477E33300B910D6 /* ShowImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowImageTool.h; sourceTree = "<group>"; };
@@ -496,6 +499,8 @@
 		4BDDB037248CC78000E10B67 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4160FAC1248CDA2E003DD217 /* HomeRedPointModel.h */,
+				4160FAC2248CDA2E003DD217 /* HomeRedPointModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -749,6 +754,7 @@
 				413B01D22472362B000301F3 /* MineViewController.m in Sources */,
 				413B01CD2472361B000301F3 /* MessageViewController.m in Sources */,
 				4BDDB032248CC73B00E10B67 /* HttpRequestTool.m in Sources */,
+				4160FAC3248CDA2E003DD217 /* HomeRedPointModel.m in Sources */,
 				413B01E324723F6E000301F3 /* MineTopTableViewCell.m in Sources */,
 				413B01AD24723488000301F3 /* TCBaseViewController.m in Sources */,
 				4BDDB04E248CC78000E10B67 /* HomeAlertTableViewCell.m in Sources */,
@@ -930,7 +936,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202005292040;
-				DEVELOPMENT_TEAM = 3XFNUN44Y6;
+				DEVELOPMENT_TEAM = 8LUY94YDBY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Supervision/Class/WorkSpace(工作专区)/FrameWork",
@@ -943,7 +949,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.JianNiu.JianBang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjb.Supervision;
 				PRODUCT_NAME = "资质通";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -956,7 +962,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202005292040;
-				DEVELOPMENT_TEAM = 3XFNUN44Y6;
+				DEVELOPMENT_TEAM = 8LUY94YDBY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Supervision/Class/WorkSpace(工作专区)/FrameWork",
@@ -969,7 +975,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.JianNiu.JianBang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjb.Supervision;
 				PRODUCT_NAME = "资质通";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
