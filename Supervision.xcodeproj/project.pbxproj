@@ -59,6 +59,8 @@
 		4B04FB8B2488FF880077C195 /* UserDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B04FB882488FF870077C195 /* UserDelegateViewController.xib */; };
 		4B04FB8C2488FF880077C195 /* UserDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B04FB8A2488FF880077C195 /* UserDelegateViewController.m */; };
 		4B04FB8E2488FF960077C195 /* 协议.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4B04FB8D2488FF960077C195 /* 协议.docx */; };
+		4BBFB639248E3F8B00D303B6 /* LookBroadTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1109F248CD27300EC661B /* LookBroadTopTableViewCell.m */; };
+		4BBFB63C248E40F300D303B6 /* LookBroadViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB63B248E40F300D303B6 /* LookBroadViewModel.m */; };
 		4BDDB02D248CA37800E10B67 /* CSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB02C248CA37700E10B67 /* CSTabBar.m */; };
 		4BDDB032248CC73B00E10B67 /* HttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB02E248CC73A00E10B67 /* HttpRequestTool.m */; };
 		4BDDB033248CC73B00E10B67 /* CTWS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB031248CC73B00E10B67 /* CTWS.m */; };
@@ -72,7 +74,13 @@
 		4BDDB04F248CC78000E10B67 /* HomeTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BDDB044248CC78000E10B67 /* HomeTopTableViewCell.xib */; };
 		4BDDB050248CC78000E10B67 /* WCScrollLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB045248CC78000E10B67 /* WCScrollLabelView.m */; };
 		4BF110A2248CD27300EC661B /* LookBroadTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF110A0248CD27300EC661B /* LookBroadTopTableViewCell.xib */; };
-		C64E48D08F56FA587C10D789 /* libPods-Supervision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E596A3DE8C9589649C0102E5 /* libPods-Supervision.a */; };
+		4BF110AC248DEF3600EC661B /* NoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF110AA248DEF3600EC661B /* NoticeViewController.m */; };
+		4BF110AD248DEF3600EC661B /* NoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF110AB248DEF3600EC661B /* NoticeViewController.xib */; };
+		4BF111D2248E0B9600EC661B /* NoticeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF111D0248E0B9600EC661B /* NoticeTableViewCell.m */; };
+		4BF111D3248E0B9600EC661B /* NoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF111D1248E0B9600EC661B /* NoticeTableViewCell.xib */; };
+		4BF111D7248E239700EC661B /* FeedBackListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF111D4248E239700EC661B /* FeedBackListTableViewCell.m */; };
+		4BF111D8248E239700EC661B /* FeedBackListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF111D5248E239700EC661B /* FeedBackListTableViewCell.xib */; };
+		FFDB12B5B7A0F2804DFFF904 /* Pods_Supervision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1CCABB6E76983B603279F4 /* Pods_Supervision.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +118,7 @@
 		16E4DE46248CE823000FAB7A /* MineContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineContentView.h; sourceTree = "<group>"; };
 		16E4DE47248CE823000FAB7A /* MineContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineContentView.m; sourceTree = "<group>"; };
 		16E4DE49248CE839000FAB7A /* MineContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineContentView.xib; sourceTree = "<group>"; };
+		3D1CCABB6E76983B603279F4 /* Pods_Supervision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Supervision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		413B014724721E22000301F3 /* 资质通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "资质通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		413B015624721E23000301F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413B015924721E23000301F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -193,6 +202,8 @@
 		4B04FB892488FF880077C195 /* UserDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDelegateViewController.h; sourceTree = "<group>"; };
 		4B04FB8A2488FF880077C195 /* UserDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegateViewController.m; sourceTree = "<group>"; };
 		4B04FB8D2488FF960077C195 /* 协议.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "协议.docx"; sourceTree = "<group>"; };
+		4BBFB63A248E40F300D303B6 /* LookBroadViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookBroadViewModel.h; sourceTree = "<group>"; };
+		4BBFB63B248E40F300D303B6 /* LookBroadViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LookBroadViewModel.m; sourceTree = "<group>"; };
 		4BDDB02B248CA37700E10B67 /* CSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTabBar.h; sourceTree = "<group>"; };
 		4BDDB02C248CA37700E10B67 /* CSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTabBar.m; sourceTree = "<group>"; };
 		4BDDB02E248CC73A00E10B67 /* HttpRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestTool.m; sourceTree = "<group>"; };
@@ -216,9 +227,17 @@
 		4BF1109E248CD27300EC661B /* LookBroadTopTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookBroadTopTableViewCell.h; sourceTree = "<group>"; };
 		4BF1109F248CD27300EC661B /* LookBroadTopTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LookBroadTopTableViewCell.m; sourceTree = "<group>"; };
 		4BF110A0248CD27300EC661B /* LookBroadTopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LookBroadTopTableViewCell.xib; sourceTree = "<group>"; };
+		4BF110A9248DEF3600EC661B /* NoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoticeViewController.h; sourceTree = "<group>"; };
+		4BF110AA248DEF3600EC661B /* NoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoticeViewController.m; sourceTree = "<group>"; };
+		4BF110AB248DEF3600EC661B /* NoticeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeViewController.xib; sourceTree = "<group>"; };
+		4BF111CF248E0B9600EC661B /* NoticeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoticeTableViewCell.h; sourceTree = "<group>"; };
+		4BF111D0248E0B9600EC661B /* NoticeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoticeTableViewCell.m; sourceTree = "<group>"; };
+		4BF111D1248E0B9600EC661B /* NoticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeTableViewCell.xib; sourceTree = "<group>"; };
+		4BF111D4248E239700EC661B /* FeedBackListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackListTableViewCell.m; sourceTree = "<group>"; };
+		4BF111D5248E239700EC661B /* FeedBackListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedBackListTableViewCell.xib; sourceTree = "<group>"; };
+		4BF111D6248E239700EC661B /* FeedBackListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackListTableViewCell.h; sourceTree = "<group>"; };
 		95F242620D8D133D3A1E66A3 /* Pods-Supervision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supervision.debug.xcconfig"; path = "Target Support Files/Pods-Supervision/Pods-Supervision.debug.xcconfig"; sourceTree = "<group>"; };
 		C58539FFC28AB4A2D0DADCF0 /* Pods-Supervision.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supervision.release.xcconfig"; path = "Target Support Files/Pods-Supervision/Pods-Supervision.release.xcconfig"; sourceTree = "<group>"; };
-		E596A3DE8C9589649C0102E5 /* libPods-Supervision.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Supervision.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,8 +245,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64E48D08F56FA587C10D789 /* libPods-Supervision.a in Frameworks */,
 				4197CA47247CACD5000EF4E1 /* BaiduTraceSDK.framework in Frameworks */,
+				FFDB12B5B7A0F2804DFFF904 /* Pods_Supervision.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +294,7 @@
 			children = (
 				413B018524722756000301F3 /* Base */,
 				413B018024722756000301F3 /* Class */,
+				4BF110A8248DEEE100EC661B /* others(工作内容) */,
 				413B017F24722756000301F3 /* Tools */,
 				415A447224769184004F1EE7 /* AppDelegate.h */,
 				415A447024769184004F1EE7 /* AppDelegate.m */,
@@ -380,6 +400,8 @@
 		413B01B9247235C6000301F3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4BBFB63A248E40F300D303B6 /* LookBroadViewModel.h */,
+				4BBFB63B248E40F300D303B6 /* LookBroadViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -548,6 +570,30 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4BF110A8248DEEE100EC661B /* others(工作内容) */ = {
+			isa = PBXGroup;
+			children = (
+				4BF110B3248E054700EC661B /* 预警通知 */,
+			);
+			path = "others(工作内容)";
+			sourceTree = "<group>";
+		};
+		4BF110B3248E054700EC661B /* 预警通知 */ = {
+			isa = PBXGroup;
+			children = (
+				4BF110A9248DEF3600EC661B /* NoticeViewController.h */,
+				4BF110AA248DEF3600EC661B /* NoticeViewController.m */,
+				4BF110AB248DEF3600EC661B /* NoticeViewController.xib */,
+				4BF111D6248E239700EC661B /* FeedBackListTableViewCell.h */,
+				4BF111D4248E239700EC661B /* FeedBackListTableViewCell.m */,
+				4BF111D5248E239700EC661B /* FeedBackListTableViewCell.xib */,
+				4BF111CF248E0B9600EC661B /* NoticeTableViewCell.h */,
+				4BF111D0248E0B9600EC661B /* NoticeTableViewCell.m */,
+				4BF111D1248E0B9600EC661B /* NoticeTableViewCell.xib */,
+			);
+			path = "预警通知";
+			sourceTree = "<group>";
+		};
 		5D2810F019CFEBB9A393901F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -561,7 +607,7 @@
 			isa = PBXGroup;
 			children = (
 				4197CA46247CACD5000EF4E1 /* BaiduTraceSDK.framework */,
-				E596A3DE8C9589649C0102E5 /* libPods-Supervision.a */,
+				3D1CCABB6E76983B603279F4 /* Pods_Supervision.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -577,8 +623,8 @@
 				413B014324721E22000301F3 /* Sources */,
 				413B014424721E22000301F3 /* Frameworks */,
 				413B014524721E22000301F3 /* Resources */,
-				B83C88863BDE2C66BE21638F /* [CP] Copy Pods Resources */,
 				4197CA49247CACD5000EF4E1 /* Embed Frameworks */,
+				D8EBEDDECE429EDBC1192CD2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -672,10 +718,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF110AD248DEF3600EC661B /* NoticeViewController.xib in Resources */,
 				4160FAD7248CED2A003DD217 /* HomeInformationSelectionCell.xib in Resources */,
 				4160FACD248CE57A003DD217 /* HomeManagerCell.xib in Resources */,
 				413B01DF247237F8000301F3 /* LoginViewController.xib in Resources */,
 				413B01C924723609000301F3 /* LookBroadViewController.xib in Resources */,
+				4BF111D3248E0B9600EC661B /* NoticeTableViewCell.xib in Resources */,
 				4BDDB049248CC78000E10B67 /* HomeViewController.xib in Resources */,
 				4160FAC8248CDDDC003DD217 /* HomeFindToolCell.xib in Resources */,
 				419A5B43247FD1BC00839B2B /* echarts.js in Resources */,
@@ -694,6 +742,7 @@
 				4BDDB04F248CC78000E10B67 /* HomeTopTableViewCell.xib in Resources */,
 				4B04FB8E2488FF960077C195 /* 协议.docx in Resources */,
 				4BF110A2248CD27300EC661B /* LookBroadTopTableViewCell.xib in Resources */,
+				4BF111D8248E239700EC661B /* FeedBackListTableViewCell.xib in Resources */,
 				413B01D32472362B000301F3 /* MineViewController.xib in Resources */,
 				4BDDB04A248CC78000E10B67 /* HomeAlertTableViewCell.xib in Resources */,
 			);
@@ -738,21 +787,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B83C88863BDE2C66BE21638F /* [CP] Copy Pods Resources */ = {
+		D8EBEDDECE429EDBC1192CD2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Supervision/Pods-Supervision-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Supervision/Pods-Supervision-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Supervision/Pods-Supervision-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Supervision/Pods-Supervision-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Supervision/Pods-Supervision-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Supervision/Pods-Supervision-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -762,8 +811,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BBFB639248E3F8B00D303B6 /* LookBroadTopTableViewCell.m in Sources */,
 				4BDDB04C248CC78000E10B67 /* HomeTopTableViewCell.m in Sources */,
 				413B019D24722813000301F3 /* NSArray+safeArray.m in Sources */,
+				4BF111D7248E239700EC661B /* FeedBackListTableViewCell.m in Sources */,
 				413B018B247227F4000301F3 /* Singleton.m in Sources */,
 				413B01AF24723488000301F3 /* TCBaseTabBarController.m in Sources */,
 				4BDDB033248CC73B00E10B67 /* CTWS.m in Sources */,
@@ -789,6 +840,8 @@
 				4160FAD1248CE9D8003DD217 /* HomeManagerItem.m in Sources */,
 				4160FADB248CEFEB003DD217 /* InformationSelectionItem.m in Sources */,
 				413B019E24722813000301F3 /* NSMutableArray+safaMutableArray.m in Sources */,
+				4BF111D2248E0B9600EC661B /* NoticeTableViewCell.m in Sources */,
+				4BBFB63C248E40F300D303B6 /* LookBroadViewModel.m in Sources */,
 				418687EB2477E33300B910D6 /* ShowImageTool.m in Sources */,
 				4160FACC248CE57A003DD217 /* HomeManagerCell.m in Sources */,
 				4BDDB050248CC78000E10B67 /* WCScrollLabelView.m in Sources */,
@@ -798,6 +851,7 @@
 				415A446E24769156004F1EE7 /* NSString+BaseNSString.m in Sources */,
 				4160FAD6248CED2A003DD217 /* HomeInformationSelectionCell.m in Sources */,
 				4BDDB04D248CC78000E10B67 /* HomeQuickTableViewCell.m in Sources */,
+				4BF110AC248DEF3600EC661B /* NoticeViewController.m in Sources */,
 				415A447424769184004F1EE7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

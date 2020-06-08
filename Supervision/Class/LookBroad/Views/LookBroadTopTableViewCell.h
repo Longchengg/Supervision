@@ -9,8 +9,20 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@protocol LookBroadTopTableViewCellDelegate <NSObject>
 
+
+- (void)didClickxiaoxiBtn:(UIButton *)button;
+
+- (void)didClickchuliBtn:(UIButton *)button;
+
+
+@end
 @interface LookBroadTopTableViewCell : UITableViewCell
+@property (nonatomic, weak) id <LookBroadTopTableViewCellDelegate > delegate;
+@property (nonatomic, copy) NSString *expiredCount;
+@property (nonatomic, copy) NSString *alertCount;
+
 
 @end
 

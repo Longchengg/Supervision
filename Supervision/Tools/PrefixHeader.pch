@@ -30,7 +30,10 @@
     #import "TCBaseViewController.h"
 #endif
 
-#define HttpRequestURL @"http://54.223.183.206:8090"
+//#define HttpRequestURL @"http://54.223.183.206:8090"    //测试
+#define HttpRequestURL @"https://saas.jz-rck.com"      //线上
+
+
 #define HttpRequestImageURL @"http://www.52cjb.cn:81"
 
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height

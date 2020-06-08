@@ -58,4 +58,9 @@
 /// @param failureBlock 失败回调
 + (void)redPointSuccessBlock:(void (^)(id responObject))successBlock
                 failureBlock:(void (^)(id err))failureBlock;
+/// 获取预警页面
+/// @param successBlock 成功回调
+/// @param failureBlock 失败回调
++ (void)infoSuccessBlock:(void (^)(id responObject))successBlock
+            failureBlock:(void (^)(id err))failureBlock;
 @end

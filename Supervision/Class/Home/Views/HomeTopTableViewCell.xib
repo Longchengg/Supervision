@@ -86,7 +86,6 @@
                                 </state>
                                 <connections>
                                     <action selector="didClickDetailsBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qai-uz-hub"/>
-                                    <action selector="didClickWorkSpaceBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Sa4-Ad-32d"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看详情" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8H-Ys-g2V">
@@ -111,7 +110,6 @@
                                 </state>
                                 <connections>
                                     <action selector="didClickDetailsBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4po-Nu-T1G"/>
-                                    <action selector="didClickWorkSpaceBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nP7-mB-ejH"/>
                                 </connections>
                             </button>
                         </subviews>

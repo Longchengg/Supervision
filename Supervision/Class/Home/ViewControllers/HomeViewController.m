@@ -15,7 +15,7 @@
 #import "HomeInformationSelectionCell.h"
 
 #import "HomeRedPointModel.h"
-
+#import "NoticeViewController.h"
 @interface HomeViewController ()
 <UITableViewDelegate,
 UITableViewDataSource,
@@ -147,7 +147,7 @@ HomeQuickTableViewCellDelegate>{
         return 115.0f;
 
     }else if(2 == section){
-        return 120.0f;
+        return 100.0f;
 
     }else if(3 == section){
         return 350.0f;
@@ -260,12 +260,23 @@ HomeQuickTableViewCellDelegate>{
     }
     
 }
-
 #pragma mark - HomeTopTableViewCellDelegate
 #pragma mark - 查看详情
+-(void)didClickDetailsBtn:(UIButton *)button{
+    NSLog(@"查看详情");
+    NoticeViewController *VC = [[NoticeViewController alloc]init];
+    VC.dataSource = _alertList;
+    [self.navigationController pushViewController:VC animated:YES];
+}
+-(void)didClickWorkSpaceBtn:(UIButton *)button{
+    NSLog(@"通知");
+   
+}
+#pragma mark - HomeTopTableViewCellDelegate
+#pragma mark - 信息助手
 - (void)didClickQuickBtn:(NSInteger)index{
     
-    NSLog(@"查看详情 -- %ld",index);
+    NSLog(@"资质证书 -- %ld",index);
 }
 
 #pragma mark - 更多
@@ -273,6 +284,7 @@ HomeQuickTableViewCellDelegate>{
     
     NSLog(@"%ld",(long)sender.tag);
 }
+
 
 #pragma mark - 查看人员
 - (void)checkPersonDetail:(NSInteger )index{
@@ -284,7 +296,7 @@ HomeQuickTableViewCellDelegate>{
     NSLog(@"%ld--%ld",(long)section,(long)row);
     
 }
-
+#pragma mark - 懒加载
 - (NSMutableArray *)alertList{
     
     if (!_alertList) {

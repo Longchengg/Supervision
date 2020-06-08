@@ -13,9 +13,6 @@
 
 #import "LoginViewController.h"
 
-#import <BaiduMapAPI_Base/BMKBaseComponent.h>
-#import <BMKLocationkit/BMKLocationComponent.h>
-
 
 @interface AppDelegate ()
 
@@ -29,9 +26,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    //初始化百度地图
-    [self initBMKMap];
+
     
     if (@available(iOS 11.0, *)) {
         UITableView.appearance.estimatedRowHeight = 0;
@@ -56,20 +51,6 @@
     return YES;
 }
 
-- (void)initBMKMap{
-    
-    //    BMKMapManager *mapManager = [[BMKMapManager alloc] init];
-    //    // 如果要关注网络及授权验证事件，请设定generalDelegate参数
-    //    BOOL ret = [mapManager start:BMKMap_key  generalDelegate:nil];
-    //    if (!ret) {
-    //        NSLog(@"启动引擎失败");
-    //    }
-    //
-    //    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:BMKMap_key authDelegate:self];
-    
-   
-    
-}
 - (void)Login{
     
     LoginViewController *VC = [[LoginViewController alloc]init];

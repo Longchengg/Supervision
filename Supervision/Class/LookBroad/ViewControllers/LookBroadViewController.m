@@ -8,7 +8,7 @@
 
 #import "LookBroadViewController.h"
 #import "LookBroadTopTableViewCell.h"
-
+#import "LookBroadViewModel.h"
 @interface LookBroadViewController ()<
 UITableViewDelegate,
 UITableViewDataSource
@@ -23,6 +23,7 @@ UITableViewDataSource
 /// 证书统计元数据
 @property (nonatomic, copy) NSDictionary *cert_stasticDict;
 
+@property (nonatomic, strong) LookBroadViewModel *lookBroadViewModel;
 
 @end
 
@@ -45,12 +46,12 @@ UITableViewDataSource
     [_tableView registerNib:[UINib nibWithNibName:@"LookBroadTopTableViewCell" bundle:nil] forCellReuseIdentifier:@"LookBroadTopTableViewCell"];
     
     
- if (@available(iOS 11.0, *)) {
+    if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    //    [self reloadVideoList];
+    [self reloadVideoList];
     
     
 }
@@ -59,44 +60,12 @@ UITableViewDataSource
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        [HttpRequestTool indexMessageSuccessBlock:^(id responObject) {
+        [HttpRequestTool infoSuccessBlock:^(id responObject) {
+            __weakSelf.lookBroadViewModel = [LookBroadViewModel mj_objectWithKeyValues:responObject];
             
-            NSArray *arr = (NSArray *)responObject;
-            [__weakSelf.alertList addObjectsFromArray:arr];
-            
-            NSIndexSet *setIndex = [NSIndexSet indexSetWithIndex:0];
-            
-            
-            [__weakSelf.tableView reloadSections:setIndex withRowAnimation:UITableViewRowAnimationNone];
-        } failureBlock:^(id err) {
-            
-        }];
-    });
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
-        [HttpRequestTool cert_stasticSuccessBlock:^(id responObject) {
-            
-            __weakSelf.cert_stasticDict = (NSDictionary *)responObject;
-            
-            
-            NSIndexSet *setIndex = [NSIndexSet indexSetWithIndex:0];
-            
-            
-            [__weakSelf.tableView reloadSections:setIndex withRowAnimation:UITableViewRowAnimationNone];
-            
-        } failureBlock:^(id err) {
-            
-        }];
-    });
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
-        [HttpRequestTool redPointSuccessBlock:^(id responObject) {
-            
-            //            __weakSelf.redPointModel = [HomeRedPointModel mj_objectWithKeyValues:responObject];
-            
-            
+//            NSIndexSet *setIndex = [NSIndexSet indexSetWithIndex:0];
+//            [__weakSelf.tableView reloadSections:setIndex withRowAnimation:UITableViewRowAnimationNone];
+            [self.tableView reloadData];
         } failureBlock:^(id err) {
             
         }];
@@ -137,24 +106,7 @@ UITableViewDataSource
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    if (0 == section) {
-//        UIView *view = [[UIView alloc]init];
-//        
-//        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-//        gradientLayer.colors = @[(__bridge id)RGB(0,90,186).CGColor, (__bridge id)RGB(0,90,186).CGColor, (__bridge id)RGB(0,90,186).CGColor];
-//        gradientLayer.locations = @[@0.0, @0.5, @1.0];
-//        gradientLayer.startPoint = CGPointMake(0, 0);
-//        gradientLayer.endPoint = CGPointMake(1.0, 0);
-//        gradientLayer.frame = CGRectMake(0, 0, SCREEN_WIDTH, Height_StatusBar);
-//        [view.layer addSublayer:gradientLayer];
-//        
-//        return view;
-        return [[UIView alloc]init];
-
-    }else{
-        return [[UIView alloc]init];
-        
-    }
+    return [[UIView alloc]init];
 }
 
 
@@ -172,6 +124,9 @@ UITableViewDataSource
     if (0 == section) {
         LookBroadTopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LookBroadTopTableViewCell"];
         cell.selectionStyle=UITableViewCellSelectionStyleNone;//设置cell点击效果
+        cell.alertCount = _lookBroadViewModel.alertCount;
+        cell.expiredCount = _lookBroadViewModel.expiredCount;
+        
         return cell;
     }else{
         static NSString *identifier = @"LookBroadCellIdentifier";
@@ -186,17 +141,60 @@ UITableViewDataSource
             cell.textLabel.textColor = TextColor;
             cell.textLabel.font      = [UIFont systemFontOfSize:14.0f];
             cell.detailTextLabel.textColor = SubTextColor;
-            cell.detailTextLabel.font      = [UIFont systemFontOfSize:14.0f];
+            cell.detailTextLabel.font      = [UIFont systemFontOfSize:12.0f];
         }
         
         NSArray *arr = @[@"资质证书",@"备案信息",@"CA锁",@"安全许可证",@"企业人员",@"投标预警"];
-        NSArray *arrdetail = @[@"资质证书",@"备案信息",@"CA锁",@"安全许可证",@"企业人员",@"投标预警"];
         NSArray *arrimg = @[@"个人资料",@"修改密码",@"设置",@"隐私条款",@"意见与反馈",@"意见与反馈"];
         cell.imageView.image = [UIImage imageNamed:arrimg[row]];
         
         cell.textLabel.text  = arr[row];
         
-        cell.detailTextLabel.text =arrdetail[row];
+        //        cell.detailTextLabel.text =arrdetail[row];
+        if (row == 0) {
+            if ( _lookBroadViewModel.bidEnoughAlertMessage == nil) {
+                _lookBroadViewModel.bidEnoughAlertMessage = @"暂无";
+            }
+            cell.detailTextLabel.text = _lookBroadViewModel.bidEnoughAlertMessage;
+        }
+        if (row == 1) {
+            if ( _lookBroadViewModel.fourlib == nil) {
+                cell.detailTextLabel.text = @"暂无";
+            }
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"有效期%@",_lookBroadViewModel.fourlib[@"validTime"]];
+        }
+        if (row == 2) {
+            if ( _lookBroadViewModel.calock == nil) {
+                cell.detailTextLabel.text = @"暂无";
+            }
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"有效期%@",_lookBroadViewModel.calock[@"validTime"]];
+        }
+        if (row == 3) {
+            if ( _lookBroadViewModel.comSafetyLicenseDTO == nil) {
+                cell.detailTextLabel.text = @"暂无";
+            }
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"有效期%@",_lookBroadViewModel.calock[@"validTime"]];
+        }
+        if (row == 4) {
+            if ( _lookBroadViewModel.personCertAlertMessage == nil) {
+                _lookBroadViewModel.personCertAlertMessage = @"暂无";
+            }
+            cell.detailTextLabel.textColor = [UIColor redColor];
+//            label.lineBreakMode = NSLineBreakByTruncatingTail;
+//            label.numberOfLines = 2;
+            cell.detailTextLabel.numberOfLines = 3;
+            cell.detailTextLabel.text = _lookBroadViewModel.personCertAlertMessage;
+        }
+        if (row == 5) {
+            if ( _lookBroadViewModel.companyLicenseDTO == nil) {
+                cell.detailTextLabel.text = @"暂无";;
+            }else{
+                cell.detailTextLabel.text = _lookBroadViewModel.companyLicenseDTO[@""];
+            }
+        }
+        
+        
+        
         
         CALayer *layer = [CALayer layer];
         layer.frame = CGRectMake(65, 54, SCREEN_WIDTH - 80, 1);
