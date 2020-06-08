@@ -123,7 +123,7 @@
                                     <constraint firstAttribute="width" constant="50" id="xRL-OP-puj"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="100">
+                                    <fragment content="0">
                                         <attributes>
                                             <color key="NSColor" red="0.74188321830000004" green="0.097594641149999994" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="25" name="Futura-Bold"/>
@@ -140,7 +140,7 @@
                                     <constraint firstAttribute="width" constant="50" id="stc-dI-Vsk"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="100">
+                                    <fragment content="0">
                                         <attributes>
                                             <color key="NSColor" red="0.98334687949999999" green="0.50953274969999995" blue="0.31587871909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="25" name="Futura-Bold"/>

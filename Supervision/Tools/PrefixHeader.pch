@@ -28,6 +28,7 @@
     #import "MJRefresh.h"
     #import "AFNetworking.h"
     #import "TCBaseViewController.h"
+    #import "Masonry.h"
 #endif
 
 //#define HttpRequestURL @"http://54.223.183.206:8090"    //测试
