@@ -13,15 +13,15 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9IB-CO-DeZ" customClass="LookBroadTopTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9IB-CO-DeZ" id="lzn-yX-mpo">
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9IB-CO-DeZ" id="lzn-yX-mpo">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warn_head" translatesAutoresizingMaskIntoConstraints="NO" id="nb7-bD-Zu8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roI-9e-8iW">
-                        <rect key="frame" x="333" y="25" width="22" height="22"/>
+                        <rect key="frame" x="333" y="65" width="22" height="22"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="Vrq-5f-V1p"/>
                             <constraint firstAttribute="width" constant="22" id="aqT-xP-pMS"/>
@@ -32,7 +32,7 @@
                         </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风险警示，掌握全局无担忧" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdi-na-79H">
-                        <rect key="frame" x="15" y="58" width="180" height="20"/>
+                        <rect key="frame" x="15" y="95" width="180" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="180" id="RRg-OB-uhf"/>
                             <constraint firstAttribute="height" constant="20" id="hX1-X0-Yhy"/>
@@ -42,7 +42,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CJ-pP-hhw">
-                        <rect key="frame" x="20" y="89" width="335" height="200"/>
+                        <rect key="frame" x="20" y="119" width="335" height="200"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p43-8S-075">
                                 <rect key="frame" x="15" y="15" width="19.5" height="21"/>
@@ -125,7 +125,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预警" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZP-cn-Ppr">
-                        <rect key="frame" x="15" y="30" width="45" height="20"/>
+                        <rect key="frame" x="15" y="70" width="45" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="45" id="5r4-wh-8NK"/>
                             <constraint firstAttribute="height" constant="20" id="ydu-d6-dxM"/>
@@ -141,14 +141,14 @@
                     <constraint firstItem="nb7-bD-Zu8" firstAttribute="leading" secondItem="lzn-yX-mpo" secondAttribute="leading" id="E0v-Fi-DTE"/>
                     <constraint firstAttribute="trailing" secondItem="roI-9e-8iW" secondAttribute="trailing" constant="20" id="Ee0-eS-SXR"/>
                     <constraint firstItem="dZP-cn-Ppr" firstAttribute="leading" secondItem="lzn-yX-mpo" secondAttribute="leading" constant="15" id="G0S-mQ-SJ7"/>
-                    <constraint firstAttribute="bottom" secondItem="nb7-bD-Zu8" secondAttribute="bottom" constant="150" id="I1J-R9-EaA"/>
-                    <constraint firstItem="dZP-cn-Ppr" firstAttribute="top" secondItem="lzn-yX-mpo" secondAttribute="top" constant="30" id="JZl-ip-cE7"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="1CJ-pP-hhw" secondAttribute="bottom" constant="30" id="Vjz-Ii-p00"/>
+                    <constraint firstAttribute="bottom" secondItem="nb7-bD-Zu8" secondAttribute="bottom" constant="130" id="I1J-R9-EaA"/>
+                    <constraint firstItem="dZP-cn-Ppr" firstAttribute="top" secondItem="lzn-yX-mpo" secondAttribute="top" constant="70" id="JZl-ip-cE7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1CJ-pP-hhw" secondAttribute="bottom" id="Vjz-Ii-p00"/>
                     <constraint firstAttribute="trailing" secondItem="nb7-bD-Zu8" secondAttribute="trailing" id="dl0-kj-G6h"/>
-                    <constraint firstItem="roI-9e-8iW" firstAttribute="top" secondItem="lzn-yX-mpo" secondAttribute="top" constant="25" id="epU-3Y-vXL"/>
+                    <constraint firstItem="roI-9e-8iW" firstAttribute="top" secondItem="lzn-yX-mpo" secondAttribute="top" constant="65" id="epU-3Y-vXL"/>
                     <constraint firstItem="nb7-bD-Zu8" firstAttribute="top" secondItem="lzn-yX-mpo" secondAttribute="top" id="qBJ-DH-jVt"/>
                     <constraint firstItem="zdi-na-79H" firstAttribute="leading" secondItem="lzn-yX-mpo" secondAttribute="leading" constant="15" id="yTf-bb-ACN"/>
-                    <constraint firstItem="zdi-na-79H" firstAttribute="top" secondItem="dZP-cn-Ppr" secondAttribute="bottom" constant="8" id="zD7-56-Yjd"/>
+                    <constraint firstItem="zdi-na-79H" firstAttribute="top" secondItem="dZP-cn-Ppr" secondAttribute="bottom" constant="5" id="zD7-56-Yjd"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="amj-se-YL8"/>

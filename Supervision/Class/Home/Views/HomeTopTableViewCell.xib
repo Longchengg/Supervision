@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service_head" translatesAutoresizingMaskIntoConstraints="NO" id="kGr-KD-J7I">
-                        <rect key="frame" x="0.0" y="-70" width="375" height="250"/>
+                        <rect key="frame" x="0.0" y="-50" width="375" height="250"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="250" id="Ul8-Tn-xYc"/>
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5q-CL-TOP">
-                        <rect key="frame" x="333" y="25" width="22" height="22"/>
+                        <rect key="frame" x="333" y="65" width="22" height="22"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="22" id="CFi-DF-gPF"/>
                             <constraint firstAttribute="height" constant="22" id="uFz-jP-eGV"/>
@@ -38,7 +38,7 @@
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="科学管理，简单便捷高效率" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoZ-Pd-ylf">
-                        <rect key="frame" x="15" y="58" width="180" height="20"/>
+                        <rect key="frame" x="15" y="95" width="180" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="180" id="DXx-dc-1bA"/>
                             <constraint firstAttribute="height" constant="20" id="obk-Sv-5Ch"/>
@@ -48,7 +48,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErB-jd-4Z5">
-                        <rect key="frame" x="20" y="89" width="335" height="200"/>
+                        <rect key="frame" x="20" y="119" width="335" height="200"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVH-g2-8B9">
                                 <rect key="frame" x="15" y="15" width="19.5" height="21"/>
@@ -142,7 +142,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="739-X6-EzZ">
-                        <rect key="frame" x="15" y="30" width="45" height="20"/>
+                        <rect key="frame" x="15" y="70" width="45" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="X74-zr-haz"/>
                             <constraint firstAttribute="width" constant="45" id="YFV-EG-y1b"/>
@@ -153,17 +153,17 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="o5q-CL-TOP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="264-2P-rAL"/>
+                    <constraint firstItem="o5q-CL-TOP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="65" id="264-2P-rAL"/>
                     <constraint firstItem="ErB-jd-4Z5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="5v9-yq-kvV"/>
-                    <constraint firstItem="739-X6-EzZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="E9z-bW-av8"/>
+                    <constraint firstItem="739-X6-EzZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="70" id="E9z-bW-av8"/>
                     <constraint firstItem="739-X6-EzZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="K3I-j5-ipK"/>
                     <constraint firstAttribute="trailing" secondItem="kGr-KD-J7I" secondAttribute="trailing" id="M1Q-zF-hZ7"/>
                     <constraint firstItem="kGr-KD-J7I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ad6-ct-BOM"/>
-                    <constraint firstAttribute="bottom" secondItem="kGr-KD-J7I" secondAttribute="bottom" constant="150" id="b5l-8C-RzD"/>
+                    <constraint firstAttribute="bottom" secondItem="kGr-KD-J7I" secondAttribute="bottom" constant="130" id="b5l-8C-RzD"/>
                     <constraint firstAttribute="trailing" secondItem="o5q-CL-TOP" secondAttribute="trailing" constant="20" id="ccd-PJ-4R5"/>
                     <constraint firstItem="SoZ-Pd-ylf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="d08-XS-b8S"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="ErB-jd-4Z5" secondAttribute="bottom" constant="30" id="sIb-cT-FFT"/>
-                    <constraint firstItem="SoZ-Pd-ylf" firstAttribute="top" secondItem="739-X6-EzZ" secondAttribute="bottom" constant="8" id="zW1-Ea-MvQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ErB-jd-4Z5" secondAttribute="bottom" id="sIb-cT-FFT"/>
+                    <constraint firstItem="SoZ-Pd-ylf" firstAttribute="top" secondItem="739-X6-EzZ" secondAttribute="bottom" constant="5" id="zW1-Ea-MvQ"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ErB-jd-4Z5" secondAttribute="trailing" id="zir-tc-9Ln"/>
                 </constraints>
             </tableViewCellContentView>

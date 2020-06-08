@@ -99,7 +99,7 @@ HomeQuickTableViewCellDelegate>{
             __weakSelf.cert_stasticDict = (NSDictionary *)responObject;
             
             
-            NSIndexSet *setIndex = [NSIndexSet indexSetWithIndex:0];
+            NSIndexSet *setIndex = [NSIndexSet indexSetWithIndex:1];
             
             
             [__weakSelf.tableView reloadSections:setIndex withRowAnimation:UITableViewRowAnimationNone];
@@ -220,7 +220,6 @@ HomeQuickTableViewCellDelegate>{
         
         return cell;
 
-        
     }
     
     

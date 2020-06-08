@@ -138,17 +138,19 @@ UITableViewDataSource
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (0 == section) {
-        UIView *view = [[UIView alloc]init];
-        
-        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-        gradientLayer.colors = @[(__bridge id)RGB(0,90,186).CGColor, (__bridge id)RGB(0,90,186).CGColor, (__bridge id)RGB(0,90,186).CGColor];
-        gradientLayer.locations = @[@0.0, @0.5, @1.0];
-        gradientLayer.startPoint = CGPointMake(0, 0);
-        gradientLayer.endPoint = CGPointMake(1.0, 0);
-        gradientLayer.frame = CGRectMake(0, 0, SCREEN_WIDTH, Height_StatusBar);
-        [view.layer addSublayer:gradientLayer];
-        
-        return view;
+//        UIView *view = [[UIView alloc]init];
+//        
+//        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+//        gradientLayer.colors = @[(__bridge id)RGB(0,90,186).CGColor, (__bridge id)RGB(0,90,186).CGColor, (__bridge id)RGB(0,90,186).CGColor];
+//        gradientLayer.locations = @[@0.0, @0.5, @1.0];
+//        gradientLayer.startPoint = CGPointMake(0, 0);
+//        gradientLayer.endPoint = CGPointMake(1.0, 0);
+//        gradientLayer.frame = CGRectMake(0, 0, SCREEN_WIDTH, Height_StatusBar);
+//        [view.layer addSublayer:gradientLayer];
+//        
+//        return view;
+        return [[UIView alloc]init];
+
     }else{
         return [[UIView alloc]init];
         
