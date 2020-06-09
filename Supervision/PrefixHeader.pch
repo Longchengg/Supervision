@@ -31,8 +31,8 @@
     #import "Masonry.h"
 #endif
 
-//#define HttpRequestURL @"http://54.223.183.206:8090"    //测试
-#define HttpRequestURL @"https://saas.jz-rck.com"      //线上
+#define HttpRequestURL @"http://54.223.183.206:8090"    //测试
+//#define HttpRequestURL @"https://saas.jz-rck.com"      //线上
 
 
 #define HttpRequestImageURL @"http://www.52cjb.cn:81"
@@ -53,6 +53,8 @@
 #define RGBA(r, g, b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 
 //颜色规范
+//常用颜色
+#define MColor RGB(6,66,195)
 //按钮背景颜色
 #define ButtonColor RGB(16,136,237)
 //按钮标题颜色

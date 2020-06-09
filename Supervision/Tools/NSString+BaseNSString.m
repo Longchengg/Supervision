@@ -37,5 +37,17 @@
     
 }
 
++ (CGFloat) widthForString:(NSString *)value uifont:(UIFont *)showFont andHight:(CGFloat)hight{
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineSpacing:4];
+    CGRect sizeToFit = [value boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, hight)
+                                           options:NSStringDrawingUsesLineFragmentOrigin
+                                        attributes:@{NSFontAttributeName:showFont ,NSParagraphStyleAttributeName:paragraphStyle}
+                                           context:nil];
+    return sizeToFit.size.width;
+    
+}
+
 
 @end

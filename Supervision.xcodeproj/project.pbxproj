@@ -59,18 +59,25 @@
 		4B04FB8B2488FF880077C195 /* UserDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B04FB882488FF870077C195 /* UserDelegateViewController.xib */; };
 		4B04FB8C2488FF880077C195 /* UserDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B04FB8A2488FF880077C195 /* UserDelegateViewController.m */; };
 		4B04FB8E2488FF960077C195 /* 协议.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4B04FB8D2488FF960077C195 /* 协议.docx */; };
+		4B84B8A8248F6EBC007A22CE /* toBlackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B84B8A6248F6EBC007A22CE /* toBlackListViewController.m */; };
+		4B84B8A9248F6EBC007A22CE /* toBlackListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B84B8A7248F6EBC007A22CE /* toBlackListViewController.xib */; };
+		4B84B8AD248F729C007A22CE /* toBlackListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B84B8AB248F729C007A22CE /* toBlackListTableViewCell.m */; };
+		4B84B8AE248F729C007A22CE /* toBlackListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B84B8AC248F729C007A22CE /* toBlackListTableViewCell.xib */; };
 		4BBFB639248E3F8B00D303B6 /* LookBroadTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1109F248CD27300EC661B /* LookBroadTopTableViewCell.m */; };
 		4BBFB63C248E40F300D303B6 /* LookBroadViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB63B248E40F300D303B6 /* LookBroadViewModel.m */; };
+		4BBFB646248F1DAB00D303B6 /* BlackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB644248F1DAB00D303B6 /* BlackListViewController.m */; };
+		4BBFB647248F1DAB00D303B6 /* BlackListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBFB645248F1DAB00D303B6 /* BlackListViewController.xib */; };
+		4BBFB64B248F226000D303B6 /* BlackListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB649248F226000D303B6 /* BlackListTableViewCell.m */; };
+		4BBFB64C248F226000D303B6 /* BlackListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBFB64A248F226000D303B6 /* BlackListTableViewCell.xib */; };
+		4BBFB652248F422B00D303B6 /* BKMenuListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB651248F422B00D303B6 /* BKMenuListView.m */; };
 		4BDDB02D248CA37800E10B67 /* CSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB02C248CA37700E10B67 /* CSTabBar.m */; };
 		4BDDB032248CC73B00E10B67 /* HttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB02E248CC73A00E10B67 /* HttpRequestTool.m */; };
 		4BDDB033248CC73B00E10B67 /* CTWS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB031248CC73B00E10B67 /* CTWS.m */; };
 		4BDDB048248CC78000E10B67 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB039248CC78000E10B67 /* HomeViewController.m */; };
 		4BDDB049248CC78000E10B67 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BDDB03A248CC78000E10B67 /* HomeViewController.xib */; };
-		4BDDB04A248CC78000E10B67 /* HomeAlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BDDB03D248CC78000E10B67 /* HomeAlertTableViewCell.xib */; };
 		4BDDB04B248CC78000E10B67 /* HomeQuickTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BDDB03E248CC78000E10B67 /* HomeQuickTableViewCell.xib */; };
 		4BDDB04C248CC78000E10B67 /* HomeTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB03F248CC78000E10B67 /* HomeTopTableViewCell.m */; };
 		4BDDB04D248CC78000E10B67 /* HomeQuickTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB040248CC78000E10B67 /* HomeQuickTableViewCell.m */; };
-		4BDDB04E248CC78000E10B67 /* HomeAlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB041248CC78000E10B67 /* HomeAlertTableViewCell.m */; };
 		4BDDB04F248CC78000E10B67 /* HomeTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BDDB044248CC78000E10B67 /* HomeTopTableViewCell.xib */; };
 		4BDDB050248CC78000E10B67 /* WCScrollLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB045248CC78000E10B67 /* WCScrollLabelView.m */; };
 		4BF110A2248CD27300EC661B /* LookBroadTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF110A0248CD27300EC661B /* LookBroadTopTableViewCell.xib */; };
@@ -78,8 +85,6 @@
 		4BF110AD248DEF3600EC661B /* NoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF110AB248DEF3600EC661B /* NoticeViewController.xib */; };
 		4BF111D2248E0B9600EC661B /* NoticeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF111D0248E0B9600EC661B /* NoticeTableViewCell.m */; };
 		4BF111D3248E0B9600EC661B /* NoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF111D1248E0B9600EC661B /* NoticeTableViewCell.xib */; };
-		4BF111D7248E239700EC661B /* FeedBackListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF111D4248E239700EC661B /* FeedBackListTableViewCell.m */; };
-		4BF111D8248E239700EC661B /* FeedBackListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF111D5248E239700EC661B /* FeedBackListTableViewCell.xib */; };
 		FFDB12B5B7A0F2804DFFF904 /* Pods_Supervision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1CCABB6E76983B603279F4 /* Pods_Supervision.framework */; };
 /* End PBXBuildFile section */
 
@@ -202,8 +207,22 @@
 		4B04FB892488FF880077C195 /* UserDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDelegateViewController.h; sourceTree = "<group>"; };
 		4B04FB8A2488FF880077C195 /* UserDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegateViewController.m; sourceTree = "<group>"; };
 		4B04FB8D2488FF960077C195 /* 协议.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "协议.docx"; sourceTree = "<group>"; };
+		4B84B8A5248F6EBC007A22CE /* toBlackListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toBlackListViewController.h; sourceTree = "<group>"; };
+		4B84B8A6248F6EBC007A22CE /* toBlackListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toBlackListViewController.m; sourceTree = "<group>"; };
+		4B84B8A7248F6EBC007A22CE /* toBlackListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = toBlackListViewController.xib; sourceTree = "<group>"; };
+		4B84B8AA248F729C007A22CE /* toBlackListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toBlackListTableViewCell.h; sourceTree = "<group>"; };
+		4B84B8AB248F729C007A22CE /* toBlackListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toBlackListTableViewCell.m; sourceTree = "<group>"; };
+		4B84B8AC248F729C007A22CE /* toBlackListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = toBlackListTableViewCell.xib; sourceTree = "<group>"; };
 		4BBFB63A248E40F300D303B6 /* LookBroadViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookBroadViewModel.h; sourceTree = "<group>"; };
 		4BBFB63B248E40F300D303B6 /* LookBroadViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LookBroadViewModel.m; sourceTree = "<group>"; };
+		4BBFB643248F1DAB00D303B6 /* BlackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackListViewController.h; sourceTree = "<group>"; };
+		4BBFB644248F1DAB00D303B6 /* BlackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackListViewController.m; sourceTree = "<group>"; };
+		4BBFB645248F1DAB00D303B6 /* BlackListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlackListViewController.xib; sourceTree = "<group>"; };
+		4BBFB648248F226000D303B6 /* BlackListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlackListTableViewCell.h; sourceTree = "<group>"; };
+		4BBFB649248F226000D303B6 /* BlackListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlackListTableViewCell.m; sourceTree = "<group>"; };
+		4BBFB64A248F226000D303B6 /* BlackListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlackListTableViewCell.xib; sourceTree = "<group>"; };
+		4BBFB650248F422B00D303B6 /* BKMenuListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMenuListView.h; sourceTree = "<group>"; };
+		4BBFB651248F422B00D303B6 /* BKMenuListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKMenuListView.m; sourceTree = "<group>"; };
 		4BDDB02B248CA37700E10B67 /* CSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTabBar.h; sourceTree = "<group>"; };
 		4BDDB02C248CA37700E10B67 /* CSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTabBar.m; sourceTree = "<group>"; };
 		4BDDB02E248CC73A00E10B67 /* HttpRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestTool.m; sourceTree = "<group>"; };
@@ -213,16 +232,13 @@
 		4BDDB039248CC78000E10B67 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		4BDDB03A248CC78000E10B67 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		4BDDB03B248CC78000E10B67 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		4BDDB03D248CC78000E10B67 /* HomeAlertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeAlertTableViewCell.xib; sourceTree = "<group>"; };
 		4BDDB03E248CC78000E10B67 /* HomeQuickTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeQuickTableViewCell.xib; sourceTree = "<group>"; };
 		4BDDB03F248CC78000E10B67 /* HomeTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTopTableViewCell.m; sourceTree = "<group>"; };
 		4BDDB040248CC78000E10B67 /* HomeQuickTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeQuickTableViewCell.m; sourceTree = "<group>"; };
-		4BDDB041248CC78000E10B67 /* HomeAlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeAlertTableViewCell.m; sourceTree = "<group>"; };
 		4BDDB042248CC78000E10B67 /* WCScrollLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCScrollLabelView.h; sourceTree = "<group>"; };
 		4BDDB043248CC78000E10B67 /* HomeTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTopTableViewCell.h; sourceTree = "<group>"; };
 		4BDDB044248CC78000E10B67 /* HomeTopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTopTableViewCell.xib; sourceTree = "<group>"; };
 		4BDDB045248CC78000E10B67 /* WCScrollLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCScrollLabelView.m; sourceTree = "<group>"; };
-		4BDDB046248CC78000E10B67 /* HomeAlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeAlertTableViewCell.h; sourceTree = "<group>"; };
 		4BDDB047248CC78000E10B67 /* HomeQuickTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeQuickTableViewCell.h; sourceTree = "<group>"; };
 		4BF1109E248CD27300EC661B /* LookBroadTopTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookBroadTopTableViewCell.h; sourceTree = "<group>"; };
 		4BF1109F248CD27300EC661B /* LookBroadTopTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LookBroadTopTableViewCell.m; sourceTree = "<group>"; };
@@ -233,9 +249,6 @@
 		4BF111CF248E0B9600EC661B /* NoticeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoticeTableViewCell.h; sourceTree = "<group>"; };
 		4BF111D0248E0B9600EC661B /* NoticeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoticeTableViewCell.m; sourceTree = "<group>"; };
 		4BF111D1248E0B9600EC661B /* NoticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeTableViewCell.xib; sourceTree = "<group>"; };
-		4BF111D4248E239700EC661B /* FeedBackListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackListTableViewCell.m; sourceTree = "<group>"; };
-		4BF111D5248E239700EC661B /* FeedBackListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedBackListTableViewCell.xib; sourceTree = "<group>"; };
-		4BF111D6248E239700EC661B /* FeedBackListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackListTableViewCell.h; sourceTree = "<group>"; };
 		95F242620D8D133D3A1E66A3 /* Pods-Supervision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supervision.debug.xcconfig"; path = "Target Support Files/Pods-Supervision/Pods-Supervision.debug.xcconfig"; sourceTree = "<group>"; };
 		C58539FFC28AB4A2D0DADCF0 /* Pods-Supervision.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supervision.release.xcconfig"; path = "Target Support Files/Pods-Supervision/Pods-Supervision.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -298,6 +311,7 @@
 				413B017F24722756000301F3 /* Tools */,
 				415A447224769184004F1EE7 /* AppDelegate.h */,
 				415A447024769184004F1EE7 /* AppDelegate.m */,
+				415A446C24769144004F1EE7 /* PrefixHeader.pch */,
 				413B015624721E23000301F3 /* Assets.xcassets */,
 				413B015824721E23000301F3 /* LaunchScreen.storyboard */,
 				415A447124769184004F1EE7 /* Info.plist */,
@@ -342,7 +356,6 @@
 				413B019624722813000301F3 /* NSMutableDictionary+CTSafeDict.m */,
 				413B0189247227F3000301F3 /* Singleton.h */,
 				413B018A247227F4000301F3 /* Singleton.m */,
-				415A446C24769144004F1EE7 /* PrefixHeader.pch */,
 				413B019424722813000301F3 /* UIView+Addition.h */,
 				413B019A24722813000301F3 /* UIView+Addition.m */,
 				413B018F24722813000301F3 /* UIView+xibConfig.h */,
@@ -355,6 +368,8 @@
 				415A446D24769156004F1EE7 /* NSString+BaseNSString.m */,
 				418687A92477B2E800B910D6 /* BMChineseSort.h */,
 				418687A82477B2E800B910D6 /* BMChineseSort.m */,
+				4BBFB650248F422B00D303B6 /* BKMenuListView.h */,
+				4BBFB651248F422B00D303B6 /* BKMenuListView.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -508,6 +523,33 @@
 			path = "用户协议";
 			sourceTree = "<group>";
 		};
+		4B84B8A4248F6E39007A22CE /* 问题管理二级VC */ = {
+			isa = PBXGroup;
+			children = (
+				4B84B8A5248F6EBC007A22CE /* toBlackListViewController.h */,
+				4B84B8A6248F6EBC007A22CE /* toBlackListViewController.m */,
+				4B84B8A7248F6EBC007A22CE /* toBlackListViewController.xib */,
+				4B84B8AA248F729C007A22CE /* toBlackListTableViewCell.h */,
+				4B84B8AB248F729C007A22CE /* toBlackListTableViewCell.m */,
+				4B84B8AC248F729C007A22CE /* toBlackListTableViewCell.xib */,
+			);
+			path = "问题管理二级VC";
+			sourceTree = "<group>";
+		};
+		4BBFB63D248F124500D303B6 /* 问题管理 */ = {
+			isa = PBXGroup;
+			children = (
+				4B84B8A4248F6E39007A22CE /* 问题管理二级VC */,
+				4BBFB643248F1DAB00D303B6 /* BlackListViewController.h */,
+				4BBFB644248F1DAB00D303B6 /* BlackListViewController.m */,
+				4BBFB645248F1DAB00D303B6 /* BlackListViewController.xib */,
+				4BBFB648248F226000D303B6 /* BlackListTableViewCell.h */,
+				4BBFB649248F226000D303B6 /* BlackListTableViewCell.m */,
+				4BBFB64A248F226000D303B6 /* BlackListTableViewCell.xib */,
+			);
+			path = "问题管理";
+			sourceTree = "<group>";
+		};
 		4BDDB036248CC78000E10B67 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,9 +582,6 @@
 		4BDDB03C248CC78000E10B67 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4BDDB046248CC78000E10B67 /* HomeAlertTableViewCell.h */,
-				4BDDB041248CC78000E10B67 /* HomeAlertTableViewCell.m */,
-				4BDDB03D248CC78000E10B67 /* HomeAlertTableViewCell.xib */,
 				4BDDB047248CC78000E10B67 /* HomeQuickTableViewCell.h */,
 				4BDDB040248CC78000E10B67 /* HomeQuickTableViewCell.m */,
 				4BDDB03E248CC78000E10B67 /* HomeQuickTableViewCell.xib */,
@@ -573,6 +612,7 @@
 		4BF110A8248DEEE100EC661B /* others(工作内容) */ = {
 			isa = PBXGroup;
 			children = (
+				4BBFB63D248F124500D303B6 /* 问题管理 */,
 				4BF110B3248E054700EC661B /* 预警通知 */,
 			);
 			path = "others(工作内容)";
@@ -584,9 +624,6 @@
 				4BF110A9248DEF3600EC661B /* NoticeViewController.h */,
 				4BF110AA248DEF3600EC661B /* NoticeViewController.m */,
 				4BF110AB248DEF3600EC661B /* NoticeViewController.xib */,
-				4BF111D6248E239700EC661B /* FeedBackListTableViewCell.h */,
-				4BF111D4248E239700EC661B /* FeedBackListTableViewCell.m */,
-				4BF111D5248E239700EC661B /* FeedBackListTableViewCell.xib */,
 				4BF111CF248E0B9600EC661B /* NoticeTableViewCell.h */,
 				4BF111D0248E0B9600EC661B /* NoticeTableViewCell.m */,
 				4BF111D1248E0B9600EC661B /* NoticeTableViewCell.xib */,
@@ -721,12 +758,15 @@
 				4BF110AD248DEF3600EC661B /* NoticeViewController.xib in Resources */,
 				4160FAD7248CED2A003DD217 /* HomeInformationSelectionCell.xib in Resources */,
 				4160FACD248CE57A003DD217 /* HomeManagerCell.xib in Resources */,
+				4BBFB647248F1DAB00D303B6 /* BlackListViewController.xib in Resources */,
 				413B01DF247237F8000301F3 /* LoginViewController.xib in Resources */,
+				4BBFB64C248F226000D303B6 /* BlackListTableViewCell.xib in Resources */,
 				413B01C924723609000301F3 /* LookBroadViewController.xib in Resources */,
 				4BF111D3248E0B9600EC661B /* NoticeTableViewCell.xib in Resources */,
 				4BDDB049248CC78000E10B67 /* HomeViewController.xib in Resources */,
 				4160FAC8248CDDDC003DD217 /* HomeFindToolCell.xib in Resources */,
 				419A5B43247FD1BC00839B2B /* echarts.js in Resources */,
+				4B84B8AE248F729C007A22CE /* toBlackListTableViewCell.xib in Resources */,
 				419A5B44247FD1BC00839B2B /* worldcloud.js in Resources */,
 				4B04FB8B2488FF880077C195 /* UserDelegateViewController.xib in Resources */,
 				16E4DE4A248CE839000FAB7A /* MineContentView.xib in Resources */,
@@ -741,10 +781,9 @@
 				413B015724721E23000301F3 /* Assets.xcassets in Resources */,
 				4BDDB04F248CC78000E10B67 /* HomeTopTableViewCell.xib in Resources */,
 				4B04FB8E2488FF960077C195 /* 协议.docx in Resources */,
+				4B84B8A9248F6EBC007A22CE /* toBlackListViewController.xib in Resources */,
 				4BF110A2248CD27300EC661B /* LookBroadTopTableViewCell.xib in Resources */,
-				4BF111D8248E239700EC661B /* FeedBackListTableViewCell.xib in Resources */,
 				413B01D32472362B000301F3 /* MineViewController.xib in Resources */,
-				4BDDB04A248CC78000E10B67 /* HomeAlertTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,10 +850,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B84B8AD248F729C007A22CE /* toBlackListTableViewCell.m in Sources */,
 				4BBFB639248E3F8B00D303B6 /* LookBroadTopTableViewCell.m in Sources */,
 				4BDDB04C248CC78000E10B67 /* HomeTopTableViewCell.m in Sources */,
 				413B019D24722813000301F3 /* NSArray+safeArray.m in Sources */,
-				4BF111D7248E239700EC661B /* FeedBackListTableViewCell.m in Sources */,
 				413B018B247227F4000301F3 /* Singleton.m in Sources */,
 				413B01AF24723488000301F3 /* TCBaseTabBarController.m in Sources */,
 				4BDDB033248CC73B00E10B67 /* CTWS.m in Sources */,
@@ -822,6 +861,7 @@
 				418687AA2477B2E900B910D6 /* BMChineseSort.m in Sources */,
 				413B019F24722813000301F3 /* NSMutableDictionary+CTSafeDict.m in Sources */,
 				4B04FB8C2488FF880077C195 /* UserDelegateViewController.m in Sources */,
+				4BBFB652248F422B00D303B6 /* BKMenuListView.m in Sources */,
 				413B01AE24723488000301F3 /* TCBaseNavigationController.m in Sources */,
 				413B01D22472362B000301F3 /* MineViewController.m in Sources */,
 				16E4DE48248CE823000FAB7A /* MineContentView.m in Sources */,
@@ -829,7 +869,6 @@
 				4160FAC3248CDA2E003DD217 /* HomeRedPointModel.m in Sources */,
 				413B01E324723F6E000301F3 /* MineTopTableViewCell.m in Sources */,
 				413B01AD24723488000301F3 /* TCBaseViewController.m in Sources */,
-				4BDDB04E248CC78000E10B67 /* HomeAlertTableViewCell.m in Sources */,
 				413B01C824723609000301F3 /* LookBroadViewController.m in Sources */,
 				413B01DE247237F8000301F3 /* LoginViewController.m in Sources */,
 				413B01A624722993000301F3 /* BackModel.m in Sources */,
@@ -838,8 +877,10 @@
 				4160FAC7248CDDDC003DD217 /* HomeFindToolCell.m in Sources */,
 				413B01A224722813000301F3 /* UIView+Addition.m in Sources */,
 				4160FAD1248CE9D8003DD217 /* HomeManagerItem.m in Sources */,
+				4BBFB64B248F226000D303B6 /* BlackListTableViewCell.m in Sources */,
 				4160FADB248CEFEB003DD217 /* InformationSelectionItem.m in Sources */,
 				413B019E24722813000301F3 /* NSMutableArray+safaMutableArray.m in Sources */,
+				4B84B8A8248F6EBC007A22CE /* toBlackListViewController.m in Sources */,
 				4BF111D2248E0B9600EC661B /* NoticeTableViewCell.m in Sources */,
 				4BBFB63C248E40F300D303B6 /* LookBroadViewModel.m in Sources */,
 				418687EB2477E33300B910D6 /* ShowImageTool.m in Sources */,
@@ -852,6 +893,7 @@
 				4160FAD6248CED2A003DD217 /* HomeInformationSelectionCell.m in Sources */,
 				4BDDB04D248CC78000E10B67 /* HomeQuickTableViewCell.m in Sources */,
 				4BF110AC248DEF3600EC661B /* NoticeViewController.m in Sources */,
+				4BBFB646248F1DAB00D303B6 /* BlackListViewController.m in Sources */,
 				415A447424769184004F1EE7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1022,7 +1064,7 @@
 					"$(PROJECT_DIR)/Supervision/Class/WorkSpace(工作专区)/FrameWork",
 					"$(PROJECT_DIR)/Supervision",
 				);
-				GCC_PREFIX_HEADER = Supervision/Tools/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = Supervision/PrefixHeader.pch;
 				INFOPLIST_FILE = Supervision/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1048,7 +1090,7 @@
 					"$(PROJECT_DIR)/Supervision/Class/WorkSpace(工作专区)/FrameWork",
 					"$(PROJECT_DIR)/Supervision",
 				);
-				GCC_PREFIX_HEADER = Supervision/Tools/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = Supervision/PrefixHeader.pch;
 				INFOPLIST_FILE = Supervision/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

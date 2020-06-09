@@ -2,8 +2,8 @@
 //  CSTabBar.h
 //  CaiShiTikuNew
 //
-//  Created by 夏江福 on 2019/5/29.
-//  Copyright © 2019 夏江福. All rights reserved.
+//  Created by 龙成 on 2019/5/29.
+//  Copyright © 2019 龙成. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

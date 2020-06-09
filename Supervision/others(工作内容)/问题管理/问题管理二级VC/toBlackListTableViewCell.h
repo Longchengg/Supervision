@@ -1,8 +1,8 @@
 //
-//  FeedBackListTableViewCell.h
+//  toBlackListTableViewCell.h
 //  Supervision
 //
-//  Created by 黄琦 on 2020/5/26.
+//  Created by 龙成 on 2020/6/9.
 //  Copyright © 2020 Supervision. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FeedBackListTableViewCell : UITableViewCell
+@interface toBlackListTableViewCell : UITableViewCell
 
 @end
 

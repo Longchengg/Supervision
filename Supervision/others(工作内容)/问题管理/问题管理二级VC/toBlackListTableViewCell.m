@@ -1,14 +1,14 @@
 //
-//  FeedBackListTableViewCell.m
+//  toBlackListTableViewCell.m
 //  Supervision
 //
-//  Created by 黄琦 on 2020/5/26.
+//  Created by 龙成 on 2020/6/9.
 //  Copyright © 2020 Supervision. All rights reserved.
 //
 
-#import "FeedBackListTableViewCell.h"
+#import "toBlackListTableViewCell.h"
 
-@implementation FeedBackListTableViewCell
+@implementation toBlackListTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

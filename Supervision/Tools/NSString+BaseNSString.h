@@ -33,6 +33,13 @@ NS_ASSUME_NONNULL_BEGIN
 + (CGFloat) widthForString:(NSString *)value fontSize:(CGFloat)fontSize andHight:(CGFloat)hight;
 
 
+/// 计算文字宽度
+/// @param value 文字内容
+/// @param showFont 文本字体
+/// @param hight 高度
++ (CGFloat) widthForString:(NSString *)value uifont:(UIFont *)showFont andHight:(CGFloat)hight;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

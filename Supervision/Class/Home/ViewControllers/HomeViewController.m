@@ -16,11 +16,14 @@
 
 #import "HomeRedPointModel.h"
 #import "NoticeViewController.h"
+#import "BlackListViewController.h"
 @interface HomeViewController ()
 <UITableViewDelegate,
 UITableViewDataSource,
 HomeTopTableViewCellDelegate,
-HomeQuickTableViewCellDelegate>{
+HomeQuickTableViewCellDelegate,
+HomeFindToolCellDelegate
+>{
     
 }
 
@@ -61,8 +64,8 @@ HomeQuickTableViewCellDelegate>{
     [_tableView registerNib:[UINib nibWithNibName:@"HomeFindToolCell" bundle:nil] forCellReuseIdentifier:@"HomeFindToolCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"HomeManagerCell" bundle:nil] forCellReuseIdentifier:@"HomeManagerCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"HomeInformationSelectionCell" bundle:nil] forCellReuseIdentifier:@"HomeInformationSelectionCell"];
-
-
+    
+    
     
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -85,13 +88,12 @@ HomeQuickTableViewCellDelegate>{
             
             NSIndexSet *setIndex = [NSIndexSet indexSetWithIndex:0];
             
-            
             [__weakSelf.tableView reloadSections:setIndex withRowAnimation:UITableViewRowAnimationNone];
         } failureBlock:^(id err) {
             
         }];
     });
-
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         
         [HttpRequestTool cert_stasticSuccessBlock:^(id responObject) {
@@ -103,7 +105,7 @@ HomeQuickTableViewCellDelegate>{
             
             
             [__weakSelf.tableView reloadSections:setIndex withRowAnimation:UITableViewRowAnimationNone];
-
+            
         } failureBlock:^(id err) {
             
         }];
@@ -142,16 +144,16 @@ HomeQuickTableViewCellDelegate>{
     
     if (0 == section) {
         return 330.0f;
-
+        
     }else if(1 == section){
         return 115.0f;
-
+        
     }else if(2 == section){
         return 100.0f;
-
+        
     }else if(3 == section){
         return 350.0f;
-
+        
     }else{
         
         return 140.0f;
@@ -162,7 +164,7 @@ HomeQuickTableViewCellDelegate>{
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
     return 0.0001f;
-
+    
     
 }
 
@@ -174,7 +176,7 @@ HomeQuickTableViewCellDelegate>{
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     
     return [[UIView alloc]init];
-
+    
 }
 
 
@@ -205,7 +207,7 @@ HomeQuickTableViewCellDelegate>{
     }else if (2 == section){
         HomeFindToolCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeFindToolCell"];
         cell.selectionStyle    = UITableViewCellSelectionStyleNone;
-        
+        cell.delegate                = self;
         return cell;
         
     }else if (3 == section){
@@ -213,13 +215,13 @@ HomeQuickTableViewCellDelegate>{
         cell.selectionStyle   = UITableViewCellSelectionStyleNone;
         
         return cell;
-
+        
     }else{
         HomeInformationSelectionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeInformationSelectionCell"];
         cell.selectionStyle   = UITableViewCellSelectionStyleNone;
         
         return cell;
-
+        
     }
     
     
@@ -270,13 +272,39 @@ HomeQuickTableViewCellDelegate>{
 }
 -(void)didClickWorkSpaceBtn:(UIButton *)button{
     NSLog(@"通知");
-   
+    
 }
 #pragma mark - HomeTopTableViewCellDelegate
 #pragma mark - 信息助手
 - (void)didClickQuickBtn:(NSInteger)index{
     
     NSLog(@"资质证书 -- %ld",index);
+}
+#pragma mark - HomeTopTableViewCellDelegate
+#pragma mark - 信息助手
+- (void)didClickFindBtn:(NSInteger)index{
+    
+    NSLog(@"分类查询 -- %ld",index);
+    if (index == 0) {
+        NSLog(@"问题进度");
+           BlackListViewController *VC = [[BlackListViewController alloc]init];
+           [self.navigationController pushViewController:VC animated:YES];
+    }
+    if (index == 1) {
+        NSLog(@"咨询管理");
+           NoticeViewController *VC = [[NoticeViewController alloc]init];
+           [self.navigationController pushViewController:VC animated:YES];
+    }
+    if (index == 2) {
+        NSLog(@"人员培训");
+           NoticeViewController *VC = [[NoticeViewController alloc]init];
+           [self.navigationController pushViewController:VC animated:YES];
+    }
+    if (index == 3) {
+        NSLog(@"证书动态");
+           NoticeViewController *VC = [[NoticeViewController alloc]init];
+           [self.navigationController pushViewController:VC animated:YES];
+    }
 }
 
 #pragma mark - 更多

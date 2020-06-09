@@ -33,10 +33,10 @@
 - (void)setDict:(NSDictionary *)dict{
     
     _dict = dict;
-    
+
     if (_dict.count > 0) {
         
-        _lab1.text = [NSString stringWithFormat:@"%@",_dict[@"资质证书"]];
+        _lab1.text = [NSString stringWithFormat:@"%d",[_dict[@"数字证书"]intValue]+[_dict[@"投标数量"]intValue] +[_dict[@"资质证书"]intValue]];
         _lab2.text = [NSString stringWithFormat:@"%@",_dict[@"人员数量"]];
         _lab3.text = [NSString stringWithFormat:@"%@",_dict[@"投标数量"]];
         _lab4.text = [NSString stringWithFormat:@"%@",_dict[@"待归还证书"]];

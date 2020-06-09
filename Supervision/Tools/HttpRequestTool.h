@@ -63,4 +63,12 @@
 /// @param failureBlock 失败回调
 + (void)infoSuccessBlock:(void (^)(id responObject))successBlock
             failureBlock:(void (^)(id err))failureBlock;
+
+/// 问题处理状态
+/// @param processStatus  0 待处理  1处理中  2已处理
+/// @param successBlock 成功回调
+/// @param failureBlock 失败回调
++(void)problem_process:(NSString *)processStatus
+          successBlock:(void (^)(id responObject))successBlock
+          failureBlock:(void (^)(id err))failureBlock;
 @end
