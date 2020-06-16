@@ -21,6 +21,7 @@ PODS:
   - MJExtension (3.2.1)
   - MJRefresh (3.2.3)
   - MLLabel (1.10.5)
+  - PPBadgeView (3.1.0)
   - SDWebImage (5.4.0):
     - SDWebImage/Core (= 5.4.0)
   - SDWebImage/Core (5.4.0)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - MLLabel
+  - PPBadgeView
   - SDWebImage
   - SGQRCode
 
@@ -48,6 +50,7 @@ SPEC REPOS:
     - MJExtension
     - MJRefresh
     - MLLabel
+    - PPBadgeView
     - SDWebImage
     - SGQRCode
 
@@ -60,9 +63,10 @@ SPEC CHECKSUMS:
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
   MJRefresh: 2b1214a2dc8f4df4c5dcb028ea2ad4e245425fb7
   MLLabel: d76124055a2205e7f76878e62cd06ba925ba0c97
+  PPBadgeView: b50a223638970fd0781e8753250385864b6dd2fe
   SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
   SGQRCode: bf02d60e18d6660a9d75ff1c8b9b467f064f054e
 
-PODFILE CHECKSUM: 13bed8ab4d9c9484a7a0bb5e707ada202c2912e1
+PODFILE CHECKSUM: 4f5df552c0264da9d8b4fe46788c15d92926ae39
 
 COCOAPODS: 1.9.3

@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@protocol HomeManagerCellDelegate <NSObject>
+
+- (void)didClickHomeManager:(NSInteger )index;
+
+@end
 
 @interface HomeManagerCell : UITableViewCell
+@property (nonatomic, weak) id <HomeManagerCellDelegate> delegate;
 
 @end
 

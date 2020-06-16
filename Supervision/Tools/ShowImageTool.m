@@ -71,9 +71,9 @@
         
         //给图片视图添加图片 通过图片数组
         NSString *str = imageArr[i];
-        if (![str containsString:@"http"]) {
-            str =   [NSString stringWithFormat:@"%@%@",HttpRequestImageURL,str];
-        }
+//        if (![str containsString:@"http"]) {
+//            str =   [NSString stringWithFormat:@"%@%@",HttpRequestImageURL,str];
+//        }
 
         [imgV sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:[UIImage imageNamed:@"LoadImg"]];
         

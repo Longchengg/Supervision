@@ -17,12 +17,21 @@
 #import "HomeRedPointModel.h"
 #import "NoticeViewController.h"
 #import "BlackListViewController.h"
+#import "ConsultingViewController.h"
+#import "TCLightListViewController.h"
+#import "CertificateViewController.h"
+#import "MessageViewController.h"
+#import "QualificationsViewController.h"
+#import "anquanSCViewController.h"
+#import "shuzizhengshuViewController.h"
+#import "CertificatemanagementVC.h"
 @interface HomeViewController ()
 <UITableViewDelegate,
 UITableViewDataSource,
 HomeTopTableViewCellDelegate,
 HomeQuickTableViewCellDelegate,
-HomeFindToolCellDelegate
+HomeFindToolCellDelegate,
+HomeManagerCellDelegate
 >{
     
 }
@@ -72,11 +81,11 @@ HomeFindToolCellDelegate
     }else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    [self reloadVideoList];
-    
+    [self loadMore];
+
     
 }
-- (void)reloadVideoList{
+- (void)loadMore{
     WEAK_SELF;
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -213,7 +222,7 @@ HomeFindToolCellDelegate
     }else if (3 == section){
         HomeManagerCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeManagerCell"];
         cell.selectionStyle   = UITableViewCellSelectionStyleNone;
-        
+        cell.delegate         = self;
         return cell;
         
     }else{
@@ -272,6 +281,9 @@ HomeFindToolCellDelegate
 }
 -(void)didClickWorkSpaceBtn:(UIButton *)button{
     NSLog(@"通知");
+    MessageViewController *VC = [[MessageViewController alloc]init];
+//      VC.dataSource = _alertList;
+    [self.navigationController pushViewController:VC animated:YES];
     
 }
 #pragma mark - HomeTopTableViewCellDelegate
@@ -279,12 +291,13 @@ HomeFindToolCellDelegate
 - (void)didClickQuickBtn:(NSInteger)index{
     
     NSLog(@"资质证书 -- %ld",index);
+   
 }
 #pragma mark - HomeTopTableViewCellDelegate
 #pragma mark - 信息助手
 - (void)didClickFindBtn:(NSInteger)index{
     
-    NSLog(@"分类查询 -- %ld",index);
+    NSLog(@"分类查询 -- %ld",(long)index);
     if (index == 0) {
         NSLog(@"问题进度");
            BlackListViewController *VC = [[BlackListViewController alloc]init];
@@ -292,21 +305,42 @@ HomeFindToolCellDelegate
     }
     if (index == 1) {
         NSLog(@"咨询管理");
-           NoticeViewController *VC = [[NoticeViewController alloc]init];
+           ConsultingViewController *VC = [[ConsultingViewController alloc]init];
            [self.navigationController pushViewController:VC animated:YES];
     }
     if (index == 2) {
         NSLog(@"人员培训");
-           NoticeViewController *VC = [[NoticeViewController alloc]init];
+           TCLightListViewController *VC = [[TCLightListViewController alloc]init];
            [self.navigationController pushViewController:VC animated:YES];
     }
     if (index == 3) {
         NSLog(@"证书动态");
-           NoticeViewController *VC = [[NoticeViewController alloc]init];
+           CertificateViewController *VC = [[CertificateViewController alloc]init];
            [self.navigationController pushViewController:VC animated:YES];
     }
 }
-
+#pragma mark - 建牛独家
+-(void)didClickHomeManager:(NSInteger)index{
+    NSLog(@"%ld",(long)index);
+    if (index == 0) {
+        QualificationsViewController *VC = [[QualificationsViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }else if(index == 1){
+        
+    }else if(index == 2){
+        CertificatemanagementVC *VC = [[CertificatemanagementVC alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }else if(index == 3){
+        
+    }else if(index == 4){
+        anquanSCViewController *VC = [[anquanSCViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }else{
+        shuzizhengshuViewController *VC = [[shuzizhengshuViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+  
+}
 #pragma mark - 更多
 - (void)moreBtn:(UIButton *)sender{
     

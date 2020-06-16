@@ -9,6 +9,8 @@
 #import "CTUserDefaults.h"
 
 NSString *const KToken = @"token";
+
+
 NSString *const KIsLogin = @"isLogin";
 NSString *const KUserName = @"username";
 NSString *const KRule = @"rule";
@@ -25,10 +27,10 @@ NSString *const KIsAsk = @"isAsk";
     return [self getObjectForKey:KToken];
 }
 
-
 + (void)setToken:(NSString *)token{
     [self setValue:token forKey:KToken];
 }
+
 
 + (NSString *)Rule{
     return [self getObjectForKey:KRule];

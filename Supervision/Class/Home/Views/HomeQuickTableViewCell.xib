@@ -276,6 +276,7 @@
                 <outlet property="lab2" destination="jla-eF-ESl" id="xXd-R5-hmh"/>
                 <outlet property="lab3" destination="Kba-QX-L8I" id="RIM-wK-O7C"/>
                 <outlet property="lab4" destination="k0O-Pi-cmG" id="o5Z-Nn-Bjx"/>
+                <outlet property="label" destination="2l3-j9-xs7" id="BHV-ue-g0d"/>
             </connections>
             <point key="canvasLocation" x="138.40579710144928" y="105.46875"/>
         </tableViewCell>

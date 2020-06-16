@@ -9,11 +9,8 @@
 #import "BlackListViewController.h"
 
 #import "BlackListTableViewCell.h"
-#import "toBlackListViewController.h"
-//#import "EnterpriseListTableViewCell.h"
-//#import "PersonListTableViewCell.h"
-//#import "CarListTableViewCell.h"
-
+#import "to2BlackListViewController.h"
+#import "to4BlackListViewController.h"
 #import "BKMenuListView.h"
 
 @interface BlackListViewController ()
@@ -21,10 +18,7 @@
 UITableViewDataSource,
 UITextFieldDelegate,
 BKMenuListViewDelegate>
-{
-    UIButton *currentBtn;
-    
-}
+
 @property (weak, nonatomic) IBOutlet UIView *topView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -161,7 +155,7 @@ BKMenuListViewDelegate>
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
-    return 10;
+    return 8;
     
 }
 
@@ -218,34 +212,99 @@ BKMenuListViewDelegate>
     switch (_selectedIndex) {
         case 0:
         {
-            toBlackListViewController *VC = [[toBlackListViewController alloc]init];
-            VC.titleStr = [NSString stringWithFormat:@"%@待处理", _dataSourceArr[index][@"category"]];
-            [self.navigationController pushViewController:VC animated:YES];
+            if (index == 0) {
+                 to2BlackListViewController *VC = [[to2BlackListViewController alloc]init];
+                 VC.titleStr = [NSString stringWithFormat:@"%@待处理", _dataSourceArr[index][@"category"]];
+                 VC.processStatus =@"0";
+                 VC.typeVC=@"0";
+                 [self.navigationController pushViewController:VC animated:YES];
+            }else if (index == 1){
+                to2BlackListViewController *VC = [[to2BlackListViewController alloc]init];
+                VC.titleStr = [NSString stringWithFormat:@"%@待处理", _dataSourceArr[index][@"category"]];
+                VC.processStatus =@"0";
+                VC.typeVC=@"1";
+                [self.navigationController pushViewController:VC animated:YES];
+            }else if (index == 2){
+                to4BlackListViewController *VC = [[to4BlackListViewController alloc]init];
+                VC.titleStr = [NSString stringWithFormat:@"%@待处理", _dataSourceArr[index][@"category"]];
+                VC.processStatus =@"0";
+                VC.typeVC=@"0";
+                [self.navigationController pushViewController:VC animated:YES];
+            }else{
+                to4BlackListViewController *VC = [[to4BlackListViewController alloc]init];
+                VC.titleStr = [NSString stringWithFormat:@"%@待处理", _dataSourceArr[index][@"category"]];
+                VC.processStatus =@"0";
+                VC.typeVC=@"1";
+                [self.navigationController pushViewController:VC animated:YES];
+            }
+           
         }
             break;
         case 1:
         {
-            toBlackListViewController *VC = [[toBlackListViewController alloc]init];
-            VC.titleStr = [NSString stringWithFormat:@"%@处理中", _dataSourceArr[index][@"category"]];
-            [self.navigationController pushViewController:VC animated:YES];
+            if (index == 0) {
+                  to2BlackListViewController *VC = [[to2BlackListViewController alloc]init];
+                  VC.titleStr = [NSString stringWithFormat:@"%@待处理", _dataSourceArr[index][@"category"]];
+                  VC.processStatus =@"0";
+                  VC.typeVC=@"0";
+                  [self.navigationController pushViewController:VC animated:YES];
+             }else if (index == 1){
+                 to2BlackListViewController *VC = [[to2BlackListViewController alloc]init];
+                 VC.titleStr = [NSString stringWithFormat:@"%@处理中", _dataSourceArr[index][@"category"]];
+                 VC.processStatus =@"1";
+                 VC.typeVC=@"1";
+                 [self.navigationController pushViewController:VC animated:YES];
+             }else if (index == 2){
+                 to4BlackListViewController *VC = [[to4BlackListViewController alloc]init];
+                 VC.titleStr = [NSString stringWithFormat:@"%@处理中", _dataSourceArr[index][@"category"]];
+                 VC.processStatus =@"1";
+                 VC.typeVC=@"0";
+                 [self.navigationController pushViewController:VC animated:YES];
+             }else{
+                 to4BlackListViewController *VC = [[to4BlackListViewController alloc]init];
+                 VC.titleStr = [NSString stringWithFormat:@"%@处理中", _dataSourceArr[index][@"category"]];
+                 VC.processStatus =@"1";
+                 VC.typeVC=@"1";
+                 [self.navigationController pushViewController:VC animated:YES];
+             }
+            
         }
             break;
         case 2:
         {
-            toBlackListViewController *VC = [[toBlackListViewController alloc]init];
-            VC.titleStr = [NSString stringWithFormat:@"%@已处理", _dataSourceArr[index][@"category"]];
-            [self.navigationController pushViewController:VC animated:YES];
+            if (index == 0) {
+                to2BlackListViewController *VC = [[to2BlackListViewController alloc]init];
+                VC.titleStr = [NSString stringWithFormat:@"%@已处理", _dataSourceArr[index][@"category"]];
+                VC.processStatus =@"2";
+                VC.typeVC=@"0";
+                [self.navigationController pushViewController:VC animated:YES];
+            }else if (index == 1){
+                to2BlackListViewController *VC = [[to2BlackListViewController alloc]init];
+                VC.titleStr = [NSString stringWithFormat:@"%@已处理", _dataSourceArr[index][@"category"]];
+                VC.processStatus =@"2";
+                VC.typeVC=@"1";
+                [self.navigationController pushViewController:VC animated:YES];
+            }else if (index == 2){
+                to4BlackListViewController *VC = [[to4BlackListViewController alloc]init];
+                VC.titleStr = [NSString stringWithFormat:@"%@已处理", _dataSourceArr[index][@"category"]];
+                VC.processStatus =@"2";
+                VC.typeVC=@"0";
+                [self.navigationController pushViewController:VC animated:YES];
+            }else{
+                to4BlackListViewController *VC = [[to4BlackListViewController alloc]init];
+                VC.titleStr = [NSString stringWithFormat:@"%@已处理", _dataSourceArr[index][@"category"]];
+                VC.processStatus =@"2";
+                VC.typeVC=@"1";
+                [self.navigationController pushViewController:VC animated:YES];
+            }
+           
         }
             break;
             
         default:
             break;
     }
- 
-    
 }
-
-
 
 - (NSMutableArray *)dataSourceArr{
     

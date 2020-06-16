@@ -20,7 +20,7 @@
 -(void)setLabelStr:(NSString *)labelStr{
     _labelStr = labelStr;
     if (_labelStr) {
-        self.labelT.text = _labelStr;
+        self.labelT.text = [NSString stringWithFormat:@"%@",_labelStr];
     }
 }
 

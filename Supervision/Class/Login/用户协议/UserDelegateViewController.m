@@ -24,8 +24,8 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"协议.docx" ofType:nil];
     
     NSData *data = [NSData dataWithContentsOfFile:path];
-    
-    [_webView loadData:data MIMEType:@"application/vnd.openxmlformats-officedocument.wordprocessingml.document" textEncodingName:@"UTF-8" baseURL:[NSURL fileURLWithPath:NSTemporaryDirectory()]];
+    [_webView loadRequest:@"https://saas.jz-rck.com/protocol.html"];
+//    [_webView loadData:data MIMEType:@"application/vnd.openxmlformats-officedocument.wordprocessingml.document" textEncodingName:@"UTF-8" baseURL:[NSURL fileURLWithPath:NSTemporaryDirectory()]];
 
     _webView.scalesPageToFit = YES;
 

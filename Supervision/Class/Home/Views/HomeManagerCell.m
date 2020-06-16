@@ -68,8 +68,10 @@
 
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
+    if ([_delegate respondsToSelector:@selector(didClickHomeManager:)]) {
+          
+        [_delegate didClickHomeManager:indexPath.row];
+      }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

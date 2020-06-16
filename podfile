@@ -11,6 +11,7 @@ target 'Supervision' do
     pod 'IQKeyboardManager'
     pod 'MLLabel'
     pod 'SGQRCode'
+    pod 'PPBadgeView'
     use_frameworks!
 end
 
