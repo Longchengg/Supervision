@@ -70,7 +70,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ita-FG-bcT">
                                 <rect key="frame" x="94" y="0.0" width="93.5" height="70"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_query_cert" translatesAutoresizingMaskIntoConstraints="NO" id="6Xt-wZ-N9X">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_query_appearance" translatesAutoresizingMaskIntoConstraints="NO" id="6Xt-wZ-N9X">
                                         <rect key="frame" x="30.5" y="7" width="32" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="E4h-EI-MXT"/>
@@ -217,8 +217,8 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="icon_query_appearance" width="96" height="96"/>
         <image name="icon_query_borrow" width="98" height="96"/>
-        <image name="icon_query_cert" width="98" height="96"/>
         <image name="icon_query_prob" width="98" height="96"/>
         <image name="icon_query_training" width="98" height="96"/>
     </resources>

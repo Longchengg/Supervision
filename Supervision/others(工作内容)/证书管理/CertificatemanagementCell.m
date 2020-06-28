@@ -53,7 +53,7 @@ professionList:(NSArray *)professionList
     if (_tableArr) {
         _lab1.text = [NSString stringWithFormat:@"%@",personName];
         _lab2.text = [NSString stringWithFormat:@"%@",certName];
-        if ([[NSString stringWithFormat:@"%@",safetyCert]  isEqual: @"<null>"]) {
+        if ([[NSString stringWithFormat:@"%@",safetyCert]  isEqual: @"<null>"]||[[NSString stringWithFormat:@"%@",safetyCert]  isEqual: @"(null)"]) {
             _lab3.text = [NSString stringWithFormat:@"其他证书:无"];
         }else{
             _lab3.text = [NSString stringWithFormat:@"其他证书:%@",safetyCert];

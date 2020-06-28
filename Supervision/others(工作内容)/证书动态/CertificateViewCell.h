@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CertificateViewCell : UITableViewCell
 
 -(void)setLal:(NSString *)Llab Rlabe:(NSString *)Rlab;
+//业绩
+-(void)seyejitLal:(NSString *)Llab Rlabe:(NSString *)Rlab;
+
 
 
 

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZhaotoubiaoViewController">
+            <connections>
+                <outlet property="JBtn" destination="gEe-OV-6ci" id="kNT-su-f5k"/>
+                <outlet property="SBtn" destination="7H4-ho-nyC" id="Ahs-KE-PdM"/>
+                <outlet property="YBtn" destination="c76-DX-lrf" id="Hcu-PN-qza"/>
+                <outlet property="tableView" destination="XFl-Nl-Og1" id="5KL-8b-mIX"/>
+                <outlet property="topView" destination="Qaf-x0-d4L" id="MKi-AP-Cs8"/>
+                <outlet property="view" destination="Qbs-Gp-k56" id="Jvx-oJ-ghu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Qbs-Gp-k56">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qaf-x0-d4L">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEe-OV-6ci">
+                            <rect key="frame" x="20" y="15" width="121.5" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name=".PingFangSC-Regular" family=".AppleSimplifiedChineseFont" pointSize="15"/>
+                            <state key="normal" title="招标类型  " image="向下_al">
+                                <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="删 除_al">
+                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="LayerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="JieBtn:" destination="-1" eventType="touchUpInside" id="AQZ-zd-b9w"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c76-DX-lrf">
+                            <rect key="frame" x="146.5" y="15" width="121" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name=".PingFangSC-Regular" family=".AppleSimplifiedChineseFont" pointSize="15"/>
+                            <state key="normal" title="投标状态  " image="向下_al">
+                                <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="删 除_al">
+                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="LayerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="yuHuanBtn:" destination="-1" eventType="touchUpInside" id="AHV-Z9-gWe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H4-ho-nyC">
+                            <rect key="frame" x="272.5" y="15" width="121.5" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name=".PingFangSC-Regular" family=".AppleSimplifiedChineseFont" pointSize="15"/>
+                            <state key="normal" title="开标时间  " image="向下_al">
+                                <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="删 除_al">
+                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="LayerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="shiHuanBtn:" destination="-1" eventType="touchUpInside" id="gKt-qN-gXP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7H4-ho-nyC" firstAttribute="top" secondItem="Qaf-x0-d4L" secondAttribute="top" constant="15" id="9dK-uP-zkO"/>
+                        <constraint firstAttribute="bottom" secondItem="gEe-OV-6ci" secondAttribute="bottom" constant="15" id="BjA-iW-JSp"/>
+                        <constraint firstItem="gEe-OV-6ci" firstAttribute="top" secondItem="Qaf-x0-d4L" secondAttribute="top" constant="15" id="KAg-ag-Rfc"/>
+                        <constraint firstItem="c76-DX-lrf" firstAttribute="top" secondItem="Qaf-x0-d4L" secondAttribute="top" constant="15" id="Sr2-44-KeG"/>
+                        <constraint firstAttribute="trailing" secondItem="7H4-ho-nyC" secondAttribute="trailing" constant="20" id="X53-gi-Ijx"/>
+                        <constraint firstItem="gEe-OV-6ci" firstAttribute="leading" secondItem="Qaf-x0-d4L" secondAttribute="leading" constant="20" id="YWw-fb-Ca4"/>
+                        <constraint firstAttribute="bottom" secondItem="c76-DX-lrf" secondAttribute="bottom" constant="15" id="bJE-fo-hLK"/>
+                        <constraint firstItem="7H4-ho-nyC" firstAttribute="leading" secondItem="c76-DX-lrf" secondAttribute="trailing" constant="5" id="gh1-LN-KdK"/>
+                        <constraint firstItem="c76-DX-lrf" firstAttribute="width" secondItem="gEe-OV-6ci" secondAttribute="width" id="hiB-iD-Kdm"/>
+                        <constraint firstItem="7H4-ho-nyC" firstAttribute="leading" secondItem="c76-DX-lrf" secondAttribute="trailing" constant="5" id="hz2-JE-XmG"/>
+                        <constraint firstItem="c76-DX-lrf" firstAttribute="leading" secondItem="gEe-OV-6ci" secondAttribute="trailing" constant="5" id="irc-1y-2lV"/>
+                        <constraint firstItem="7H4-ho-nyC" firstAttribute="width" secondItem="gEe-OV-6ci" secondAttribute="width" id="q5o-aN-Ojj"/>
+                        <constraint firstItem="c76-DX-lrf" firstAttribute="leading" secondItem="gEe-OV-6ci" secondAttribute="trailing" constant="5" id="t9f-Xl-pEX"/>
+                        <constraint firstAttribute="height" constant="60" id="tqJ-gm-j03"/>
+                        <constraint firstAttribute="bottom" secondItem="7H4-ho-nyC" secondAttribute="bottom" constant="15" id="vHC-0h-r77"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="XFl-Nl-Og1">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Qaf-x0-d4L" firstAttribute="leading" secondItem="l0p-rn-ASH" secondAttribute="leading" id="BJn-IB-jWg"/>
+                <constraint firstItem="XFl-Nl-Og1" firstAttribute="top" secondItem="Qaf-x0-d4L" secondAttribute="bottom" id="MPo-Lf-I6F"/>
+                <constraint firstItem="XFl-Nl-Og1" firstAttribute="leading" secondItem="l0p-rn-ASH" secondAttribute="leading" id="U2E-oE-w8Z"/>
+                <constraint firstItem="l0p-rn-ASH" firstAttribute="trailing" secondItem="XFl-Nl-Og1" secondAttribute="trailing" id="ZCX-dJ-sLM"/>
+                <constraint firstItem="l0p-rn-ASH" firstAttribute="bottom" secondItem="XFl-Nl-Og1" secondAttribute="bottom" id="gIZ-au-xY0"/>
+                <constraint firstItem="Qaf-x0-d4L" firstAttribute="trailing" secondItem="l0p-rn-ASH" secondAttribute="trailing" id="jdi-kI-MiC"/>
+                <constraint firstItem="Qaf-x0-d4L" firstAttribute="top" secondItem="l0p-rn-ASH" secondAttribute="top" id="uLd-D3-RIf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="l0p-rn-ASH"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="删 除_al" width="16" height="16"/>
+        <image name="向下_al" width="16" height="16"/>
+    </resources>
+</document>

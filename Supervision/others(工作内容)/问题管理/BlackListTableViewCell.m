@@ -52,9 +52,9 @@
             _Rlabel = [NSString stringWithFormat:@"%@条处理中",_Rlabel];
         }else{
             _LabelR.textColor = [UIColor systemGrayColor];
-            _Rlabel = [NSString stringWithFormat:@"%@条已处理",_Rlabel];
+            _Rlabel = [NSString stringWithFormat:@"%@条处理完结",_Rlabel];
         }
-        if ([_Rlabel  isEqual: @"0条待处理"]||[_Rlabel  isEqual: @"0条处理中"]||[_Rlabel  isEqual: @"0条已处理"]) {
+        if ([_Rlabel  isEqual: @"0条待处理"]||[_Rlabel  isEqual: @"0条处理中"]||[_Rlabel  isEqual: @"0条处理完结"]) {
             _Rlabel = @"";
         }
         _LabelR.text = _Rlabel;

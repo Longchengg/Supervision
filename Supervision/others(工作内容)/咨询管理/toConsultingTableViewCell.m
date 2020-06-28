@@ -23,7 +23,7 @@
 -(void)setContent:(NSString *)NameTextL ContextL:(NSString *)ContextL timeTextL:(NSString *)timeTextL stausTextL:(NSString *)stausTextL{
     _nameT.text = NameTextL;
     _contT.text =[NSString stringWithFormat:@"项目:%@",ContextL];
-    if ([[NSString stringWithFormat:@"%@",timeTextL]  isEqual: @"<null>"]) {
+    if ([[NSString stringWithFormat:@"%@",timeTextL]  isEqual: @"<null>"]||[[NSString stringWithFormat:@"%@",timeTextL]  isEqual: @"(null)"]) {
         _timeT.text = [NSString stringWithFormat:@""];
     }else{
         _timeT.text = [NSString stringWithFormat:@"服务时间:%@",timeTextL];

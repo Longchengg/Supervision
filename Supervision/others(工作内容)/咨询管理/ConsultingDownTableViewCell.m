@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *con2;
 @property (weak, nonatomic) IBOutlet UILabel *con3;
 @property (weak, nonatomic) IBOutlet UILabel *con4;
+@property (weak, nonatomic) IBOutlet UILabel *beizhu;
 
 @end
 
@@ -27,7 +28,7 @@
     [super awakeFromNib];
     // Initialization code
 }
--(void)setContent:(NSString *)NameTextL ContextL:(NSString *)ContextL timeTextL:(NSString *)timeTextL stausTextL:(NSString *)stausTextL downTextL:(NSString *)downTextL cont1:(NSString *)cont1 cont2:(NSString *)cont2 cont3:(NSString *)cont3 cont4:(NSString *)cont4 cont5:(NSString *)cont5{
+-(void)setContent:(NSString *)NameTextL ContextL:(NSString *)ContextL timeTextL:(NSString *)timeTextL stausTextL:(NSString *)stausTextL downTextL:(NSString *)downTextL cont1:(NSString *)cont1 cont2:(NSString *)cont2 cont3:(NSString *)cont3 cont4:(NSString *)cont4 cont5:(NSString *)cont5 cont6:(NSString *)cont6{
     if ([[NSString stringWithFormat:@"%@",NameTextL]  isEqual: @"<null>"]) {
            _monenyT.text = [NSString stringWithFormat:@""];
        }else{
@@ -53,8 +54,16 @@
        }else{
            _monenyQ.text = [NSString stringWithFormat:@"其它费%@",downTextL];
        }
-    _conT.text = [NSString stringWithFormat:@"%@",cont1];
-    _con1.text = [NSString stringWithFormat:@"%@",cont2];
+    if ([[NSString stringWithFormat:@"%@",cont2]  isEqual: @"<null>"]) {
+              _con1.text = [NSString stringWithFormat:@"-"];
+          }else{
+              _con1.text = [NSString stringWithFormat:@"%@",cont2];
+          }
+    if ([[NSString stringWithFormat:@"%@",cont1]  isEqual: @"<null>"]) {
+              _conT.text = [NSString stringWithFormat:@"-"];
+          }else{
+              _conT.text = [NSString stringWithFormat:@"%@",cont1];
+          }
     if ([[NSString stringWithFormat:@"%@",cont3]  isEqual: @"<null>"]) {
         _con2.text = [NSString stringWithFormat:@""];
     }else{
@@ -66,6 +75,12 @@
     }else{
         _con4.text = [NSString stringWithFormat:@"%@",cont5];
     }
+    if ([[NSString stringWithFormat:@"%@",cont6]  isEqual: @"<null>"]) {
+        _beizhu.text = [NSString stringWithFormat:@"无"];
+    }else{
+        _beizhu.text = [NSString stringWithFormat:@"%@",cont6];
+    }
+    
     
 }
 

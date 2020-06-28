@@ -10,7 +10,7 @@
 #import "UserDelegateViewController.h"
 #import "TCBaseNavigationController.h"
 #import "TCBaseTabBarController.h"
-
+#import "ZhaobiaogonggaoViewController.h"
 //定时器
 NSInteger const endTimes1 = 59;
 //协议
@@ -93,7 +93,7 @@ static int *agreement = 0;
         _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(action) userInfo:nil repeats:YES];
     }
     WEAK_SELF;
-       [HttpRequestTool sendCode:self.phoneN.text
+    [HttpRequestTool sendCode:self.phoneN.text
                          type:@"1"
                  successBlock:^(id responObject) {
         
@@ -106,19 +106,28 @@ static int *agreement = 0;
 }
 //登录
 - (IBAction)login:(id)sender {
-    WEAK_SELF;
-       [HttpRequestTool uersLogin:@"18888888888"
-                       verifyCode:@"666666"
-                     successBlock:^(id responObject) {
-           
-           NSString *token = (NSString *)responObject;
-           [CTUserDefaults setToken:token];
-           
-           TCBaseTabBarController * tvc = [[TCBaseTabBarController alloc]init];
-           self.view.window.rootViewController = tvc;
-       } failureBlock:^(id err) {
-           
-       }];
+    if(self.phoneN.text.length != 11){
+        [self showAlertMsg:@"请输入正确手机号"];
+        return;
+    }
+    if([self.CodeN.text isEqual:@""]){
+        [self showAlertMsg:@"请输入验证码"];
+        return;
+    }
+    if(self.agreeIcon.selected != YES){
+        [self showAlertMsg:@"请阅读并同意用户协议"];
+        return;
+    }
+    [HttpRequestTool uersLogin:self.phoneN.text
+                    verifyCode:self.CodeN.text
+                  successBlock:^(id responObject) {
+        [self showAlertMsg:@"登录成功"];
+        NSString *token = (NSString *)responObject;
+        [ShareApp loginSuccess:token];
+        
+    } failureBlock:^(id err) {
+        [self showAlertMsg:@"验证码错误"];
+    }];
 }
 
 #pragma mark - 验证码按钮
@@ -174,8 +183,10 @@ static int *agreement = 0;
     self.agreeIcon.selected = !self.agreeIcon.selected;
 }
 - (IBAction)agreeButtonClick:(id)sender {
-    UserDelegateViewController *VC = [[UserDelegateViewController alloc]init];
-    [self.navigationController pushViewController:VC animated:YES];
+    ZhaobiaogonggaoViewController *nextVC = [[ZhaobiaogonggaoViewController alloc] init];
+    nextVC.webId = 5;
+    nextVC.titelStr = @"用户隐私协议";
+    [self.navigationController pushViewController:nextVC animated:NO];
 }
 
 

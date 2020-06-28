@@ -31,7 +31,11 @@
         _Rlab.textColor = [UIColor orangeColor];
     }
 }
+-(void)seyejitLal:(NSString *)Llab Rlabe:(NSString *)Rlab{
+    _Llab.text = [NSString stringWithFormat:@"%@",Llab];
+    _Rlab.text = [NSString stringWithFormat:@"%@",Rlab];
 
+}
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -34,8 +34,8 @@
     //透明设置为NO，显示白色，view的高度到tabbar顶部截止，YES的话到底部
     self.csTabbar.translucent = NO;
     self.csTabbar.position              = CSTabBarCenterButtonPositionBulge;
-    self.csTabbar.centerImage           = [UIImage imageNamed:@"tabbar_add_yellow"];
-    self.csTabbar.centerSelectedImage   = [UIImage imageNamed:@"tabbar_add_yellow"];
+    self.csTabbar.centerImage           = [UIImage imageNamed:@"预警bar"];
+    self.csTabbar.centerSelectedImage   = [UIImage imageNamed:@"预警bar"];
 }
 // 重写选中事件， 处理中间按钮选中问题
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
@@ -54,8 +54,8 @@
         
     NSArray *titleArr = @[@"服务",@"预警",@"企业"];
     
-    NSArray *iconArr = @[@"首页",@"",@"我的"];
-    NSArray *selectIconArr = @[@"首页-选中",@"",@"我的-选中"];
+    NSArray *iconArr = @[@"服务bar",@"",@"企业bar"];
+    NSArray *selectIconArr = @[@"服务1bar",@"",@"企业1bar"];
     
     NSArray *controllerArr = @[@"HomeViewController",@"LookBroadViewController",@"MineViewController"];
     
@@ -75,7 +75,7 @@
         barItem.selectedImage           = selectedBarItemImage;
         barItem.tag                     = i;
         //barItem字体大小
-        NSDictionary *selectDict        = @{NSFontAttributeName:[UIFont fontWithName:@"PingFangSC-Regular" size:12],NSForegroundColorAttributeName:RGB(16, 136, 237)};
+        NSDictionary *selectDict        = @{NSFontAttributeName:[UIFont fontWithName:@"PingFangSC-Regular" size:12],NSForegroundColorAttributeName:RGB(51, 51, 51)};
         NSDictionary *normalDict        = @{NSFontAttributeName:[UIFont fontWithName:@"PingFangSC-Regular" size:12],NSForegroundColorAttributeName:RGB(51, 51, 51)};
         //未选中字体颜色
         [barItem setTitleTextAttributes:normalDict forState:UIControlStateNormal];

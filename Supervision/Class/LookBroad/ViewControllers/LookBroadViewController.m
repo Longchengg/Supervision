@@ -9,9 +9,16 @@
 #import "LookBroadViewController.h"
 #import "LookBroadTopTableViewCell.h"
 #import "LookBroadViewModel.h"
+#import "MessageMainViewController.h"
+#import "QualificationsViewController.h"
+#import "anquanSCViewController.h"
+#import "CertificatemanagementVC.h"
+#import "TLTabBarController.h"
+#import "YujinxiangqingViewController.h"
 @interface LookBroadViewController ()<
 UITableViewDelegate,
-UITableViewDataSource
+UITableViewDataSource,
+LookBroadTopTableViewCellDelegate
 >
 
 /// 主页面tableView
@@ -63,8 +70,8 @@ UITableViewDataSource
         [HttpRequestTool infoSuccessBlock:^(id responObject) {
             __weakSelf.lookBroadViewModel = [LookBroadViewModel mj_objectWithKeyValues:responObject];
             
-//            NSIndexSet *setIndex = [NSIndexSet indexSetWithIndex:0];
-//            [__weakSelf.tableView reloadSections:setIndex withRowAnimation:UITableViewRowAnimationNone];
+            //            NSIndexSet *setIndex = [NSIndexSet indexSetWithIndex:0];
+            //            [__weakSelf.tableView reloadSections:setIndex withRowAnimation:UITableViewRowAnimationNone];
             [self.tableView reloadData];
         } failureBlock:^(id err) {
             
@@ -84,7 +91,7 @@ UITableViewDataSource
     if (0 == section) {
         return 1;
     }
-    return 6;
+    return 7;
     
     
 }
@@ -126,7 +133,7 @@ UITableViewDataSource
         cell.selectionStyle=UITableViewCellSelectionStyleNone;//设置cell点击效果
         cell.alertCount = _lookBroadViewModel.alertCount;
         cell.expiredCount = _lookBroadViewModel.expiredCount;
-        
+        cell.delegate  = self;
         return cell;
     }else{
         static NSString *identifier = @"LookBroadCellIdentifier";
@@ -144,8 +151,8 @@ UITableViewDataSource
             cell.detailTextLabel.font      = [UIFont systemFontOfSize:12.0f];
         }
         
-        NSArray *arr = @[@"资质证书",@"备案信息",@"CA锁",@"安全许可证",@"企业人员",@"投标预警"];
-        NSArray *arrimg = @[@"个人资料",@"修改密码",@"设置",@"隐私条款",@"意见与反馈",@"意见与反馈"];
+        NSArray *arr = @[@"服务截止日期",@"资质证书",@"备案信息",@"CA锁",@"安全许可证",@"企业人员",@"投标预警"];
+        NSArray *arrimg = @[@"到期日期",@"资质证书",@"备案信息",@"ca锁",@"安全生产许可",@"企业人员",@"投标预警"];
         cell.imageView.image = [UIImage imageNamed:arrimg[row]];
         
         cell.textLabel.text  = arr[row];
@@ -155,41 +162,47 @@ UITableViewDataSource
             if ( _lookBroadViewModel.bidEnoughAlertMessage == nil) {
                 _lookBroadViewModel.bidEnoughAlertMessage = @"暂无";
             }
-            cell.detailTextLabel.text = _lookBroadViewModel.bidEnoughAlertMessage;
+            cell.detailTextLabel.numberOfLines = 2;
+            cell.detailTextLabel.text = _lookBroadViewModel.serviceTimeAlertMessage;
         }
         if (row == 1) {
+            if ( _lookBroadViewModel.serviceTimeAlertMessage == nil) {
+                cell.detailTextLabel.text = @"暂无";
+            }
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"有效期%@",_lookBroadViewModel.companyLicenseDTO[@"validTime"]];        }
+        if (row == 2) {
             if ( _lookBroadViewModel.fourlib == nil) {
                 cell.detailTextLabel.text = @"暂无";
             }
             cell.detailTextLabel.text = [NSString stringWithFormat:@"有效期%@",_lookBroadViewModel.fourlib[@"validTime"]];
         }
-        if (row == 2) {
+        if (row == 3) {
             if ( _lookBroadViewModel.calock == nil) {
                 cell.detailTextLabel.text = @"暂无";
             }
             cell.detailTextLabel.text = [NSString stringWithFormat:@"有效期%@",_lookBroadViewModel.calock[@"validTime"]];
         }
-        if (row == 3) {
+        if (row == 4) {
             if ( _lookBroadViewModel.comSafetyLicenseDTO == nil) {
                 cell.detailTextLabel.text = @"暂无";
             }
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"有效期%@",_lookBroadViewModel.calock[@"validTime"]];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"有效期%@",_lookBroadViewModel.comSafetyLicenseDTO[@"validTime"]];
         }
-        if (row == 4) {
+        if (row == 5) {
             if ( _lookBroadViewModel.personCertAlertMessage == nil) {
                 _lookBroadViewModel.personCertAlertMessage = @"暂无";
             }
             cell.detailTextLabel.textColor = [UIColor redColor];
-//            label.lineBreakMode = NSLineBreakByTruncatingTail;
-//            label.numberOfLines = 2;
-            cell.detailTextLabel.numberOfLines = 3;
+            cell.detailTextLabel.numberOfLines = 2;
             cell.detailTextLabel.text = _lookBroadViewModel.personCertAlertMessage;
         }
-        if (row == 5) {
+        if (row == 6) {
             if ( _lookBroadViewModel.companyLicenseDTO == nil) {
                 cell.detailTextLabel.text = @"暂无";;
             }else{
-                cell.detailTextLabel.text = _lookBroadViewModel.companyLicenseDTO[@""];
+                cell.detailTextLabel.textColor = [UIColor redColor];
+                cell.detailTextLabel.numberOfLines = 2;
+                cell.detailTextLabel.text = _lookBroadViewModel.bidEnoughAlertMessage;
             }
         }
         
@@ -220,7 +233,8 @@ UITableViewDataSource
             break;
         case 1:
         {
-            
+            QualificationsViewController *VC = [[QualificationsViewController alloc]init];
+            [self.navigationController pushViewController:VC animated:YES];
         }
             break;
         case 2:{
@@ -231,6 +245,17 @@ UITableViewDataSource
         }
             break;
         case 4:{
+            anquanSCViewController *VC = [[anquanSCViewController alloc]init];
+            [self.navigationController pushViewController:VC animated:YES];
+        }
+            break;
+        case 5:{
+            CertificatemanagementVC *VC = [[CertificatemanagementVC alloc]init];
+            [self.navigationController pushViewController:VC animated:YES];                  }
+            break;
+        case 6:{
+            TLTabBarController *tb = [[TLTabBarController alloc] init];
+            [self.navigationController pushViewController:tb animated:YES];
         }
             break;
         default:
@@ -240,5 +265,14 @@ UITableViewDataSource
     
 }
 
+#pragma mark - 底部
+-(void)didClickchuliBtn:(UIButton *)button{
+    YujinxiangqingViewController *VC = [[YujinxiangqingViewController alloc]init];
+    [self.navigationController pushViewController:VC animated:YES];
 
+}
+-(void)didClickxiaoxiBtn:(UIButton *)button{
+    MessageMainViewController *VC = [[MessageMainViewController alloc]init];
+    [self.navigationController pushViewController:VC animated:YES];
+}
 @end

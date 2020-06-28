@@ -21,7 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
             cont2:(NSString *)cont2
             cont3:(NSString *)cont3
             cont4:(NSString *)cont4
-            cont5:(NSString *)cont5;
+            cont5:(NSString *)cont5
+            cont6:(NSString *)cont6;
 @end
 
 NS_ASSUME_NONNULL_END

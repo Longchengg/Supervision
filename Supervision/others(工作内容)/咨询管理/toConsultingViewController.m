@@ -116,7 +116,7 @@ UITableViewDataSource
     int row     = (int)indexPath.row;
     
     toConsultingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"toConsultingTableViewCell"];
-    cell.selectionStyle        = UITableViewCellSelectionStyleGray;
+    cell.selectionStyle        = UITableViewCellSelectionStyleNone;
     _consultingModel = [ConsultingModel mj_objectWithKeyValues:_dataSourceArr[row]];
        WEAK_SELF;
        [HttpRequestTool person_appearance_query:_consultingModel.personId page:@"1" size:@"50" SuccessBlock:^(id responObject) {

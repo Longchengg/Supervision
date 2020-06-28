@@ -12,6 +12,8 @@ target 'Supervision' do
     pod 'MLLabel'
     pod 'SGQRCode'
     pod 'PPBadgeView'
-    use_frameworks!
+    pod 'TLAnimationTabBar', '~> 1.0.3'
+    pod 'JPush'   
+ use_frameworks!	
 end
 

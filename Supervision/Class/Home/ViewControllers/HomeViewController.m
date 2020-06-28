@@ -13,25 +13,38 @@
 #import "HomeFindToolCell.h"
 #import "HomeManagerCell.h"
 #import "HomeInformationSelectionCell.h"
+#import "HomeZxTableViewCell.h"
+#import "HomeZbTableViewCell.h"
+#import "HomeDownTableViewCell.h"
 
 #import "HomeRedPointModel.h"
 #import "NoticeViewController.h"
 #import "BlackListViewController.h"
 #import "ConsultingViewController.h"
-#import "TCLightListViewController.h"
+#import "CityViewController.h"
 #import "CertificateViewController.h"
-#import "MessageViewController.h"
+#import "MessageMainViewController.h"
 #import "QualificationsViewController.h"
 #import "anquanSCViewController.h"
 #import "shuzizhengshuViewController.h"
 #import "CertificatemanagementVC.h"
+#import "yejiguanliViewController.h"
+#import "ZhaotoubiaoViewController.h"
+#import "TLTabBarController.h"
+#import "JianNiuzixunViewController.h"
+#import "ZhaobiaogonggaoViewController.h"
+#import "YijianfankuiViewController.h"
+
+#import "JPUSHService.h"
+
 @interface HomeViewController ()
 <UITableViewDelegate,
 UITableViewDataSource,
 HomeTopTableViewCellDelegate,
 HomeQuickTableViewCellDelegate,
 HomeFindToolCellDelegate,
-HomeManagerCellDelegate
+HomeManagerCellDelegate,
+HomeDownTableCellDelegate
 >{
     
 }
@@ -55,7 +68,6 @@ HomeManagerCellDelegate
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
     [self initData];
 }
 
@@ -73,6 +85,12 @@ HomeManagerCellDelegate
     [_tableView registerNib:[UINib nibWithNibName:@"HomeFindToolCell" bundle:nil] forCellReuseIdentifier:@"HomeFindToolCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"HomeManagerCell" bundle:nil] forCellReuseIdentifier:@"HomeManagerCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"HomeInformationSelectionCell" bundle:nil] forCellReuseIdentifier:@"HomeInformationSelectionCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"HomeZxTableViewCell" bundle:nil] forCellReuseIdentifier:@"HomeZxTableViewCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"HomeZxTableViewCell" bundle:nil] forCellReuseIdentifier:@"HomeZxTableViewCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"HomeZbTableViewCell" bundle:nil] forCellReuseIdentifier:@"HomeZbTableViewCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"HomeDownTableViewCell" bundle:nil] forCellReuseIdentifier:@"HomeDownTableViewCell"];
+    
+    
     
     
     
@@ -82,7 +100,7 @@ HomeManagerCellDelegate
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     [self loadMore];
-
+    
     
 }
 - (void)loadMore{
@@ -131,17 +149,39 @@ HomeManagerCellDelegate
             
         }];
     });
+    dispatch_async(dispatch_get_main_queue(), ^{
+           
+           [HttpRequestTool uers_refreshTokensuccessBlock:^(id responObject) {
+               
+//               __weakSelf.redPointModel = [HomeRedPointModel mj_objectWithKeyValues:responObject];
+               
+           } failureBlock:^(id err) {
+               
+           }];
+       });
     
+    //极光
+    [JPUSHService registrationIDCompletionHandler:^(int resCode, NSString *registrationID) {
+        NSLog(@"resCode : %d,registrationID: %@",resCode,registrationID);
+             
+             [HttpRequestTool client_push_bind:registrationID successBlock:^(id responObject) {
+                 
+             } failureBlock:^(id err) {
+                 
+             }];
+    }];
     
     
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 5;
+    return 7;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
+    if (section == 5) {
+        return 4;
+    }
     return 1;
     
 }
@@ -163,9 +203,14 @@ HomeManagerCellDelegate
     }else if(3 == section){
         return 350.0f;
         
-    }else{
+    }else if(4 == section){
+        return 180.0f;
         
-        return 140.0f;
+    }else if(5 == section){
+        return 80.0f;
+        
+    }else{
+        return 120.0f;
     }
     
 }
@@ -225,9 +270,23 @@ HomeManagerCellDelegate
         cell.delegate         = self;
         return cell;
         
-    }else{
-        HomeInformationSelectionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeInformationSelectionCell"];
+    }else if (4 == section){
+        HomeZxTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeZxTableViewCell"];
         cell.selectionStyle   = UITableViewCellSelectionStyleNone;
+        //        cell.delegate         = self;
+        return cell;
+        
+    }else if (5 == section){
+        HomeZbTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeZbTableViewCell"];
+        cell.selectionStyle   = UITableViewCellSelectionStyleNone;
+        //        cell.delegate         = self;
+        cell.index = row;
+        return cell;
+        
+    }else{
+        HomeDownTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeDownTableViewCell"];
+        cell.selectionStyle   = UITableViewCellSelectionStyleNone;
+        cell.delegate         = self;
         
         return cell;
         
@@ -263,6 +322,21 @@ HomeManagerCellDelegate
         }
             break;
         case 4:{
+            JianNiuzixunViewController *VC = [[JianNiuzixunViewController alloc]init];
+            //      VC.dataSource = _alertList;
+            [self.navigationController pushViewController:VC animated:NO];
+            
+        }
+            break;
+        case 5:{
+            ZhaobiaogonggaoViewController *VC = [[ZhaobiaogonggaoViewController alloc]init];
+            VC.webId = row;
+            VC.titelStr = @"加载中...";
+            [self.navigationController pushViewController:VC animated:NO];
+        }
+            break;
+        case 6:{
+            
         }
             break;
         default:
@@ -280,9 +354,7 @@ HomeManagerCellDelegate
     [self.navigationController pushViewController:VC animated:YES];
 }
 -(void)didClickWorkSpaceBtn:(UIButton *)button{
-    NSLog(@"通知");
-    MessageViewController *VC = [[MessageViewController alloc]init];
-//      VC.dataSource = _alertList;
+    MessageMainViewController *VC = [[MessageMainViewController alloc]init];
     [self.navigationController pushViewController:VC animated:YES];
     
 }
@@ -291,7 +363,7 @@ HomeManagerCellDelegate
 - (void)didClickQuickBtn:(NSInteger)index{
     
     NSLog(@"资质证书 -- %ld",index);
-   
+    
 }
 #pragma mark - HomeTopTableViewCellDelegate
 #pragma mark - 信息助手
@@ -300,23 +372,23 @@ HomeManagerCellDelegate
     NSLog(@"分类查询 -- %ld",(long)index);
     if (index == 0) {
         NSLog(@"问题进度");
-           BlackListViewController *VC = [[BlackListViewController alloc]init];
-           [self.navigationController pushViewController:VC animated:YES];
+        BlackListViewController *VC = [[BlackListViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
     }
     if (index == 1) {
         NSLog(@"咨询管理");
-           ConsultingViewController *VC = [[ConsultingViewController alloc]init];
-           [self.navigationController pushViewController:VC animated:YES];
+        ConsultingViewController *VC = [[ConsultingViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
     }
     if (index == 2) {
         NSLog(@"人员培训");
-           TCLightListViewController *VC = [[TCLightListViewController alloc]init];
-           [self.navigationController pushViewController:VC animated:YES];
+        CityViewController *VC = [[CityViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
     }
     if (index == 3) {
         NSLog(@"证书动态");
-           CertificateViewController *VC = [[CertificateViewController alloc]init];
-           [self.navigationController pushViewController:VC animated:YES];
+        CertificateViewController *VC = [[CertificateViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
     }
 }
 #pragma mark - 建牛独家
@@ -326,12 +398,14 @@ HomeManagerCellDelegate
         QualificationsViewController *VC = [[QualificationsViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
     }else if(index == 1){
-        
+        TLTabBarController *tb = [[TLTabBarController alloc] init];
+        [self.navigationController pushViewController:tb animated:YES];
     }else if(index == 2){
         CertificatemanagementVC *VC = [[CertificatemanagementVC alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
     }else if(index == 3){
-        
+        yejiguanliViewController *VC = [[yejiguanliViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
     }else if(index == 4){
         anquanSCViewController *VC = [[anquanSCViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
@@ -339,7 +413,7 @@ HomeManagerCellDelegate
         shuzizhengshuViewController *VC = [[shuzizhengshuViewController alloc]init];
         [self.navigationController pushViewController:VC animated:YES];
     }
-  
+    
 }
 #pragma mark - 更多
 - (void)moreBtn:(UIButton *)sender{
@@ -358,6 +432,19 @@ HomeManagerCellDelegate
     NSLog(@"%ld--%ld",(long)section,(long)row);
     
 }
+#pragma mark - 底部
+-(void)didClickDownBtn:(NSInteger)index{
+    if (index == 1) {
+        ZhaobiaogonggaoViewController *nextVC = [[ZhaobiaogonggaoViewController alloc] init];
+        nextVC.webId = 4;
+        nextVC.titelStr = @"用户隐私协议";
+        [self.navigationController pushViewController:nextVC animated:NO];
+    }else{
+        YijianfankuiViewController *nextVC = [[YijianfankuiViewController alloc] init];
+        [self.navigationController pushViewController:nextVC animated:NO];
+    }
+}
+
 #pragma mark - 懒加载
 - (NSMutableArray *)alertList{
     

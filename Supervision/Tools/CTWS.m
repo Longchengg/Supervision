@@ -142,42 +142,99 @@ static CTWS *instance;
                parameters:(NSMutableDictionary *)parameters
                   success:(void (^)(id responseObject))success
                   failure:(void (^)(NSError *error))failure{
-    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
-
-    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/plain", nil];
-
-    //post 发送json格式数据的时候加上这两句
-    // >>>>>>>>
-    session.requestSerializer = [AFJSONRequestSerializer serializer];
-    session.responseSerializer = [AFJSONResponseSerializer serializer];
-    // <<<<<<<<
     
-    NSString *token = [CTUserDefaults token];
-    if (token.length > 0) {
-        [session.requestSerializer setValue:token forHTTPHeaderField:@"Account-Token"];
+    
+    UIViewController *VC  = [self currentViewController];
+
+    if (!self.isOnline) {
+        //  最好抽成一个分类
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提示" message:@"暂未开启网络权限，请打开APP网络权限" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            BackModel *model = [[BackModel alloc]init];
+            model.status = @"2";
+            model.errorMsg = @"网络错误";
+            success(model);
+        }];
+        
+        [alertVC addAction:cancelAction];
+        
+        [VC presentViewController:alertVC animated:NO completion:nil];
+        
+        
+        return;
     }
     
-    session.requestSerializer.timeoutInterval = 15;
     
-    
-    [session POST:urlString parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+    dispatch_async(dispatch_get_main_queue(), ^{
+       
+        MBProgressHUD *hud;
+        if (!self.isHiddenHUDView) {
+            
+            hud = [MBProgressHUD showHUDAddedTo:VC.view animated:YES];
+            
+            [hud showAnimated:YES];
+        }
         
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (success) {
-            // 接口log
-            NSLog(@"%@ 返回参数： --- %@",urlString, responseObject);
-            BackModel *model = [BackModel mj_objectWithKeyValues:responseObject];
-            NSLog(@"errorMsg********%@",model.errorMsg);
-            success(responseObject);
+        AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+        
+        session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/plain", nil];
+        
+        //post 发送json格式数据的时候加上这两句
+        // >>>>>>>>
+        session.requestSerializer = [AFJSONRequestSerializer serializer];
+        session.responseSerializer = [AFJSONResponseSerializer serializer];
+        // <<<<<<<<
+        
+        NSString *token = [CTUserDefaults token];
+        if (token.length > 0) {
+            [session.requestSerializer setValue:token forHTTPHeaderField:@"Account-Token"];
         }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (failure) {
-            // 失败后的处理
-            NSLog(@"%@", error);
+        
+        session.requestSerializer.timeoutInterval = 15;
+        
+        
+        [session POST:urlString parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            if (self.isHiddenHUDView) {
+                self.isHiddenHUDView = NO;
+            }
+            [hud hideAnimated:YES];
+            
+            if (success) {
+                // 接口log
+                NSLog(@"%@ 返回参数： --- %@",urlString, responseObject);
+                BackModel *model = [BackModel mj_objectWithKeyValues:responseObject];
+                NSLog(@"errorMsg********%@",model.errorMsg);
+                if ([model.errorCode isEqualToString:@"401"]) {
+                    [ShareApp loginOut];
 
-            failure(error);
-        }
-    }];
+//                    [self reLoadRequest:urlString type:@"POST" andParams:parameters success:success failure:failure];
+
+                }else{
+                    success(responseObject);
+
+                }
+//                success(responseObject);
+            }
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            if (self.isHiddenHUDView) {
+                self.isHiddenHUDView = NO;
+            }
+            [hud hideAnimated:YES];
+            
+            if (failure) {
+                // 失败后的处理
+                NSLog(@"%@", error);
+                
+                failure(error);
+            }
+        }];
+        
+    });
 }
 
 - (void)getWithURLString:(NSString *)urlString
@@ -185,53 +242,137 @@ static CTWS *instance;
                  success:(void (^)(id responseObject))success
                  failure:(void (^)(NSError *error))failure{
     
-    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    UIViewController *VC  = [self currentViewController];
     
-    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/plain", nil];
-    
-    //post 发送json格式数据的时候加上这两句
-    // >>>>>>>>
-    session.requestSerializer = [AFJSONRequestSerializer serializer];
-    session.responseSerializer = [AFJSONResponseSerializer serializer];
-    // <<<<<<<<
-    
-    NSString *token = [CTUserDefaults token];
-    if (token.length > 0) {
-        [session.requestSerializer setValue:token forHTTPHeaderField:@"Account-Token"];
+    if (!self.isOnline) {
+        //  最好抽成一个分类
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提示" message:@"暂未开启网络权限，请打开APP网络权限" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            BackModel *model = [[BackModel alloc]init];
+            model.status = @"2";
+            model.errorMsg = @"网络错误";
+            success(model);
+        }];
+        
+        [alertVC addAction:cancelAction];
+        
+        [VC presentViewController:alertVC animated:NO completion:nil];
+        
+        
+        return;
     }
     
-    session.requestSerializer.timeoutInterval = 15;
     
-    
-    [session GET:urlString parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+    dispatch_async(dispatch_get_main_queue(), ^{
         
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (success) {
-            // 接口log
-            NSLog(@"%@ 返回参数： --- %@",urlString, responseObject);
-            BackModel *model = [BackModel mj_objectWithKeyValues:responseObject];
-            NSLog(@"errorMsg********%@",model.errorMsg);
-            success(responseObject);
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (failure) {
-            // 失败后的处理
-            NSLog(@"%@", error);
+        MBProgressHUD *hud;
+        if (!self.isHiddenHUDView) {
             
-            failure(error);
+            hud = [MBProgressHUD showHUDAddedTo:VC.view animated:YES];
+            
+            [hud showAnimated:YES];
         }
-    }];
+        
+        AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+        
+        session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/plain", nil];
+        
+        //post 发送json格式数据的时候加上这两句
+        // >>>>>>>>
+        session.requestSerializer = [AFJSONRequestSerializer serializer];
+        session.responseSerializer = [AFJSONResponseSerializer serializer];
+        // <<<<<<<<
+        
+        NSString *token = [CTUserDefaults token];
+        if (token.length > 0) {
+            [session.requestSerializer setValue:token forHTTPHeaderField:@"Account-Token"];
+        }
+        
+        session.requestSerializer.timeoutInterval = 15;
+        
+        
+        [session GET:urlString parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            if (self.isHiddenHUDView) {
+                self.isHiddenHUDView = NO;
+            }
+            [hud hideAnimated:YES];
+            if (success) {
+                // 接口log
+                NSLog(@"%@ 返回参数： --- %@",urlString, responseObject);
+                BackModel *model = [BackModel mj_objectWithKeyValues:responseObject];
+                NSLog(@"errorMsg********%@",model.errorMsg);
+                //这个地方 判断一下 刷新token 的 code
+               
+                if ([model.errorCode isEqualToString:@"401"]) {
+                    [ShareApp loginOut];
+//                    [self reLoadRequest:urlString type:@"GET" andParams:parameters success:success failure:failure];
+
+                }else{
+                    success(responseObject);
+
+                }
+            }
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            if (self.isHiddenHUDView) {
+                self.isHiddenHUDView = NO;
+            }
+            [hud hideAnimated:YES];
+            if (failure) {
+                // 失败后的处理
+                NSLog(@"%@", error);
+                
+                failure(error);
+            }
+        }];
+        
+    });
 }
 - (void)reLoadRequest:(NSString *)url
-            andParams:(NSDictionary *)Dict
+                 type:(NSString *)type
+            andParams:(NSMutableDictionary *)Dict
               success:(void (^)(id responseObject))success
               failure:(void (^)(NSError *error))failure{
  
-    [self doPostWithUrl:url params:Dict success:^(id responseObject) {
-        success(responseObject);
-    } failure:^(NSError *error) {
-        failure(error);
+    
+    
+    [[CTWS getDefault] postWithURLString:[NSString stringWithFormat:@"%@/client/user/refreshToken", HttpRequestURL] parameters:@{} success:^(id responseObject) {
+        
+        if (responseObject) {
+            BackModel *model = [BackModel mj_objectWithKeyValues:responseObject];
+            
+            if ([model.status isEqualToString:@"1"]) {
+                
+                [CTUserDefaults setToken:model.wrapper];
+                
+                if ([type isEqualToString:@"GET"]) {
+                    [self getWithURLString:url parameters:Dict success:^(id responseObject) {
+                        success(responseObject);
+                    } failure:^(NSError *error) {
+                        failure(error);
+                    }];
+                }else{
+                    [self doPostWithUrl:url params:Dict success:^(id responseObject) {
+                        success(responseObject);
+                    } failure:^(NSError *error) {
+                        failure(error);
+                    }];
+                }
+            }else{
+                [ShareApp loginOut];
+            }
+        }else{
+            [ShareApp loginOut];
+        }
+    } failure:^(id error) {
+        [ShareApp loginOut];
     }];
+    
+    
 }
 
 - (void)upLoadImage:(NSString *)url
@@ -368,5 +509,15 @@ static CTWS *instance;
     
     return VC;
 }
-
+- (void)reLoadRequest:(NSString *)url
+            andParams:(NSDictionary *)Dict
+              success:(void (^)(id responseObject))success
+              failure:(void (^)(NSError *error))failure{
+ 
+    [self doPostWithUrl:url params:Dict success:^(id responseObject) {
+        success(responseObject);
+    } failure:^(NSError *error) {
+        failure(error);
+    }];
+}
 @end

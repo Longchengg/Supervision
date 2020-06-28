@@ -147,7 +147,7 @@ UITableViewDataSource
     }else{
         ConsultingDownTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ConsultingDownTableViewCell"];
         cell.selectionStyle   = UITableViewCellSelectionStyleNone;
-        [cell setContent:_personArr[0][@"feeTotal"] ContextL:_personArr[0][@"appearanceFee"] timeTextL:_personArr[0][@"trafficFee"] stausTextL:_personArr[0][@"otherFee"] downTextL:_personArr[0][@"otherFee"] cont1:_personArr[0][@"projectName"] cont2:_personArr[0][@"lockStatus"] cont3:_personArr[0][@"unlockTime"] cont4:_personArr[0][@"appearanceStatusDesc"] cont5:_personArr[0][@"appearanceTime"]];
+        [cell setContent:_personArr[0][@"feeTotal"] ContextL:_personArr[0][@"appearanceFee"] timeTextL:_personArr[0][@"trafficFee"] stausTextL:_personArr[0][@"otherFee"] downTextL:_personArr[0][@"otherFee"] cont1:_personArr[0][@"projectName"] cont2:_personArr[0][@"lockStatus"] cont3:_personArr[0][@"unlockTime"] cont4:_personArr[0][@"appearanceStatusDesc"] cont5:_personArr[0][@"appearanceTime"] cont6:_personArr[0][@"remark"] ];
         return cell;
         
     }

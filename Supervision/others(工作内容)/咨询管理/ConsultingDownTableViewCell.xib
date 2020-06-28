@@ -358,6 +358,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="beizhu" destination="hU5-8y-gSg" id="azF-nq-01d"/>
                 <outlet property="con1" destination="Ag0-3z-PBj" id="Dnu-dL-Ha9"/>
                 <outlet property="con2" destination="LUD-Gf-Ysp" id="yq3-8Q-wdK"/>
                 <outlet property="con3" destination="njt-qe-4Fm" id="v3h-py-bm9"/>

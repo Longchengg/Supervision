@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "bg_company_card.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "bg_company_card.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

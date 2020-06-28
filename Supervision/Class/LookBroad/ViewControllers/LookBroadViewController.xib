@@ -20,13 +20,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="vmf-M5-QXZ">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="vmf-M5-QXZ" secondAttribute="bottom" id="Xxr-Q4-nUm"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="vmf-M5-QXZ" secondAttribute="bottom" constant="20" id="Xxr-Q4-nUm"/>
                 <constraint firstItem="vmf-M5-QXZ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="azk-wp-W5p"/>
                 <constraint firstItem="vmf-M5-QXZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="g1r-QW-Jbu"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="vmf-M5-QXZ" secondAttribute="trailing" id="zaM-9X-NFo"/>

@@ -49,8 +49,6 @@
 		4160FADC248CEFEB003DD217 /* InformationSelectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4160FADA248CEFEB003DD217 /* InformationSelectionItem.xib */; };
 		418687AA2477B2E900B910D6 /* BMChineseSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 418687A82477B2E800B910D6 /* BMChineseSort.m */; };
 		418687EB2477E33300B910D6 /* ShowImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 418687EA2477E33300B910D6 /* ShowImageTool.m */; };
-		4197CA47247CACD5000EF4E1 /* BaiduTraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4197CA46247CACD5000EF4E1 /* BaiduTraceSDK.framework */; };
-		4197CA48247CACD5000EF4E1 /* BaiduTraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4197CA46247CACD5000EF4E1 /* BaiduTraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		419A5B40247FD1BC00839B2B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 419A5B3B247FD1BC00839B2B /* index.html */; };
 		419A5B41247FD1BC00839B2B /* bmap.js in Resources */ = {isa = PBXBuildFile; fileRef = 419A5B3C247FD1BC00839B2B /* bmap.js */; };
 		419A5B42247FD1BC00839B2B /* jquery-1.11.3.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 419A5B3D247FD1BC00839B2B /* jquery-1.11.3.min.js */; };
@@ -59,6 +57,13 @@
 		4B04FB8B2488FF880077C195 /* UserDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B04FB882488FF870077C195 /* UserDelegateViewController.xib */; };
 		4B04FB8C2488FF880077C195 /* UserDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B04FB8A2488FF880077C195 /* UserDelegateViewController.m */; };
 		4B04FB8E2488FF960077C195 /* 协议.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4B04FB8D2488FF960077C195 /* 协议.docx */; };
+		4B29D60124A1D8F900471615 /* MessageMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B29D5FF24A1D8F900471615 /* MessageMainViewController.m */; };
+		4B29D60224A1D8F900471615 /* MessageMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B29D60024A1D8F900471615 /* MessageMainViewController.xib */; };
+		4B29D60524A1DC9B00471615 /* MessageMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B29D60424A1DC9B00471615 /* MessageMainModel.m */; };
+		4B29D60924A1DED500471615 /* MessageMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B29D60724A1DED500471615 /* MessageMainTableViewCell.m */; };
+		4B29D60A24A1DED500471615 /* MessageMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B29D60824A1DED500471615 /* MessageMainTableViewCell.xib */; };
+		4B29D60E24A1FF2B00471615 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B29D60D24A1FF2A00471615 /* Info.plist */; };
+		4B29D61024A1FF3F00471615 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B29D60F24A1FF3F00471615 /* Info.plist */; };
 		4B327B6C2491C012009827EB /* ConsultingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B327B6A2491C012009827EB /* ConsultingViewController.m */; };
 		4B327B6D2491C012009827EB /* ConsultingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B327B6B2491C012009827EB /* ConsultingViewController.xib */; };
 		4B327B712491C066009827EB /* ConsultingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B327B6F2491C066009827EB /* ConsultingTableViewCell.m */; };
@@ -75,8 +80,6 @@
 		4B36FCBB249722AE009A4A68 /* to2QualificationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B36FCB9249722AE009A4A68 /* to2QualificationsTableViewCell.xib */; };
 		4B36FCBF2497258E009A4A68 /* to3QualificationsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B36FCBD2497258E009A4A68 /* to3QualificationsTableViewCell.m */; };
 		4B36FCC02497258E009A4A68 /* to3QualificationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B36FCBE2497258E009A4A68 /* to3QualificationsTableViewCell.xib */; };
-		4B43829D24932E8500303F58 /* TCLightListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B43829B24932E8500303F58 /* TCLightListViewController.xib */; };
-		4B43829E24932E8500303F58 /* TCLightListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B43829C24932E8500303F58 /* TCLightListViewController.m */; };
 		4B4F30A7249249E70028AD97 /* ConsultingDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F30A5249249E70028AD97 /* ConsultingDetailTableViewCell.m */; };
 		4B4F30A8249249E70028AD97 /* ConsultingDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B4F30A6249249E70028AD97 /* ConsultingDetailTableViewCell.xib */; };
 		4B4F30AD249265C40028AD97 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F30AC249265C40028AD97 /* NullSafe.m */; };
@@ -90,8 +93,6 @@
 		4B4F30C12492A2FB0028AD97 /* to2ConsultingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B4F30BF2492A2FB0028AD97 /* to2ConsultingViewController.xib */; };
 		4B50384724934F3400B61432 /* CertificateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B50384524934F3400B61432 /* CertificateViewController.m */; };
 		4B50384824934F3400B61432 /* CertificateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B50384624934F3400B61432 /* CertificateViewController.xib */; };
-		4B50384E249351E200B61432 /* SelectedDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B50384C249351E100B61432 /* SelectedDateView.xib */; };
-		4B50384F249351E200B61432 /* SelectedDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B50384D249351E100B61432 /* SelectedDateView.m */; };
 		4B50385524937FE200B61432 /* YearMonthPikerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B50385224937FE100B61432 /* YearMonthPikerView.m */; };
 		4B50385624937FE200B61432 /* YearMonthPikerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B50385324937FE100B61432 /* YearMonthPikerView.xib */; };
 		4B503859249390EB00B61432 /* CertificateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B503858249390EB00B61432 /* CertificateModel.m */; };
@@ -110,6 +111,20 @@
 		4B6B03B124989150007B6E64 /* tocertificatemanagementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B03B024989150007B6E64 /* tocertificatemanagementModel.m */; };
 		4B6B03B52498CB7E007B6E64 /* yejiguanliViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B03B32498CB7E007B6E64 /* yejiguanliViewController.m */; };
 		4B6B03B62498CB7E007B6E64 /* yejiguanliViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6B03B42498CB7E007B6E64 /* yejiguanliViewController.xib */; };
+		4B6B03CA2498FFEF007B6E64 /* CGXAddressCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B6B03B92498FFEF007B6E64 /* CGXAddressCity.plist */; };
+		4B6B03CB2498FFEF007B6E64 /* CGXPickerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B03BB2498FFEF007B6E64 /* CGXPickerViewManager.m */; };
+		4B6B03CC2498FFEF007B6E64 /* NSDate+CGXPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B03C02498FFEF007B6E64 /* NSDate+CGXPicker.m */; };
+		4B6B03CD2498FFEF007B6E64 /* CGXAddressPcikerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B03C12498FFEF007B6E64 /* CGXAddressPcikerView.m */; };
+		4B6B03CE2498FFEF007B6E64 /* CGXDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B03C32498FFEF007B6E64 /* CGXDatePickerView.m */; };
+		4B6B03CF2498FFEF007B6E64 /* CGXPickerUIBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B03C42498FFEF007B6E64 /* CGXPickerUIBaseView.m */; };
+		4B6B03D02498FFEF007B6E64 /* CGXAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B03C52498FFEF007B6E64 /* CGXAddressModel.m */; };
+		4B6B03D12498FFEF007B6E64 /* CGXBasicInfoPicker.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B6B03C62498FFEF007B6E64 /* CGXBasicInfoPicker.plist */; };
+		4B6B03D22498FFEF007B6E64 /* CGXStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B03C82498FFEF007B6E64 /* CGXStringPickerView.m */; };
+		4B6B03D32498FFEF007B6E64 /* CGXPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B03C92498FFEF007B6E64 /* CGXPickerView.m */; };
+		4B6B03D724990F38007B6E64 /* yejiguanliTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6B03D524990F38007B6E64 /* yejiguanliTableViewCell.m */; };
+		4B6B03D824990F38007B6E64 /* yejiguanliTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6B03D624990F38007B6E64 /* yejiguanliTableViewCell.xib */; };
+		4B7F0446249CC1AA002BD414 /* JXCircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F0442249CC1A9002BD414 /* JXCircleModel.m */; };
+		4B7F0447249CC1AA002BD414 /* JXCircleRatioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F0444249CC1AA002BD414 /* JXCircleRatioView.m */; };
 		4B84B8B4248F8624007A22CE /* UIView+BWExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B84B8B0248F8624007A22CE /* UIView+BWExtention.m */; };
 		4B84B8B5248F8624007A22CE /* BWTopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B84B8B3248F8624007A22CE /* BWTopMenuView.m */; };
 		4B84B8B9248F8A4E007A22CE /* to2BlackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B84B8B7248F8A4E007A22CE /* to2BlackListViewController.m */; };
@@ -125,6 +140,22 @@
 		4B84B8E224910A4C007A22CE /* to3BlackListSrcollModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B84B8E124910A4C007A22CE /* to3BlackListSrcollModel.m */; };
 		4B84B8E624911F37007A22CE /* to4BlackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B84B8E424911F37007A22CE /* to4BlackListViewController.m */; };
 		4B84B8E724911F37007A22CE /* to4BlackListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B84B8E524911F37007A22CE /* to4BlackListViewController.xib */; };
+		4B9404B5249B5391006264DA /* twoZhaotoubiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9404B3249B5391006264DA /* twoZhaotoubiaoViewController.m */; };
+		4B9404B6249B5391006264DA /* twoZhaotoubiaoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9404B4249B5391006264DA /* twoZhaotoubiaoViewController.xib */; };
+		4B9404BC249B6090006264DA /* TLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9404BA249B6090006264DA /* TLTabBarController.m */; };
+		4B9404C8249B77EC006264DA /* ZhaotoubiaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9404C6249B77EC006264DA /* ZhaotoubiaoTableViewCell.m */; };
+		4B9404C9249B77EC006264DA /* ZhaotoubiaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9404C7249B77EC006264DA /* ZhaotoubiaoTableViewCell.xib */; };
+		4B9404CC249B91E8006264DA /* ZhaotoubiaoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9404CB249B91E8006264DA /* ZhaotoubiaoModel.m */; };
+		4B9404D2249C5009006264DA /* ZhaotoubiaoDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9404D1249C5009006264DA /* ZhaotoubiaoDownView.m */; };
+		4B9404D4249C502E006264DA /* ZhaotoubiaoDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9404D3249C502E006264DA /* ZhaotoubiaoDownView.xib */; };
+		4B9404D8249C5940006264DA /* ZhaotoubiaoDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9404D6249C5940006264DA /* ZhaotoubiaoDownCell.m */; };
+		4B9404D9249C5940006264DA /* ZhaotoubiaoDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9404D7249C5940006264DA /* ZhaotoubiaoDownCell.xib */; };
+		4B9404FF249C91EB006264DA /* FtoubiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9404FD249C91EB006264DA /* FtoubiaoViewController.m */; };
+		4B940500249C91EB006264DA /* FtoubiaoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9404FE249C91EB006264DA /* FtoubiaoViewController.xib */; };
+		4B940504249C91FE006264DA /* StoubiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B940502249C91FE006264DA /* StoubiaoViewController.m */; };
+		4B940505249C91FE006264DA /* StoubiaoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B940503249C91FE006264DA /* StoubiaoViewController.xib */; };
+		4B940509249C9210006264DA /* TtoubiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B940507249C9210006264DA /* TtoubiaoViewController.m */; };
+		4B94050A249C9210006264DA /* TtoubiaoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B940508249C9210006264DA /* TtoubiaoViewController.xib */; };
 		4B9EDBBE249762900033FED2 /* ChuZhiCheckFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9EDBB62497628C0033FED2 /* ChuZhiCheckFirstCell.m */; };
 		4B9EDBBF249762900033FED2 /* ChuZhiCheckFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9EDBB72497628D0033FED2 /* ChuZhiCheckFirstCell.xib */; };
 		4B9EDBC0249762900033FED2 /* ChuZhiCheckLastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9EDBB82497628D0033FED2 /* ChuZhiCheckLastCell.xib */; };
@@ -135,6 +166,38 @@
 		4B9EDBCD249764360033FED2 /* WhereGOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9EDBCB249764360033FED2 /* WhereGOViewController.xib */; };
 		4B9EDBD124976B8F0033FED2 /* ChuzhiCheckTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9EDBCF24976B8F0033FED2 /* ChuzhiCheckTopTableViewCell.m */; };
 		4B9EDBD224976B900033FED2 /* ChuzhiCheckTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9EDBD024976B8F0033FED2 /* ChuzhiCheckTopTableViewCell.xib */; };
+		4BA30DA5249EFB9B00DB5E84 /* TtoubiaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DA3249EFB9B00DB5E84 /* TtoubiaoTableViewCell.m */; };
+		4BA30DA6249EFB9B00DB5E84 /* TtoubiaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DA4249EFB9B00DB5E84 /* TtoubiaoTableViewCell.xib */; };
+		4BA30DAA249F052D00DB5E84 /* HomeZxTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DA8249F052D00DB5E84 /* HomeZxTableViewCell.m */; };
+		4BA30DAB249F052D00DB5E84 /* HomeZxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DA9249F052D00DB5E84 /* HomeZxTableViewCell.xib */; };
+		4BA30DAF249F060D00DB5E84 /* HomeZbTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DAD249F060D00DB5E84 /* HomeZbTableViewCell.m */; };
+		4BA30DB0249F060D00DB5E84 /* HomeZbTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DAE249F060D00DB5E84 /* HomeZbTableViewCell.xib */; };
+		4BA30DB4249F063600DB5E84 /* HomeDownTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DB2249F063500DB5E84 /* HomeDownTableViewCell.m */; };
+		4BA30DB5249F063600DB5E84 /* HomeDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DB3249F063500DB5E84 /* HomeDownTableViewCell.xib */; };
+		4BA30DBA249F25D800DB5E84 /* JianNiuzixunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DB8249F25D800DB5E84 /* JianNiuzixunViewController.m */; };
+		4BA30DBB249F25D800DB5E84 /* JianNiuzixunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DB9249F25D800DB5E84 /* JianNiuzixunViewController.xib */; };
+		4BA30DBF249F314500DB5E84 /* JianNiuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DBD249F314500DB5E84 /* JianNiuTableViewCell.m */; };
+		4BA30DC0249F314500DB5E84 /* JianNiuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DBE249F314500DB5E84 /* JianNiuTableViewCell.xib */; };
+		4BA30DC3249F3A9C00DB5E84 /* JianNIUzixunModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DC2249F3A9C00DB5E84 /* JianNIUzixunModel.m */; };
+		4BA30DCC249F3F2000DB5E84 /* toJianNiuzixunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DCA249F3F2000DB5E84 /* toJianNiuzixunViewController.m */; };
+		4BA30DCD249F3F2000DB5E84 /* toJianNiuzixunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DCB249F3F2000DB5E84 /* toJianNiuzixunViewController.xib */; };
+		4BA30DD4249F445A00DB5E84 /* SYProgressWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DD0249F445900DB5E84 /* SYProgressWebView.m */; };
+		4BA30DD8249F4D0E00DB5E84 /* ToJianNiuWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DD6249F4D0E00DB5E84 /* ToJianNiuWebVC.m */; };
+		4BA30DD9249F4D0E00DB5E84 /* ToJianNiuWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DD7249F4D0E00DB5E84 /* ToJianNiuWebVC.xib */; };
+		4BA30DDC249F524F00DB5E84 /* JianNiuWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DDB249F524F00DB5E84 /* JianNiuWebViewController.m */; };
+		4BA30DE1249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DDF249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.m */; };
+		4BA30DE2249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DE0249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.xib */; };
+		4BA30DE6249F95BE00DB5E84 /* YujinxiangqingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DE4249F95BE00DB5E84 /* YujinxiangqingViewController.m */; };
+		4BA30DE7249F95BE00DB5E84 /* YujinxiangqingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DE5249F95BE00DB5E84 /* YujinxiangqingViewController.xib */; };
+		4BA30DEB249F9CF800DB5E84 /* YujinxiangqingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DE9249F9CF800DB5E84 /* YujinxiangqingTableViewCell.m */; };
+		4BA30DEC249F9CF800DB5E84 /* YujinxiangqingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DEA249F9CF800DB5E84 /* YujinxiangqingTableViewCell.xib */; };
+		4BA30DEF249FA15C00DB5E84 /* YujinxiangqingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DEE249FA15C00DB5E84 /* YujinxiangqingModel.m */; };
+		4BA30DF2249FB8AE00DB5E84 /* MineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DF1249FB8AE00DB5E84 /* MineViewModel.m */; };
+		4BA30DF624A0442200DB5E84 /* ShezhiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DF424A0442200DB5E84 /* ShezhiViewController.m */; };
+		4BA30DF724A0442200DB5E84 /* ShezhiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DF524A0442200DB5E84 /* ShezhiViewController.xib */; };
+		4BA30DFB24A0444200DB5E84 /* YijianfankuiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DF924A0444200DB5E84 /* YijianfankuiViewController.m */; };
+		4BA30DFC24A0444200DB5E84 /* YijianfankuiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA30DFA24A0444200DB5E84 /* YijianfankuiViewController.xib */; };
+		4BA30DFF24A092BD00DB5E84 /* PlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA30DFD24A092BD00DB5E84 /* PlaceholderTextView.m */; };
 		4BBFB639248E3F8B00D303B6 /* LookBroadTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1109F248CD27300EC661B /* LookBroadTopTableViewCell.m */; };
 		4BBFB63C248E40F300D303B6 /* LookBroadViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB63B248E40F300D303B6 /* LookBroadViewModel.m */; };
 		4BBFB646248F1DAB00D303B6 /* BlackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB644248F1DAB00D303B6 /* BlackListViewController.m */; };
@@ -142,6 +205,22 @@
 		4BBFB64B248F226000D303B6 /* BlackListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB649248F226000D303B6 /* BlackListTableViewCell.m */; };
 		4BBFB64C248F226000D303B6 /* BlackListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBFB64A248F226000D303B6 /* BlackListTableViewCell.xib */; };
 		4BBFB652248F422B00D303B6 /* BKMenuListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB651248F422B00D303B6 /* BKMenuListView.m */; };
+		4BCA14102499C01A00430A23 /* yejiguanliModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA140F2499C01A00430A23 /* yejiguanliModel.m */; };
+		4BCA14142499F85D00430A23 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA14112499F85C00430A23 /* CityViewController.m */; };
+		4BCA14152499F85D00430A23 /* CityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA14122499F85D00430A23 /* CityViewController.xib */; };
+		4BCA14192499F86900430A23 /* CityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA14162499F86900430A23 /* CityTableViewCell.m */; };
+		4BCA141A2499F86900430A23 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA14172499F86900430A23 /* CityTableViewCell.xib */; };
+		4BCA141D249A1E0E00430A23 /* CityViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA141C249A1E0E00430A23 /* CityViewModel.m */; };
+		4BCA1421249A2B3C00430A23 /* toCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA141F249A2B3C00430A23 /* toCityViewController.m */; };
+		4BCA1422249A2B3C00430A23 /* toCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA1420249A2B3C00430A23 /* toCityViewController.xib */; };
+		4BCA1426249A2CF700430A23 /* toCityViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA1424249A2CF700430A23 /* toCityViewTableViewCell.m */; };
+		4BCA1427249A2CF700430A23 /* toCityViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA1425249A2CF700430A23 /* toCityViewTableViewCell.xib */; };
+		4BCA142B249AFC9100430A23 /* to2CityViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA1429249AFC9100430A23 /* to2CityViewTableViewCell.m */; };
+		4BCA142C249AFC9100430A23 /* to2CityViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA142A249AFC9100430A23 /* to2CityViewTableViewCell.xib */; };
+		4BCA1430249B00A300430A23 /* to2CityViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA142E249B00A300430A23 /* to2CityViewCell.m */; };
+		4BCA1431249B00A300430A23 /* to2CityViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA142F249B00A300430A23 /* to2CityViewCell.xib */; };
+		4BCA1439249B414C00430A23 /* ZhaotoubiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA1437249B414C00430A23 /* ZhaotoubiaoViewController.m */; };
+		4BCA143A249B414C00430A23 /* ZhaotoubiaoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA1438249B414C00430A23 /* ZhaotoubiaoViewController.xib */; };
 		4BDDB02D248CA37800E10B67 /* CSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB02C248CA37700E10B67 /* CSTabBar.m */; };
 		4BDDB032248CC73B00E10B67 /* HttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB02E248CC73A00E10B67 /* HttpRequestTool.m */; };
 		4BDDB033248CC73B00E10B67 /* CTWS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDB031248CC73B00E10B67 /* CTWS.m */; };
@@ -191,20 +270,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		4197CA49247CACD5000EF4E1 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4197CA48247CACD5000EF4E1 /* BaiduTraceSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		16E4DE46248CE823000FAB7A /* MineContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineContentView.h; sourceTree = "<group>"; };
 		16E4DE47248CE823000FAB7A /* MineContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineContentView.m; sourceTree = "<group>"; };
@@ -215,10 +280,8 @@
 		413B015924721E23000301F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413B016224721E24000301F3 /* SupervisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SupervisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		413B016624721E24000301F3 /* SupervisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupervisionTests.m; sourceTree = "<group>"; };
-		413B016824721E24000301F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413B016D24721E24000301F3 /* SupervisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SupervisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		413B017124721E24000301F3 /* SupervisionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupervisionUITests.m; sourceTree = "<group>"; };
-		413B017324721E24000301F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413B0189247227F3000301F3 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		413B018A247227F4000301F3 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		413B018C24722812000301F3 /* NSMutableDictionary+CTSafeDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+CTSafeDict.h"; sourceTree = "<group>"; };
@@ -259,7 +322,6 @@
 		415A446D24769156004F1EE7 /* NSString+BaseNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BaseNSString.m"; sourceTree = "<group>"; };
 		415A446F24769184004F1EE7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		415A447024769184004F1EE7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		415A447124769184004F1EE7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		415A447224769184004F1EE7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		415DC78F2476237D00AB5BB8 /* NSString+BaseNSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+BaseNSString.h"; sourceTree = "<group>"; };
 		4160FAC1248CDA2E003DD217 /* HomeRedPointModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeRedPointModel.h; sourceTree = "<group>"; };
@@ -293,6 +355,17 @@
 		4B04FB892488FF880077C195 /* UserDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDelegateViewController.h; sourceTree = "<group>"; };
 		4B04FB8A2488FF880077C195 /* UserDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegateViewController.m; sourceTree = "<group>"; };
 		4B04FB8D2488FF960077C195 /* 协议.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "协议.docx"; sourceTree = "<group>"; };
+		4B29D5FE24A1D8F900471615 /* MessageMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageMainViewController.h; sourceTree = "<group>"; };
+		4B29D5FF24A1D8F900471615 /* MessageMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageMainViewController.m; sourceTree = "<group>"; };
+		4B29D60024A1D8F900471615 /* MessageMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageMainViewController.xib; sourceTree = "<group>"; };
+		4B29D60324A1DC9B00471615 /* MessageMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageMainModel.h; sourceTree = "<group>"; };
+		4B29D60424A1DC9B00471615 /* MessageMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageMainModel.m; sourceTree = "<group>"; };
+		4B29D60624A1DED500471615 /* MessageMainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageMainTableViewCell.h; sourceTree = "<group>"; };
+		4B29D60724A1DED500471615 /* MessageMainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageMainTableViewCell.m; sourceTree = "<group>"; };
+		4B29D60824A1DED500471615 /* MessageMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageMainTableViewCell.xib; sourceTree = "<group>"; };
+		4B29D60B24A1F7A500471615 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B29D60D24A1FF2A00471615 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B29D60F24A1FF3F00471615 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B327B692491C012009827EB /* ConsultingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsultingViewController.h; sourceTree = "<group>"; };
 		4B327B6A2491C012009827EB /* ConsultingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConsultingViewController.m; sourceTree = "<group>"; };
 		4B327B6B2491C012009827EB /* ConsultingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsultingViewController.xib; sourceTree = "<group>"; };
@@ -318,9 +391,6 @@
 		4B36FCBC2497258E009A4A68 /* to3QualificationsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = to3QualificationsTableViewCell.h; sourceTree = "<group>"; };
 		4B36FCBD2497258E009A4A68 /* to3QualificationsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = to3QualificationsTableViewCell.m; sourceTree = "<group>"; };
 		4B36FCBE2497258E009A4A68 /* to3QualificationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = to3QualificationsTableViewCell.xib; sourceTree = "<group>"; };
-		4B43829A24932E8500303F58 /* TCLightListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLightListViewController.h; sourceTree = "<group>"; };
-		4B43829B24932E8500303F58 /* TCLightListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCLightListViewController.xib; sourceTree = "<group>"; };
-		4B43829C24932E8500303F58 /* TCLightListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLightListViewController.m; sourceTree = "<group>"; };
 		4B4F30A4249249E70028AD97 /* ConsultingDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsultingDetailTableViewCell.h; sourceTree = "<group>"; };
 		4B4F30A5249249E70028AD97 /* ConsultingDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConsultingDetailTableViewCell.m; sourceTree = "<group>"; };
 		4B4F30A6249249E70028AD97 /* ConsultingDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsultingDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -340,9 +410,6 @@
 		4B50384424934F3400B61432 /* CertificateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificateViewController.h; sourceTree = "<group>"; };
 		4B50384524934F3400B61432 /* CertificateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificateViewController.m; sourceTree = "<group>"; };
 		4B50384624934F3400B61432 /* CertificateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CertificateViewController.xib; sourceTree = "<group>"; };
-		4B50384B249351E100B61432 /* SelectedDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedDateView.h; sourceTree = "<group>"; };
-		4B50384C249351E100B61432 /* SelectedDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedDateView.xib; sourceTree = "<group>"; };
-		4B50384D249351E100B61432 /* SelectedDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedDateView.m; sourceTree = "<group>"; };
 		4B50385224937FE100B61432 /* YearMonthPikerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearMonthPikerView.m; sourceTree = "<group>"; };
 		4B50385324937FE100B61432 /* YearMonthPikerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearMonthPikerView.xib; sourceTree = "<group>"; };
 		4B50385424937FE200B61432 /* YearMonthPikerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearMonthPikerView.h; sourceTree = "<group>"; };
@@ -371,6 +438,31 @@
 		4B6B03B22498CB7E007B6E64 /* yejiguanliViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yejiguanliViewController.h; sourceTree = "<group>"; };
 		4B6B03B32498CB7E007B6E64 /* yejiguanliViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yejiguanliViewController.m; sourceTree = "<group>"; };
 		4B6B03B42498CB7E007B6E64 /* yejiguanliViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = yejiguanliViewController.xib; sourceTree = "<group>"; };
+		4B6B03B82498FFEF007B6E64 /* CGXAddressPcikerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXAddressPcikerView.h; sourceTree = "<group>"; };
+		4B6B03B92498FFEF007B6E64 /* CGXAddressCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CGXAddressCity.plist; sourceTree = "<group>"; };
+		4B6B03BA2498FFEF007B6E64 /* CGXDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXDatePickerView.h; sourceTree = "<group>"; };
+		4B6B03BB2498FFEF007B6E64 /* CGXPickerViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXPickerViewManager.m; sourceTree = "<group>"; };
+		4B6B03BC2498FFEF007B6E64 /* CGXAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXAddressModel.h; sourceTree = "<group>"; };
+		4B6B03BD2498FFEF007B6E64 /* CGXPickerUIBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXPickerUIBaseView.h; sourceTree = "<group>"; };
+		4B6B03BE2498FFEF007B6E64 /* CGXPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXPickerView.h; sourceTree = "<group>"; };
+		4B6B03BF2498FFEF007B6E64 /* CGXStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXStringPickerView.h; sourceTree = "<group>"; };
+		4B6B03C02498FFEF007B6E64 /* NSDate+CGXPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CGXPicker.m"; sourceTree = "<group>"; };
+		4B6B03C12498FFEF007B6E64 /* CGXAddressPcikerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXAddressPcikerView.m; sourceTree = "<group>"; };
+		4B6B03C22498FFEF007B6E64 /* CGXPickerViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXPickerViewManager.h; sourceTree = "<group>"; };
+		4B6B03C32498FFEF007B6E64 /* CGXDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXDatePickerView.m; sourceTree = "<group>"; };
+		4B6B03C42498FFEF007B6E64 /* CGXPickerUIBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXPickerUIBaseView.m; sourceTree = "<group>"; };
+		4B6B03C52498FFEF007B6E64 /* CGXAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXAddressModel.m; sourceTree = "<group>"; };
+		4B6B03C62498FFEF007B6E64 /* CGXBasicInfoPicker.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CGXBasicInfoPicker.plist; sourceTree = "<group>"; };
+		4B6B03C72498FFEF007B6E64 /* NSDate+CGXPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CGXPicker.h"; sourceTree = "<group>"; };
+		4B6B03C82498FFEF007B6E64 /* CGXStringPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXStringPickerView.m; sourceTree = "<group>"; };
+		4B6B03C92498FFEF007B6E64 /* CGXPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXPickerView.m; sourceTree = "<group>"; };
+		4B6B03D424990F38007B6E64 /* yejiguanliTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yejiguanliTableViewCell.h; sourceTree = "<group>"; };
+		4B6B03D524990F38007B6E64 /* yejiguanliTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yejiguanliTableViewCell.m; sourceTree = "<group>"; };
+		4B6B03D624990F38007B6E64 /* yejiguanliTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = yejiguanliTableViewCell.xib; sourceTree = "<group>"; };
+		4B7F0442249CC1A9002BD414 /* JXCircleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCircleModel.m; sourceTree = "<group>"; };
+		4B7F0443249CC1A9002BD414 /* JXCircleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCircleModel.h; sourceTree = "<group>"; };
+		4B7F0444249CC1AA002BD414 /* JXCircleRatioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCircleRatioView.m; sourceTree = "<group>"; };
+		4B7F0445249CC1AA002BD414 /* JXCircleRatioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCircleRatioView.h; sourceTree = "<group>"; };
 		4B84B8B0248F8624007A22CE /* UIView+BWExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BWExtention.m"; sourceTree = "<group>"; };
 		4B84B8B1248F8624007A22CE /* BWTopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTopMenuView.h; sourceTree = "<group>"; };
 		4B84B8B2248F8624007A22CE /* UIView+BWExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BWExtention.h"; sourceTree = "<group>"; };
@@ -396,6 +488,31 @@
 		4B84B8E324911F37007A22CE /* to4BlackListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = to4BlackListViewController.h; sourceTree = "<group>"; };
 		4B84B8E424911F37007A22CE /* to4BlackListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = to4BlackListViewController.m; sourceTree = "<group>"; };
 		4B84B8E524911F37007A22CE /* to4BlackListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = to4BlackListViewController.xib; sourceTree = "<group>"; };
+		4B9404B2249B5391006264DA /* twoZhaotoubiaoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twoZhaotoubiaoViewController.h; sourceTree = "<group>"; };
+		4B9404B3249B5391006264DA /* twoZhaotoubiaoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twoZhaotoubiaoViewController.m; sourceTree = "<group>"; };
+		4B9404B4249B5391006264DA /* twoZhaotoubiaoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = twoZhaotoubiaoViewController.xib; sourceTree = "<group>"; };
+		4B9404BA249B6090006264DA /* TLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTabBarController.m; sourceTree = "<group>"; };
+		4B9404BB249B6090006264DA /* TLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTabBarController.h; sourceTree = "<group>"; };
+		4B9404C5249B77EC006264DA /* ZhaotoubiaoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhaotoubiaoTableViewCell.h; sourceTree = "<group>"; };
+		4B9404C6249B77EC006264DA /* ZhaotoubiaoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhaotoubiaoTableViewCell.m; sourceTree = "<group>"; };
+		4B9404C7249B77EC006264DA /* ZhaotoubiaoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZhaotoubiaoTableViewCell.xib; sourceTree = "<group>"; };
+		4B9404CA249B91E8006264DA /* ZhaotoubiaoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhaotoubiaoModel.h; sourceTree = "<group>"; };
+		4B9404CB249B91E8006264DA /* ZhaotoubiaoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhaotoubiaoModel.m; sourceTree = "<group>"; };
+		4B9404D0249C5009006264DA /* ZhaotoubiaoDownView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhaotoubiaoDownView.h; sourceTree = "<group>"; };
+		4B9404D1249C5009006264DA /* ZhaotoubiaoDownView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhaotoubiaoDownView.m; sourceTree = "<group>"; };
+		4B9404D3249C502E006264DA /* ZhaotoubiaoDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZhaotoubiaoDownView.xib; sourceTree = "<group>"; };
+		4B9404D5249C5940006264DA /* ZhaotoubiaoDownCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhaotoubiaoDownCell.h; sourceTree = "<group>"; };
+		4B9404D6249C5940006264DA /* ZhaotoubiaoDownCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhaotoubiaoDownCell.m; sourceTree = "<group>"; };
+		4B9404D7249C5940006264DA /* ZhaotoubiaoDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZhaotoubiaoDownCell.xib; sourceTree = "<group>"; };
+		4B9404FC249C91EB006264DA /* FtoubiaoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FtoubiaoViewController.h; sourceTree = "<group>"; };
+		4B9404FD249C91EB006264DA /* FtoubiaoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FtoubiaoViewController.m; sourceTree = "<group>"; };
+		4B9404FE249C91EB006264DA /* FtoubiaoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FtoubiaoViewController.xib; sourceTree = "<group>"; };
+		4B940501249C91FE006264DA /* StoubiaoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoubiaoViewController.h; sourceTree = "<group>"; };
+		4B940502249C91FE006264DA /* StoubiaoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoubiaoViewController.m; sourceTree = "<group>"; };
+		4B940503249C91FE006264DA /* StoubiaoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoubiaoViewController.xib; sourceTree = "<group>"; };
+		4B940506249C9210006264DA /* TtoubiaoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TtoubiaoViewController.h; sourceTree = "<group>"; };
+		4B940507249C9210006264DA /* TtoubiaoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TtoubiaoViewController.m; sourceTree = "<group>"; };
+		4B940508249C9210006264DA /* TtoubiaoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TtoubiaoViewController.xib; sourceTree = "<group>"; };
 		4B9EDBB52497628C0033FED2 /* ChuZhiCheckSecondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChuZhiCheckSecondCell.h; sourceTree = "<group>"; };
 		4B9EDBB62497628C0033FED2 /* ChuZhiCheckFirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChuZhiCheckFirstCell.m; sourceTree = "<group>"; };
 		4B9EDBB72497628D0033FED2 /* ChuZhiCheckFirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChuZhiCheckFirstCell.xib; sourceTree = "<group>"; };
@@ -411,6 +528,58 @@
 		4B9EDBCE24976B8F0033FED2 /* ChuzhiCheckTopTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChuzhiCheckTopTableViewCell.h; sourceTree = "<group>"; };
 		4B9EDBCF24976B8F0033FED2 /* ChuzhiCheckTopTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChuzhiCheckTopTableViewCell.m; sourceTree = "<group>"; };
 		4B9EDBD024976B8F0033FED2 /* ChuzhiCheckTopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChuzhiCheckTopTableViewCell.xib; sourceTree = "<group>"; };
+		4BA30DA2249EFB9B00DB5E84 /* TtoubiaoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TtoubiaoTableViewCell.h; sourceTree = "<group>"; };
+		4BA30DA3249EFB9B00DB5E84 /* TtoubiaoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TtoubiaoTableViewCell.m; sourceTree = "<group>"; };
+		4BA30DA4249EFB9B00DB5E84 /* TtoubiaoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TtoubiaoTableViewCell.xib; sourceTree = "<group>"; };
+		4BA30DA7249F052D00DB5E84 /* HomeZxTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeZxTableViewCell.h; sourceTree = "<group>"; };
+		4BA30DA8249F052D00DB5E84 /* HomeZxTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeZxTableViewCell.m; sourceTree = "<group>"; };
+		4BA30DA9249F052D00DB5E84 /* HomeZxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeZxTableViewCell.xib; sourceTree = "<group>"; };
+		4BA30DAC249F060D00DB5E84 /* HomeZbTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeZbTableViewCell.h; sourceTree = "<group>"; };
+		4BA30DAD249F060D00DB5E84 /* HomeZbTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeZbTableViewCell.m; sourceTree = "<group>"; };
+		4BA30DAE249F060D00DB5E84 /* HomeZbTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeZbTableViewCell.xib; sourceTree = "<group>"; };
+		4BA30DB1249F063500DB5E84 /* HomeDownTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeDownTableViewCell.h; sourceTree = "<group>"; };
+		4BA30DB2249F063500DB5E84 /* HomeDownTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeDownTableViewCell.m; sourceTree = "<group>"; };
+		4BA30DB3249F063500DB5E84 /* HomeDownTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDownTableViewCell.xib; sourceTree = "<group>"; };
+		4BA30DB7249F25D800DB5E84 /* JianNiuzixunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JianNiuzixunViewController.h; sourceTree = "<group>"; };
+		4BA30DB8249F25D800DB5E84 /* JianNiuzixunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JianNiuzixunViewController.m; sourceTree = "<group>"; };
+		4BA30DB9249F25D800DB5E84 /* JianNiuzixunViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JianNiuzixunViewController.xib; sourceTree = "<group>"; };
+		4BA30DBC249F314500DB5E84 /* JianNiuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JianNiuTableViewCell.h; sourceTree = "<group>"; };
+		4BA30DBD249F314500DB5E84 /* JianNiuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JianNiuTableViewCell.m; sourceTree = "<group>"; };
+		4BA30DBE249F314500DB5E84 /* JianNiuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JianNiuTableViewCell.xib; sourceTree = "<group>"; };
+		4BA30DC1249F3A9C00DB5E84 /* JianNIUzixunModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JianNIUzixunModel.h; sourceTree = "<group>"; };
+		4BA30DC2249F3A9C00DB5E84 /* JianNIUzixunModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JianNIUzixunModel.m; sourceTree = "<group>"; };
+		4BA30DC9249F3F2000DB5E84 /* toJianNiuzixunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toJianNiuzixunViewController.h; sourceTree = "<group>"; };
+		4BA30DCA249F3F2000DB5E84 /* toJianNiuzixunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toJianNiuzixunViewController.m; sourceTree = "<group>"; };
+		4BA30DCB249F3F2000DB5E84 /* toJianNiuzixunViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = toJianNiuzixunViewController.xib; sourceTree = "<group>"; };
+		4BA30DD0249F445900DB5E84 /* SYProgressWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYProgressWebView.m; sourceTree = "<group>"; };
+		4BA30DD2249F445900DB5E84 /* SYProgressWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYProgressWebView.h; sourceTree = "<group>"; };
+		4BA30DD5249F4D0E00DB5E84 /* ToJianNiuWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToJianNiuWebVC.h; sourceTree = "<group>"; };
+		4BA30DD6249F4D0E00DB5E84 /* ToJianNiuWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToJianNiuWebVC.m; sourceTree = "<group>"; };
+		4BA30DD7249F4D0E00DB5E84 /* ToJianNiuWebVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToJianNiuWebVC.xib; sourceTree = "<group>"; };
+		4BA30DDA249F524F00DB5E84 /* JianNiuWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JianNiuWebViewController.h; sourceTree = "<group>"; };
+		4BA30DDB249F524F00DB5E84 /* JianNiuWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JianNiuWebViewController.m; sourceTree = "<group>"; };
+		4BA30DDE249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhaobiaogonggaoViewController.h; sourceTree = "<group>"; };
+		4BA30DDF249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhaobiaogonggaoViewController.m; sourceTree = "<group>"; };
+		4BA30DE0249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZhaobiaogonggaoViewController.xib; sourceTree = "<group>"; };
+		4BA30DE3249F95BE00DB5E84 /* YujinxiangqingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YujinxiangqingViewController.h; sourceTree = "<group>"; };
+		4BA30DE4249F95BE00DB5E84 /* YujinxiangqingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YujinxiangqingViewController.m; sourceTree = "<group>"; };
+		4BA30DE5249F95BE00DB5E84 /* YujinxiangqingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YujinxiangqingViewController.xib; sourceTree = "<group>"; };
+		4BA30DE8249F9CF800DB5E84 /* YujinxiangqingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YujinxiangqingTableViewCell.h; sourceTree = "<group>"; };
+		4BA30DE9249F9CF800DB5E84 /* YujinxiangqingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YujinxiangqingTableViewCell.m; sourceTree = "<group>"; };
+		4BA30DEA249F9CF800DB5E84 /* YujinxiangqingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YujinxiangqingTableViewCell.xib; sourceTree = "<group>"; };
+		4BA30DED249FA15C00DB5E84 /* YujinxiangqingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YujinxiangqingModel.h; sourceTree = "<group>"; };
+		4BA30DEE249FA15C00DB5E84 /* YujinxiangqingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YujinxiangqingModel.m; sourceTree = "<group>"; };
+		4BA30DF0249FB8AE00DB5E84 /* MineViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewModel.h; sourceTree = "<group>"; };
+		4BA30DF1249FB8AE00DB5E84 /* MineViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewModel.m; sourceTree = "<group>"; };
+		4BA30DF324A0442200DB5E84 /* ShezhiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShezhiViewController.h; sourceTree = "<group>"; };
+		4BA30DF424A0442200DB5E84 /* ShezhiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShezhiViewController.m; sourceTree = "<group>"; };
+		4BA30DF524A0442200DB5E84 /* ShezhiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShezhiViewController.xib; sourceTree = "<group>"; };
+		4BA30DF824A0444200DB5E84 /* YijianfankuiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YijianfankuiViewController.h; sourceTree = "<group>"; };
+		4BA30DF924A0444200DB5E84 /* YijianfankuiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YijianfankuiViewController.m; sourceTree = "<group>"; };
+		4BA30DFA24A0444200DB5E84 /* YijianfankuiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YijianfankuiViewController.xib; sourceTree = "<group>"; };
+		4BA30DFD24A092BD00DB5E84 /* PlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTextView.m; sourceTree = "<group>"; };
+		4BA30DFE24A092BD00DB5E84 /* PlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderTextView.h; sourceTree = "<group>"; };
+		4BA30E0024A0CADF00DB5E84 /* 资质通.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "资质通.entitlements"; sourceTree = "<group>"; };
 		4BBFB63A248E40F300D303B6 /* LookBroadViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookBroadViewModel.h; sourceTree = "<group>"; };
 		4BBFB63B248E40F300D303B6 /* LookBroadViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LookBroadViewModel.m; sourceTree = "<group>"; };
 		4BBFB643248F1DAB00D303B6 /* BlackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackListViewController.h; sourceTree = "<group>"; };
@@ -421,6 +590,31 @@
 		4BBFB64A248F226000D303B6 /* BlackListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlackListTableViewCell.xib; sourceTree = "<group>"; };
 		4BBFB650248F422B00D303B6 /* BKMenuListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMenuListView.h; sourceTree = "<group>"; };
 		4BBFB651248F422B00D303B6 /* BKMenuListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKMenuListView.m; sourceTree = "<group>"; };
+		4BCA140E2499C01A00430A23 /* yejiguanliModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yejiguanliModel.h; sourceTree = "<group>"; };
+		4BCA140F2499C01A00430A23 /* yejiguanliModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yejiguanliModel.m; sourceTree = "<group>"; };
+		4BCA14112499F85C00430A23 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
+		4BCA14122499F85D00430A23 /* CityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityViewController.xib; sourceTree = "<group>"; };
+		4BCA14132499F85D00430A23 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		4BCA14162499F86900430A23 /* CityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewCell.m; sourceTree = "<group>"; };
+		4BCA14172499F86900430A23 /* CityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		4BCA14182499F86900430A23 /* CityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewCell.h; sourceTree = "<group>"; };
+		4BCA141B249A1E0E00430A23 /* CityViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityViewModel.h; sourceTree = "<group>"; };
+		4BCA141C249A1E0E00430A23 /* CityViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityViewModel.m; sourceTree = "<group>"; };
+		4BCA141E249A2B3C00430A23 /* toCityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toCityViewController.h; sourceTree = "<group>"; };
+		4BCA141F249A2B3C00430A23 /* toCityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toCityViewController.m; sourceTree = "<group>"; };
+		4BCA1420249A2B3C00430A23 /* toCityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = toCityViewController.xib; sourceTree = "<group>"; };
+		4BCA1423249A2CF700430A23 /* toCityViewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toCityViewTableViewCell.h; sourceTree = "<group>"; };
+		4BCA1424249A2CF700430A23 /* toCityViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toCityViewTableViewCell.m; sourceTree = "<group>"; };
+		4BCA1425249A2CF700430A23 /* toCityViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = toCityViewTableViewCell.xib; sourceTree = "<group>"; };
+		4BCA1428249AFC9100430A23 /* to2CityViewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = to2CityViewTableViewCell.h; sourceTree = "<group>"; };
+		4BCA1429249AFC9100430A23 /* to2CityViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = to2CityViewTableViewCell.m; sourceTree = "<group>"; };
+		4BCA142A249AFC9100430A23 /* to2CityViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = to2CityViewTableViewCell.xib; sourceTree = "<group>"; };
+		4BCA142D249B00A300430A23 /* to2CityViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = to2CityViewCell.h; sourceTree = "<group>"; };
+		4BCA142E249B00A300430A23 /* to2CityViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = to2CityViewCell.m; sourceTree = "<group>"; };
+		4BCA142F249B00A300430A23 /* to2CityViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = to2CityViewCell.xib; sourceTree = "<group>"; };
+		4BCA1436249B414C00430A23 /* ZhaotoubiaoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhaotoubiaoViewController.h; sourceTree = "<group>"; };
+		4BCA1437249B414C00430A23 /* ZhaotoubiaoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhaotoubiaoViewController.m; sourceTree = "<group>"; };
+		4BCA1438249B414C00430A23 /* ZhaotoubiaoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZhaotoubiaoViewController.xib; sourceTree = "<group>"; };
 		4BDDB02B248CA37700E10B67 /* CSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTabBar.h; sourceTree = "<group>"; };
 		4BDDB02C248CA37700E10B67 /* CSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTabBar.m; sourceTree = "<group>"; };
 		4BDDB02E248CC73A00E10B67 /* HttpRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestTool.m; sourceTree = "<group>"; };
@@ -478,7 +672,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4197CA47247CACD5000EF4E1 /* BaiduTraceSDK.framework in Frameworks */,
 				FFDB12B5B7A0F2804DFFF904 /* Pods_Supervision.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +718,7 @@
 		413B014924721E22000301F3 /* Supervision */ = {
 			isa = PBXGroup;
 			children = (
+				4BA30E0024A0CADF00DB5E84 /* 资质通.entitlements */,
 				413B018524722756000301F3 /* Base */,
 				413B018024722756000301F3 /* Class */,
 				4BF110A8248DEEE100EC661B /* others(工作内容) */,
@@ -534,7 +728,7 @@
 				415A446C24769144004F1EE7 /* PrefixHeader.pch */,
 				413B015624721E23000301F3 /* Assets.xcassets */,
 				413B015824721E23000301F3 /* LaunchScreen.storyboard */,
-				415A447124769184004F1EE7 /* Info.plist */,
+				4B29D60B24A1F7A500471615 /* Info.plist */,
 				415A446F24769184004F1EE7 /* main.m */,
 			);
 			path = Supervision;
@@ -544,7 +738,7 @@
 			isa = PBXGroup;
 			children = (
 				413B016624721E24000301F3 /* SupervisionTests.m */,
-				413B016824721E24000301F3 /* Info.plist */,
+				4B29D60D24A1FF2A00471615 /* Info.plist */,
 			);
 			path = SupervisionTests;
 			sourceTree = "<group>";
@@ -553,7 +747,7 @@
 			isa = PBXGroup;
 			children = (
 				413B017124721E24000301F3 /* SupervisionUITests.m */,
-				413B017324721E24000301F3 /* Info.plist */,
+				4B29D60F24A1FF3F00471615 /* Info.plist */,
 			);
 			path = SupervisionUITests;
 			sourceTree = "<group>";
@@ -646,6 +840,14 @@
 				413B01C524723609000301F3 /* LookBroadViewController.h */,
 				413B01C624723609000301F3 /* LookBroadViewController.m */,
 				413B01C724723609000301F3 /* LookBroadViewController.xib */,
+				4BA30DE3249F95BE00DB5E84 /* YujinxiangqingViewController.h */,
+				4BA30DE4249F95BE00DB5E84 /* YujinxiangqingViewController.m */,
+				4BA30DE5249F95BE00DB5E84 /* YujinxiangqingViewController.xib */,
+				4BA30DE8249F9CF800DB5E84 /* YujinxiangqingTableViewCell.h */,
+				4BA30DE9249F9CF800DB5E84 /* YujinxiangqingTableViewCell.m */,
+				4BA30DEA249F9CF800DB5E84 /* YujinxiangqingTableViewCell.xib */,
+				4BA30DED249FA15C00DB5E84 /* YujinxiangqingModel.h */,
+				4BA30DEE249FA15C00DB5E84 /* YujinxiangqingModel.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -673,6 +875,8 @@
 		413B01BD247235C6000301F3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4BA30DF0249FB8AE00DB5E84 /* MineViewModel.h */,
+				4BA30DF1249FB8AE00DB5E84 /* MineViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -683,6 +887,14 @@
 				413B01CF2472362B000301F3 /* MineViewController.h */,
 				413B01D02472362B000301F3 /* MineViewController.m */,
 				413B01D12472362B000301F3 /* MineViewController.xib */,
+				4BA30DF324A0442200DB5E84 /* ShezhiViewController.h */,
+				4BA30DF424A0442200DB5E84 /* ShezhiViewController.m */,
+				4BA30DF524A0442200DB5E84 /* ShezhiViewController.xib */,
+				4BA30DF824A0444200DB5E84 /* YijianfankuiViewController.h */,
+				4BA30DF924A0444200DB5E84 /* YijianfankuiViewController.m */,
+				4BA30DFA24A0444200DB5E84 /* YijianfankuiViewController.xib */,
+				4BA30DFE24A092BD00DB5E84 /* PlaceholderTextView.h */,
+				4BA30DFD24A092BD00DB5E84 /* PlaceholderTextView.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -799,9 +1011,26 @@
 		4B4F30C22492A5780028AD97 /* 人员培训 */ = {
 			isa = PBXGroup;
 			children = (
-				4B43829A24932E8500303F58 /* TCLightListViewController.h */,
-				4B43829C24932E8500303F58 /* TCLightListViewController.m */,
-				4B43829B24932E8500303F58 /* TCLightListViewController.xib */,
+				4BCA14132499F85D00430A23 /* CityViewController.h */,
+				4BCA14112499F85C00430A23 /* CityViewController.m */,
+				4BCA14122499F85D00430A23 /* CityViewController.xib */,
+				4BCA14182499F86900430A23 /* CityTableViewCell.h */,
+				4BCA14162499F86900430A23 /* CityTableViewCell.m */,
+				4BCA14172499F86900430A23 /* CityTableViewCell.xib */,
+				4BCA141B249A1E0E00430A23 /* CityViewModel.h */,
+				4BCA141C249A1E0E00430A23 /* CityViewModel.m */,
+				4BCA141E249A2B3C00430A23 /* toCityViewController.h */,
+				4BCA141F249A2B3C00430A23 /* toCityViewController.m */,
+				4BCA1420249A2B3C00430A23 /* toCityViewController.xib */,
+				4BCA1423249A2CF700430A23 /* toCityViewTableViewCell.h */,
+				4BCA1424249A2CF700430A23 /* toCityViewTableViewCell.m */,
+				4BCA1425249A2CF700430A23 /* toCityViewTableViewCell.xib */,
+				4BCA1428249AFC9100430A23 /* to2CityViewTableViewCell.h */,
+				4BCA1429249AFC9100430A23 /* to2CityViewTableViewCell.m */,
+				4BCA142A249AFC9100430A23 /* to2CityViewTableViewCell.xib */,
+				4BCA142D249B00A300430A23 /* to2CityViewCell.h */,
+				4BCA142E249B00A300430A23 /* to2CityViewCell.m */,
+				4BCA142F249B00A300430A23 /* to2CityViewCell.xib */,
 			);
 			path = "人员培训";
 			sourceTree = "<group>";
@@ -872,6 +1101,8 @@
 		4B5038492493518C00B61432 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				4BA30DCE249F445900DB5E84 /* SYProgressWebView */,
+				4B6B03B72498FFEF007B6E64 /* CGXPickerView(底部选择器) */,
 				4B50384A249351A800B61432 /* 时间选择器 */,
 				4B4F30AB249265C40028AD97 /* NullSafe */,
 				4B84B8AF248F8624007A22CE /* BWTopMenuView（滚动title） */,
@@ -884,19 +1115,8 @@
 			isa = PBXGroup;
 			children = (
 				4B50385124937FC700B61432 /* 年月 */,
-				4B50385024937FB600B61432 /* 年月日 */,
 			);
 			path = "时间选择器";
-			sourceTree = "<group>";
-		};
-		4B50385024937FB600B61432 /* 年月日 */ = {
-			isa = PBXGroup;
-			children = (
-				4B50384B249351E100B61432 /* SelectedDateView.h */,
-				4B50384D249351E100B61432 /* SelectedDateView.m */,
-				4B50384C249351E100B61432 /* SelectedDateView.xib */,
-			);
-			path = "年月日";
 			sourceTree = "<group>";
 		};
 		4B50385124937FC700B61432 /* 年月 */ = {
@@ -907,6 +1127,42 @@
 				4B50385324937FE100B61432 /* YearMonthPikerView.xib */,
 			);
 			path = "年月";
+			sourceTree = "<group>";
+		};
+		4B6B03B72498FFEF007B6E64 /* CGXPickerView(底部选择器) */ = {
+			isa = PBXGroup;
+			children = (
+				4B6B03B92498FFEF007B6E64 /* CGXAddressCity.plist */,
+				4B6B03BC2498FFEF007B6E64 /* CGXAddressModel.h */,
+				4B6B03C52498FFEF007B6E64 /* CGXAddressModel.m */,
+				4B6B03B82498FFEF007B6E64 /* CGXAddressPcikerView.h */,
+				4B6B03C12498FFEF007B6E64 /* CGXAddressPcikerView.m */,
+				4B6B03C62498FFEF007B6E64 /* CGXBasicInfoPicker.plist */,
+				4B6B03BA2498FFEF007B6E64 /* CGXDatePickerView.h */,
+				4B6B03C32498FFEF007B6E64 /* CGXDatePickerView.m */,
+				4B6B03BD2498FFEF007B6E64 /* CGXPickerUIBaseView.h */,
+				4B6B03C42498FFEF007B6E64 /* CGXPickerUIBaseView.m */,
+				4B6B03BE2498FFEF007B6E64 /* CGXPickerView.h */,
+				4B6B03C92498FFEF007B6E64 /* CGXPickerView.m */,
+				4B6B03C22498FFEF007B6E64 /* CGXPickerViewManager.h */,
+				4B6B03BB2498FFEF007B6E64 /* CGXPickerViewManager.m */,
+				4B6B03BF2498FFEF007B6E64 /* CGXStringPickerView.h */,
+				4B6B03C82498FFEF007B6E64 /* CGXStringPickerView.m */,
+				4B6B03C72498FFEF007B6E64 /* NSDate+CGXPicker.h */,
+				4B6B03C02498FFEF007B6E64 /* NSDate+CGXPicker.m */,
+			);
+			path = "CGXPickerView(底部选择器)";
+			sourceTree = "<group>";
+		};
+		4B7F0441249CC190002BD414 /* circle */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F0443249CC1A9002BD414 /* JXCircleModel.h */,
+				4B7F0442249CC1A9002BD414 /* JXCircleModel.m */,
+				4B7F0445249CC1AA002BD414 /* JXCircleRatioView.h */,
+				4B7F0444249CC1AA002BD414 /* JXCircleRatioView.m */,
+			);
+			path = circle;
 			sourceTree = "<group>";
 		};
 		4B84B8A4248F6E39007A22CE /* 企业证书 */ = {
@@ -938,12 +1194,20 @@
 		4B84B8C02490621B007A22CE /* 消息通知 */ = {
 			isa = PBXGroup;
 			children = (
-				4B50386E249665AD00B61432 /* MessageTableViewCell.h */,
-				4B50386F249665AD00B61432 /* MessageTableViewCell.m */,
-				4B503870249665AD00B61432 /* MessageTableViewCell.xib */,
+				4B29D5FE24A1D8F900471615 /* MessageMainViewController.h */,
+				4B29D5FF24A1D8F900471615 /* MessageMainViewController.m */,
+				4B29D60024A1D8F900471615 /* MessageMainViewController.xib */,
+				4B29D60624A1DED500471615 /* MessageMainTableViewCell.h */,
+				4B29D60724A1DED500471615 /* MessageMainTableViewCell.m */,
+				4B29D60824A1DED500471615 /* MessageMainTableViewCell.xib */,
 				4B503873249665CB00B61432 /* MessageViewController.h */,
 				4B503874249665CB00B61432 /* MessageViewController.m */,
 				4B503875249665CB00B61432 /* MessageViewController.xib */,
+				4B50386E249665AD00B61432 /* MessageTableViewCell.h */,
+				4B50386F249665AD00B61432 /* MessageTableViewCell.m */,
+				4B503870249665AD00B61432 /* MessageTableViewCell.xib */,
+				4B29D60324A1DC9B00471615 /* MessageMainModel.h */,
+				4B29D60424A1DC9B00471615 /* MessageMainModel.m */,
 			);
 			path = "消息通知";
 			sourceTree = "<group>";
@@ -981,6 +1245,50 @@
 			path = "招投标&自定义";
 			sourceTree = "<group>";
 		};
+		4B9404BD249B73CB006264DA /* 全部投标项目&保证金管理 */ = {
+			isa = PBXGroup;
+			children = (
+				4BCA1436249B414C00430A23 /* ZhaotoubiaoViewController.h */,
+				4BCA1437249B414C00430A23 /* ZhaotoubiaoViewController.m */,
+				4BCA1438249B414C00430A23 /* ZhaotoubiaoViewController.xib */,
+				4B9404C5249B77EC006264DA /* ZhaotoubiaoTableViewCell.h */,
+				4B9404C6249B77EC006264DA /* ZhaotoubiaoTableViewCell.m */,
+				4B9404C7249B77EC006264DA /* ZhaotoubiaoTableViewCell.xib */,
+				4B9404CA249B91E8006264DA /* ZhaotoubiaoModel.h */,
+				4B9404CB249B91E8006264DA /* ZhaotoubiaoModel.m */,
+				4B9404D0249C5009006264DA /* ZhaotoubiaoDownView.h */,
+				4B9404D1249C5009006264DA /* ZhaotoubiaoDownView.m */,
+				4B9404D3249C502E006264DA /* ZhaotoubiaoDownView.xib */,
+				4B9404D5249C5940006264DA /* ZhaotoubiaoDownCell.h */,
+				4B9404D6249C5940006264DA /* ZhaotoubiaoDownCell.m */,
+				4B9404D7249C5940006264DA /* ZhaotoubiaoDownCell.xib */,
+			);
+			path = "全部投标项目&保证金管理";
+			sourceTree = "<group>";
+		};
+		4B9404BE249B73E9006264DA /* 投标统计 */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F0441249CC190002BD414 /* circle */,
+				4B9404B2249B5391006264DA /* twoZhaotoubiaoViewController.h */,
+				4B9404B3249B5391006264DA /* twoZhaotoubiaoViewController.m */,
+				4B9404B4249B5391006264DA /* twoZhaotoubiaoViewController.xib */,
+				4B9404FC249C91EB006264DA /* FtoubiaoViewController.h */,
+				4B9404FD249C91EB006264DA /* FtoubiaoViewController.m */,
+				4B9404FE249C91EB006264DA /* FtoubiaoViewController.xib */,
+				4B940501249C91FE006264DA /* StoubiaoViewController.h */,
+				4B940502249C91FE006264DA /* StoubiaoViewController.m */,
+				4B940503249C91FE006264DA /* StoubiaoViewController.xib */,
+				4B940506249C9210006264DA /* TtoubiaoViewController.h */,
+				4B940507249C9210006264DA /* TtoubiaoViewController.m */,
+				4B940508249C9210006264DA /* TtoubiaoViewController.xib */,
+				4BA30DA2249EFB9B00DB5E84 /* TtoubiaoTableViewCell.h */,
+				4BA30DA3249EFB9B00DB5E84 /* TtoubiaoTableViewCell.m */,
+				4BA30DA4249EFB9B00DB5E84 /* TtoubiaoTableViewCell.xib */,
+			);
+			path = "投标统计";
+			sourceTree = "<group>";
+		};
 		4B9EDBB42497627C0033FED2 /* 证书去向 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1005,6 +1313,48 @@
 			path = "证书去向";
 			sourceTree = "<group>";
 		};
+		4BA30DB6249F25B000DB5E84 /* 建牛资讯 */ = {
+			isa = PBXGroup;
+			children = (
+				4BA30DB7249F25D800DB5E84 /* JianNiuzixunViewController.h */,
+				4BA30DB8249F25D800DB5E84 /* JianNiuzixunViewController.m */,
+				4BA30DB9249F25D800DB5E84 /* JianNiuzixunViewController.xib */,
+				4BA30DBC249F314500DB5E84 /* JianNiuTableViewCell.h */,
+				4BA30DBD249F314500DB5E84 /* JianNiuTableViewCell.m */,
+				4BA30DBE249F314500DB5E84 /* JianNiuTableViewCell.xib */,
+				4BA30DC1249F3A9C00DB5E84 /* JianNIUzixunModel.h */,
+				4BA30DC2249F3A9C00DB5E84 /* JianNIUzixunModel.m */,
+				4BA30DC9249F3F2000DB5E84 /* toJianNiuzixunViewController.h */,
+				4BA30DCA249F3F2000DB5E84 /* toJianNiuzixunViewController.m */,
+				4BA30DCB249F3F2000DB5E84 /* toJianNiuzixunViewController.xib */,
+				4BA30DD5249F4D0E00DB5E84 /* ToJianNiuWebVC.h */,
+				4BA30DD6249F4D0E00DB5E84 /* ToJianNiuWebVC.m */,
+				4BA30DD7249F4D0E00DB5E84 /* ToJianNiuWebVC.xib */,
+				4BA30DDA249F524F00DB5E84 /* JianNiuWebViewController.h */,
+				4BA30DDB249F524F00DB5E84 /* JianNiuWebViewController.m */,
+			);
+			path = "建牛资讯";
+			sourceTree = "<group>";
+		};
+		4BA30DCE249F445900DB5E84 /* SYProgressWebView */ = {
+			isa = PBXGroup;
+			children = (
+				4BA30DD2249F445900DB5E84 /* SYProgressWebView.h */,
+				4BA30DD0249F445900DB5E84 /* SYProgressWebView.m */,
+			);
+			path = SYProgressWebView;
+			sourceTree = "<group>";
+		};
+		4BA30DDD249F678300DB5E84 /* 招标公告查询 */ = {
+			isa = PBXGroup;
+			children = (
+				4BA30DDE249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.h */,
+				4BA30DDF249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.m */,
+				4BA30DE0249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.xib */,
+			);
+			path = "招标公告查询";
+			sourceTree = "<group>";
+		};
 		4BBFB63D248F124500D303B6 /* 问题管理 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1022,6 +1372,17 @@
 				4BBFB64A248F226000D303B6 /* BlackListTableViewCell.xib */,
 			);
 			path = "问题管理";
+			sourceTree = "<group>";
+		};
+		4BCA1435249B383F00430A23 /* 招投标管理 */ = {
+			isa = PBXGroup;
+			children = (
+				4B9404BB249B6090006264DA /* TLTabBarController.h */,
+				4B9404BA249B6090006264DA /* TLTabBarController.m */,
+				4B9404BD249B73CB006264DA /* 全部投标项目&保证金管理 */,
+				4B9404BE249B73E9006264DA /* 投标统计 */,
+			);
+			path = "招投标管理";
 			sourceTree = "<group>";
 		};
 		4BDDB036248CC78000E10B67 /* Home */ = {
@@ -1079,6 +1440,15 @@
 				4160FADA248CEFEB003DD217 /* InformationSelectionItem.xib */,
 				4BDDB042248CC78000E10B67 /* WCScrollLabelView.h */,
 				4BDDB045248CC78000E10B67 /* WCScrollLabelView.m */,
+				4BA30DA7249F052D00DB5E84 /* HomeZxTableViewCell.h */,
+				4BA30DA8249F052D00DB5E84 /* HomeZxTableViewCell.m */,
+				4BA30DA9249F052D00DB5E84 /* HomeZxTableViewCell.xib */,
+				4BA30DAC249F060D00DB5E84 /* HomeZbTableViewCell.h */,
+				4BA30DAD249F060D00DB5E84 /* HomeZbTableViewCell.m */,
+				4BA30DAE249F060D00DB5E84 /* HomeZbTableViewCell.xib */,
+				4BA30DB1249F063500DB5E84 /* HomeDownTableViewCell.h */,
+				4BA30DB2249F063500DB5E84 /* HomeDownTableViewCell.m */,
+				4BA30DB3249F063500DB5E84 /* HomeDownTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1109,6 +1479,11 @@
 				4B6B03B22498CB7E007B6E64 /* yejiguanliViewController.h */,
 				4B6B03B32498CB7E007B6E64 /* yejiguanliViewController.m */,
 				4B6B03B42498CB7E007B6E64 /* yejiguanliViewController.xib */,
+				4B6B03D424990F38007B6E64 /* yejiguanliTableViewCell.h */,
+				4B6B03D524990F38007B6E64 /* yejiguanliTableViewCell.m */,
+				4B6B03D624990F38007B6E64 /* yejiguanliTableViewCell.xib */,
+				4BCA140E2499C01A00430A23 /* yejiguanliModel.h */,
+				4BCA140F2499C01A00430A23 /* yejiguanliModel.m */,
 			);
 			path = "业绩管理";
 			sourceTree = "<group>";
@@ -1116,12 +1491,15 @@
 		4BF110A8248DEEE100EC661B /* others(工作内容) */ = {
 			isa = PBXGroup;
 			children = (
+				4BA30DDD249F678300DB5E84 /* 招标公告查询 */,
+				4BA30DB6249F25B000DB5E84 /* 建牛资讯 */,
 				4B9EDBB42497627C0033FED2 /* 证书去向 */,
 				4BDE1F3D2497A6190018080E /* 数字证书 */,
 				4BDE1F37249792B40018080E /* 安全生产许可证 */,
 				4B4F30C52492A59E0028AD97 /* 证书管理 */,
 				4BDE1F432497AC430018080E /* 业绩管理 */,
 				4B4F30C42492A5940028AD97 /* 资质管理 */,
+				4BCA1435249B383F00430A23 /* 招投标管理 */,
 				4B4F30C32492A5850028AD97 /* 证书动态 */,
 				4B4F30C22492A5780028AD97 /* 人员培训 */,
 				4B327B682491BC61009827EB /* 咨询管理 */,
@@ -1174,7 +1552,6 @@
 				413B014324721E22000301F3 /* Sources */,
 				413B014424721E22000301F3 /* Frameworks */,
 				413B014524721E22000301F3 /* Resources */,
-				4197CA49247CACD5000EF4E1 /* Embed Frameworks */,
 				D8EBEDDECE429EDBC1192CD2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -1269,71 +1646,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA30DB0249F060D00DB5E84 /* HomeZbTableViewCell.xib in Resources */,
 				4BDE1F502498585D0018080E /* CertificatemanagementScroVC.xib in Resources */,
+				4BCA142C249AFC9100430A23 /* to2CityViewTableViewCell.xib in Resources */,
 				4B84B8BF248F8AFF007A22CE /* to2BlackListScrollViewController.xib in Resources */,
 				4B327B772491C15B009827EB /* ConsultingCollectionViewCell.xib in Resources */,
 				4B4F30C12492A2FB0028AD97 /* to2ConsultingViewController.xib in Resources */,
-				4B43829D24932E8500303F58 /* TCLightListViewController.xib in Resources */,
 				4B36FCB624971725009A4A68 /* toQualificationsTableViewCell.xib in Resources */,
 				4B9EDBD224976B900033FED2 /* ChuzhiCheckTopTableViewCell.xib in Resources */,
+				4B6B03CA2498FFEF007B6E64 /* CGXAddressCity.plist in Resources */,
 				4BDE1F4B249857B80018080E /* CertificatemanagementCell.xib in Resources */,
 				4BF110AD248DEF3600EC661B /* NoticeViewController.xib in Resources */,
 				4B4F30B22492697E0028AD97 /* ConsultingDownTableViewCell.xib in Resources */,
+				4BCA1431249B00A300430A23 /* to2CityViewCell.xib in Resources */,
 				4160FAD7248CED2A003DD217 /* HomeInformationSelectionCell.xib in Resources */,
+				4BA30DB5249F063600DB5E84 /* HomeDownTableViewCell.xib in Resources */,
 				4BDE1F362497928E0018080E /* CertificatemanagementVC.xib in Resources */,
 				4B503881249670FE00B61432 /* QualificationsTableViewCell.xib in Resources */,
 				4160FACD248CE57A003DD217 /* HomeManagerCell.xib in Resources */,
+				4B940500249C91EB006264DA /* FtoubiaoViewController.xib in Resources */,
+				4BCA1422249A2B3C00430A23 /* toCityViewController.xib in Resources */,
 				4BBFB647248F1DAB00D303B6 /* BlackListViewController.xib in Resources */,
 				413B01DF247237F8000301F3 /* LoginViewController.xib in Resources */,
 				4BDE1F422497A63A0018080E /* shuzizhengshuViewController.xib in Resources */,
+				4B9404D9249C5940006264DA /* ZhaotoubiaoDownCell.xib in Resources */,
 				4BBFB64C248F226000D303B6 /* BlackListTableViewCell.xib in Resources */,
 				413B01C924723609000301F3 /* LookBroadViewController.xib in Resources */,
+				4B9404C9249B77EC006264DA /* ZhaotoubiaoTableViewCell.xib in Resources */,
 				4BF111D3248E0B9600EC661B /* NoticeTableViewCell.xib in Resources */,
 				4BDDB049248CC78000E10B67 /* HomeViewController.xib in Resources */,
 				4B503877249665CB00B61432 /* MessageViewController.xib in Resources */,
 				4160FAC8248CDDDC003DD217 /* HomeFindToolCell.xib in Resources */,
+				4B6B03D12498FFEF007B6E64 /* CGXBasicInfoPicker.plist in Resources */,
 				4B6B03B62498CB7E007B6E64 /* yejiguanliViewController.xib in Resources */,
 				419A5B43247FD1BC00839B2B /* echarts.js in Resources */,
 				4B327B6D2491C012009827EB /* ConsultingViewController.xib in Resources */,
+				4BA30DF724A0442200DB5E84 /* ShezhiViewController.xib in Resources */,
 				419A5B44247FD1BC00839B2B /* worldcloud.js in Resources */,
 				4B04FB8B2488FF880077C195 /* UserDelegateViewController.xib in Resources */,
 				16E4DE4A248CE839000FAB7A /* MineContentView.xib in Resources */,
 				419A5B41247FD1BC00839B2B /* bmap.js in Resources */,
+				4BA30DD9249F4D0E00DB5E84 /* ToJianNiuWebVC.xib in Resources */,
 				4B36FCB12497153C009A4A68 /* toQualificationsViewController.xib in Resources */,
 				4B9EDBBF249762900033FED2 /* ChuZhiCheckFirstCell.xib in Resources */,
 				4160FADC248CEFEB003DD217 /* InformationSelectionItem.xib in Resources */,
+				4BCA1427249A2CF700430A23 /* toCityViewTableViewCell.xib in Resources */,
 				419A5B42247FD1BC00839B2B /* jquery-1.11.3.min.js in Resources */,
+				4BA30DAB249F052D00DB5E84 /* HomeZxTableViewCell.xib in Resources */,
 				4B327B722491C066009827EB /* ConsultingTableViewCell.xib in Resources */,
 				4B84B8DF2490FFD7007A22CE /* to3BlackListScrollViewController.xib in Resources */,
 				4B36FCBB249722AE009A4A68 /* to2QualificationsTableViewCell.xib in Resources */,
 				4B503872249665AD00B61432 /* MessageTableViewCell.xib in Resources */,
 				4B9EDBC2249762900033FED2 /* ChuZhiCheckSecondCell.xib in Resources */,
+				4BCA141A2499F86900430A23 /* CityTableViewCell.xib in Resources */,
+				4B940505249C91FE006264DA /* StoubiaoViewController.xib in Resources */,
 				4160FAD2248CE9D8003DD217 /* HomeManagerItem.xib in Resources */,
 				4B84B8D42490A35E007A22CE /* to2BlackListScrollTableViewCell.xib in Resources */,
+				4BA30DCD249F3F2000DB5E84 /* toJianNiuzixunViewController.xib in Resources */,
 				4BDDB04B248CC78000E10B67 /* HomeQuickTableViewCell.xib in Resources */,
+				4BA30DFC24A0444200DB5E84 /* YijianfankuiViewController.xib in Resources */,
 				4B5038632496586000B61432 /* CertificateViewCell.xib in Resources */,
 				4B4F30BC249299640028AD97 /* toConsultingTableViewCell.xib in Resources */,
 				413B015A24721E23000301F3 /* LaunchScreen.storyboard in Resources */,
 				419A5B40247FD1BC00839B2B /* index.html in Resources */,
 				413B01E424723F6E000301F3 /* MineTopTableViewCell.xib in Resources */,
+				4BA30DE2249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.xib in Resources */,
 				4B4F30B7249297E00028AD97 /* toConsultingViewController.xib in Resources */,
 				4B9EDBCD249764360033FED2 /* WhereGOViewController.xib in Resources */,
 				413B015724721E23000301F3 /* Assets.xcassets in Resources */,
+				4B9404B6249B5391006264DA /* twoZhaotoubiaoViewController.xib in Resources */,
+				4B6B03D824990F38007B6E64 /* yejiguanliTableViewCell.xib in Resources */,
 				4BDDB04F248CC78000E10B67 /* HomeTopTableViewCell.xib in Resources */,
+				4B29D60224A1D8F900471615 /* MessageMainViewController.xib in Resources */,
 				4B04FB8E2488FF960077C195 /* 协议.docx in Resources */,
 				4BDE1F55249867C40018080E /* toCertificatemanagementCell.xib in Resources */,
+				4BA30DBB249F25D800DB5E84 /* JianNiuzixunViewController.xib in Resources */,
+				4BA30DEC249F9CF800DB5E84 /* YujinxiangqingTableViewCell.xib in Resources */,
+				4BCA14152499F85D00430A23 /* CityViewController.xib in Resources */,
+				4B94050A249C9210006264DA /* TtoubiaoViewController.xib in Resources */,
 				4B50385624937FE200B61432 /* YearMonthPikerView.xib in Resources */,
+				4B9404D4249C502E006264DA /* ZhaotoubiaoDownView.xib in Resources */,
+				4BA30DE7249F95BE00DB5E84 /* YujinxiangqingViewController.xib in Resources */,
 				4B36FCC02497258E009A4A68 /* to3QualificationsTableViewCell.xib in Resources */,
 				4B50387C24966F7B00B61432 /* QualificationsViewController.xib in Resources */,
-				4B50384E249351E200B61432 /* SelectedDateView.xib in Resources */,
 				4BF110A2248CD27300EC661B /* LookBroadTopTableViewCell.xib in Resources */,
 				4B84B8BA248F8A4E007A22CE /* to2BlackListViewController.xib in Resources */,
 				4B50385E249395AE00B61432 /* CertificateTableViewCell.xib in Resources */,
 				4B50384824934F3400B61432 /* CertificateViewController.xib in Resources */,
+				4BA30DC0249F314500DB5E84 /* JianNiuTableViewCell.xib in Resources */,
 				413B01D32472362B000301F3 /* MineViewController.xib in Resources */,
 				4BDE1F3C249792F40018080E /* anquanSCViewController.xib in Resources */,
+				4B29D60A24A1DED500471615 /* MessageMainTableViewCell.xib in Resources */,
 				4B4F30A8249249E70028AD97 /* ConsultingDetailTableViewCell.xib in Resources */,
 				4B9EDBC0249762900033FED2 /* ChuZhiCheckLastCell.xib in Resources */,
+				4BCA143A249B414C00430A23 /* ZhaotoubiaoViewController.xib in Resources */,
+				4BA30DA6249EFB9B00DB5E84 /* TtoubiaoTableViewCell.xib in Resources */,
 				4B84B8E724911F37007A22CE /* to4BlackListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1342,6 +1749,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B29D60E24A1FF2B00471615 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1349,6 +1757,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B29D61024A1FF3F00471615 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1401,12 +1810,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCA1439249B414C00430A23 /* ZhaotoubiaoViewController.m in Sources */,
 				4B50387B24966F7B00B61432 /* QualificationsViewController.m in Sources */,
+				4BCA142B249AFC9100430A23 /* to2CityViewTableViewCell.m in Sources */,
 				4B84B8D32490A35E007A22CE /* to2BlackListScrollTableViewCell.m in Sources */,
 				4BBFB639248E3F8B00D303B6 /* LookBroadTopTableViewCell.m in Sources */,
 				4B36FCB524971725009A4A68 /* toQualificationsTableViewCell.m in Sources */,
 				4BDDB04C248CC78000E10B67 /* HomeTopTableViewCell.m in Sources */,
 				4B327B712491C066009827EB /* ConsultingTableViewCell.m in Sources */,
+				4B29D60124A1D8F900471615 /* MessageMainViewController.m in Sources */,
 				4B9EDBCC249764360033FED2 /* WhereGOViewController.m in Sources */,
 				413B019D24722813000301F3 /* NSArray+safeArray.m in Sources */,
 				4B84B8B9248F8A4E007A22CE /* to2BlackListViewController.m in Sources */,
@@ -1414,22 +1826,38 @@
 				413B018B247227F4000301F3 /* Singleton.m in Sources */,
 				413B01AF24723488000301F3 /* TCBaseTabBarController.m in Sources */,
 				4BDE1F462498552E0018080E /* CertificatemanagementModel.m in Sources */,
+				4B9404C8249B77EC006264DA /* ZhaotoubiaoTableViewCell.m in Sources */,
+				4BA30DFB24A0444200DB5E84 /* YijianfankuiViewController.m in Sources */,
+				4B6B03D02498FFEF007B6E64 /* CGXAddressModel.m in Sources */,
 				4BDDB033248CC73B00E10B67 /* CTWS.m in Sources */,
+				4BCA1430249B00A300430A23 /* to2CityViewCell.m in Sources */,
+				4B9404D8249C5940006264DA /* ZhaotoubiaoDownCell.m in Sources */,
+				4B29D60524A1DC9B00471615 /* MessageMainModel.m in Sources */,
+				4BCA14102499C01A00430A23 /* yejiguanliModel.m in Sources */,
 				4B503859249390EB00B61432 /* CertificateModel.m in Sources */,
 				4B9EDBC1249762900033FED2 /* ChuZhiCheckSecondCell.m in Sources */,
+				4BA30DBF249F314500DB5E84 /* JianNiuTableViewCell.m in Sources */,
 				4B4F30B12492697E0028AD97 /* ConsultingDownTableViewCell.m in Sources */,
 				4BDDB02D248CA37800E10B67 /* CSTabBar.m in Sources */,
 				418687AA2477B2E900B910D6 /* BMChineseSort.m in Sources */,
 				4B36FCBA249722AE009A4A68 /* to2QualificationsTableViewCell.m in Sources */,
+				4BCA14142499F85D00430A23 /* CityViewController.m in Sources */,
 				413B019F24722813000301F3 /* NSMutableDictionary+CTSafeDict.m in Sources */,
 				4B04FB8C2488FF880077C195 /* UserDelegateViewController.m in Sources */,
 				4BBFB652248F422B00D303B6 /* BKMenuListView.m in Sources */,
+				4B6B03CC2498FFEF007B6E64 /* NSDate+CGXPicker.m in Sources */,
 				4BDE1F412497A63A0018080E /* shuzizhengshuViewController.m in Sources */,
+				4BA30DF2249FB8AE00DB5E84 /* MineViewModel.m in Sources */,
 				413B01AE24723488000301F3 /* TCBaseNavigationController.m in Sources */,
+				4B6B03D22498FFEF007B6E64 /* CGXStringPickerView.m in Sources */,
 				4B84B8E624911F37007A22CE /* to4BlackListViewController.m in Sources */,
 				4B84B8DE2490FFD7007A22CE /* to3BlackListScrollViewController.m in Sources */,
+				4BA30DEF249FA15C00DB5E84 /* YujinxiangqingModel.m in Sources */,
 				413B01D22472362B000301F3 /* MineViewController.m in Sources */,
+				4B29D60924A1DED500471615 /* MessageMainTableViewCell.m in Sources */,
+				4B6B03CE2498FFEF007B6E64 /* CGXDatePickerView.m in Sources */,
 				16E4DE48248CE823000FAB7A /* MineContentView.m in Sources */,
+				4B6B03CF2498FFEF007B6E64 /* CGXPickerUIBaseView.m in Sources */,
 				4B503880249670FE00B61432 /* QualificationsTableViewCell.m in Sources */,
 				4B84B8E224910A4C007A22CE /* to3BlackListSrcollModel.m in Sources */,
 				4B50384724934F3400B61432 /* CertificateViewController.m in Sources */,
@@ -1444,21 +1872,35 @@
 				4B84B8CF24907071007A22CE /* UIButton+Badge.m in Sources */,
 				413B01DE247237F8000301F3 /* LoginViewController.m in Sources */,
 				4B4F30B6249297E00028AD97 /* toConsultingViewController.m in Sources */,
+				4BCA14192499F86900430A23 /* CityTableViewCell.m in Sources */,
+				4BA30DBA249F25D800DB5E84 /* JianNiuzixunViewController.m in Sources */,
 				413B01A624722993000301F3 /* BackModel.m in Sources */,
+				4B9404B5249B5391006264DA /* twoZhaotoubiaoViewController.m in Sources */,
 				4BDE1F352497928E0018080E /* CertificatemanagementVC.m in Sources */,
-				4B43829E24932E8500303F58 /* TCLightListViewController.m in Sources */,
+				4B6B03D32498FFEF007B6E64 /* CGXPickerView.m in Sources */,
+				4BCA1421249A2B3C00430A23 /* toCityViewController.m in Sources */,
+				4B6B03CB2498FFEF007B6E64 /* CGXPickerViewManager.m in Sources */,
 				4B503871249665AD00B61432 /* MessageTableViewCell.m in Sources */,
+				4BA30DCC249F3F2000DB5E84 /* toJianNiuzixunViewController.m in Sources */,
+				4BA30DE1249F67AF00DB5E84 /* ZhaobiaogonggaoViewController.m in Sources */,
+				4BCA1426249A2CF700430A23 /* toCityViewTableViewCell.m in Sources */,
 				4B4F30BB249299640028AD97 /* toConsultingTableViewCell.m in Sources */,
 				4B84B8B5248F8624007A22CE /* BWTopMenuView.m in Sources */,
 				4B327B762491C15B009827EB /* ConsultingCollectionViewCell.m in Sources */,
+				4BCA141D249A1E0E00430A23 /* CityViewModel.m in Sources */,
+				4BA30DAA249F052D00DB5E84 /* HomeZxTableViewCell.m in Sources */,
 				4BDE1F31249789730018080E /* WhereGOModel.m in Sources */,
 				4B4F30A7249249E70028AD97 /* ConsultingDetailTableViewCell.m in Sources */,
 				413B01A124722813000301F3 /* CTUserDefaults.m in Sources */,
+				4B6B03CD2498FFEF007B6E64 /* CGXAddressPcikerView.m in Sources */,
+				4BA30DC3249F3A9C00DB5E84 /* JianNIUzixunModel.m in Sources */,
+				4BA30DA5249EFB9B00DB5E84 /* TtoubiaoTableViewCell.m in Sources */,
+				4B940504249C91FE006264DA /* StoubiaoViewController.m in Sources */,
 				413B01A324722813000301F3 /* UIView+xibConfig.m in Sources */,
 				4B36FCBF2497258E009A4A68 /* to3QualificationsTableViewCell.m in Sources */,
+				4B7F0447249CC1AA002BD414 /* JXCircleRatioView.m in Sources */,
 				4160FAC7248CDDDC003DD217 /* HomeFindToolCell.m in Sources */,
 				4B36FCB02497153C009A4A68 /* toQualificationsViewController.m in Sources */,
-				4B50384F249351E200B61432 /* SelectedDateView.m in Sources */,
 				413B01A224722813000301F3 /* UIView+Addition.m in Sources */,
 				4B4F30C02492A2FB0028AD97 /* to2ConsultingViewController.m in Sources */,
 				4BDE1F4F2498585D0018080E /* CertificatemanagementScroVC.m in Sources */,
@@ -1476,23 +1918,39 @@
 				418687EB2477E33300B910D6 /* ShowImageTool.m in Sources */,
 				4160FACC248CE57A003DD217 /* HomeManagerCell.m in Sources */,
 				4BDDB050248CC78000E10B67 /* WCScrollLabelView.m in Sources */,
+				4B940509249C9210006264DA /* TtoubiaoViewController.m in Sources */,
 				4B50385524937FE200B61432 /* YearMonthPikerView.m in Sources */,
+				4BA30DEB249F9CF800DB5E84 /* YujinxiangqingTableViewCell.m in Sources */,
+				4BA30DF624A0442200DB5E84 /* ShezhiViewController.m in Sources */,
 				4BDE1F3B249792F40018080E /* anquanSCViewController.m in Sources */,
+				4BA30DD8249F4D0E00DB5E84 /* ToJianNiuWebVC.m in Sources */,
 				4B9EDBC3249762900033FED2 /* ChuZhiCheckLastCell.m in Sources */,
+				4BA30DD4249F445A00DB5E84 /* SYProgressWebView.m in Sources */,
 				415A447324769184004F1EE7 /* main.m in Sources */,
+				4B9404BC249B6090006264DA /* TLTabBarController.m in Sources */,
 				4BDDB048248CC78000E10B67 /* HomeViewController.m in Sources */,
 				4BDE1F4A249857B80018080E /* CertificatemanagementCell.m in Sources */,
 				4B9EDBD124976B8F0033FED2 /* ChuzhiCheckTopTableViewCell.m in Sources */,
+				4B9404D2249C5009006264DA /* ZhaotoubiaoDownView.m in Sources */,
 				413B01E724725D2E000301F3 /* UIButton+TCBaseButton.m in Sources */,
 				415A446E24769156004F1EE7 /* NSString+BaseNSString.m in Sources */,
+				4B9404FF249C91EB006264DA /* FtoubiaoViewController.m in Sources */,
 				4B84B8CE24907071007A22CE /* UIBarButtonItem+Badge.m in Sources */,
+				4B6B03D724990F38007B6E64 /* yejiguanliTableViewCell.m in Sources */,
 				4160FAD6248CED2A003DD217 /* HomeInformationSelectionCell.m in Sources */,
 				4BDDB04D248CC78000E10B67 /* HomeQuickTableViewCell.m in Sources */,
+				4BA30DDC249F524F00DB5E84 /* JianNiuWebViewController.m in Sources */,
+				4BA30DFF24A092BD00DB5E84 /* PlaceholderTextView.m in Sources */,
+				4B7F0446249CC1AA002BD414 /* JXCircleModel.m in Sources */,
 				4B327B6C2491C012009827EB /* ConsultingViewController.m in Sources */,
+				4BA30DAF249F060D00DB5E84 /* HomeZbTableViewCell.m in Sources */,
 				4BF110AC248DEF3600EC661B /* NoticeViewController.m in Sources */,
 				4B50385D249395AE00B61432 /* CertificateTableViewCell.m in Sources */,
 				4B9EDBBE249762900033FED2 /* ChuZhiCheckFirstCell.m in Sources */,
 				4B4F30AD249265C40028AD97 /* NullSafe.m in Sources */,
+				4BA30DE6249F95BE00DB5E84 /* YujinxiangqingViewController.m in Sources */,
+				4BA30DB4249F063600DB5E84 /* HomeDownTableViewCell.m in Sources */,
+				4B9404CC249B91E8006264DA /* ZhaotoubiaoModel.m in Sources */,
 				4BBFB646248F1DAB00D303B6 /* BlackListViewController.m in Sources */,
 				415A447424769184004F1EE7 /* AppDelegate.m in Sources */,
 			);
@@ -1656,6 +2114,7 @@
 			baseConfigurationReference = 95F242620D8D133D3A1E66A3 /* Pods-Supervision.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Supervision/资质通.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202005292040;
 				DEVELOPMENT_TEAM = 3XFNUN44Y6;
@@ -1671,7 +2130,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.JianNiu.JianBang;
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianbanghr.business;
 				PRODUCT_NAME = "资质通";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1682,6 +2142,7 @@
 			baseConfigurationReference = C58539FFC28AB4A2D0DADCF0 /* Pods-Supervision.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Supervision/资质通.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202005292040;
 				DEVELOPMENT_TEAM = 3XFNUN44Y6;
@@ -1697,7 +2158,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.JianNiu.JianBang;
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianbanghr.business;
 				PRODUCT_NAME = "资质通";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

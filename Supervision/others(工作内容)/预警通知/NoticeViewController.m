@@ -40,9 +40,6 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    _tableview.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-        [self loadMore];
-    }];
     
     [self updateUI];
     
@@ -55,26 +52,21 @@
 //    [self loadMore];
     WEAK_SELF;
       
-      dispatch_async(dispatch_get_main_queue(), ^{
           
-          [HttpRequestTool infoSuccessBlock:^(id responObject) {
+//          [HttpRequestTool infoSuccessBlock:^(id responObject) {
               
 //              NSArray *arr = (NSArray *)responObject;
 //              [__weakSelf.dataSourceArr addObjectsFromArray:arr];
 //
 //              NSIndexSet *setIndex = [NSIndexSet indexSetWithIndex:0];
               //              [__weakSelf.tableview reloadSections:setIndex withRowAnimation:UITableViewRowAnimationNone];
-          } failureBlock:^(id err) {
-              
-          }];
-      });
+//          } failureBlock:^(id err) {
+//
+//          }];
 }
 
 - (void)loadMore{
     
-    NSMutableDictionary *dict =[NSMutableDictionary dictionary];
-    
-    [dict setObject:[NSString stringWithFormat:@"%ld",(long)_page] forKey:@"page"];
     
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

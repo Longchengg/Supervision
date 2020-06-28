@@ -55,17 +55,24 @@
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一级" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSV-RN-1lc">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSV-RN-1lc">
                         <rect key="frame" x="15" y="35" width="145" height="96"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <attributedString key="attributedText">
+                            <fragment content="一级">
+                                <attributes>
+                                    <color key="NSColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="已完成_ali" translatesAutoresizingMaskIntoConstraints="NO" id="7L8-4I-yXn">
-                        <rect key="frame" x="235" y="76" width="60" height="60"/>
+                        <rect key="frame" x="255" y="96" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="mMT-gT-26A"/>
-                            <constraint firstAttribute="height" constant="60" id="sbK-3a-qjH"/>
+                            <constraint firstAttribute="width" constant="40" id="mMT-gT-26A"/>
+                            <constraint firstAttribute="height" constant="40" id="sbK-3a-qjH"/>
                         </constraints>
                     </imageView>
                 </subviews>

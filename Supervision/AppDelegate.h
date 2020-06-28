@@ -17,6 +17,7 @@
 
 - (void)loginOut;
 
+- (void)loginSuccess:(NSString *)token;
 
 - (void)initControllers;
 

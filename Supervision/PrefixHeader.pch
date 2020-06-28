@@ -33,8 +33,11 @@
     #import "UIButton+Badge.h"
 #endif
 
-#define HttpRequestURL @"http://54.223.183.206:8090"    //测试
-//#define HttpRequestURL @"https://saas.jz-rck.com"      //线上
+//#define HttpRequestURL @"http://54.223.183.206:8090"    //测试
+//#define HttpRequestURLQ @"http://54.223.183.206:8098"   //前端测试
+
+#define HttpRequestURL @"https://saas.jz-rck.com"     //线上
+#define HttpRequestURLQ @"https://saas.jz-rck.com"    //前端线上
 
 
 #define HttpRequestImageURL @"ttps://jbzl-saas-test.oss-cn-shanghai.aliyuncs.com"
@@ -56,7 +59,7 @@
 
 //颜色规范
 //常用颜色
-#define MColor RGB(6,66,195)
+#define MColor RGB(80,169,236)
 //按钮背景颜色
 #define ButtonColor RGB(16,136,237)
 //按钮标题颜色
@@ -78,8 +81,6 @@
 //取个单例对象
 #define AppSingleton [Singleton shareInstance]
 
-//百度地图sdk key
-#define BMKMap_key @"gqfteWG44dW80vQG0qr5RHsuQyHObLWv"
 
 #define MYBUNDLE_NAME @ "mapapi.bundle"
 #define MYBUNDLE_PATH [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: MYBUNDLE_NAME]

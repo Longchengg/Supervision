@@ -1,0 +1,6 @@
+framework module TLAnimationTabBar {
+  umbrella header "TLAnimationTabBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

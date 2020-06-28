@@ -1,0 +1,22 @@
+//
+//  to2CityViewCell.h
+//  Supervision
+//
+//  Created by 龙成 on 2020/6/18.
+//  Copyright © 2020 Supervision. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface to2CityViewCell : UITableViewCell
+-(void)setlab1:(NSString *)lab1
+          lab2:(NSString *)lab2
+          lab3:(NSString *)lab3;
+-(void)setzhaolab1:(NSString *)lab1
+              lab2:(NSString *)lab2
+              lab3:(NSString *)lab3;
+@end
+
+NS_ASSUME_NONNULL_END
